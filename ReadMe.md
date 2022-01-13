@@ -6,9 +6,9 @@ I'm Dan Moore, I'm an Artist, Designer, and Technologist based here in New York 
 
 I leverage media frameworks, game engines, textiles, and robotic arms to create immersive environments that examine human behavior, pop-culture, and culture dichotomies. My work is inspired by the idea of HYPE and the manipulation of media to achieve it. I strive to create a fully immersive environment for the audience to not only experience but become an active participant in the work.
 
-Recently I have been creating sneakers with machine learning called [*airegan](www.aire-gan.com)
+I've been creating sneakers with machine learning called and calling them [*airegan](www.aire-gan.com)
 
-I've worked at design studios inside Samsung's HQ, a few tours of duty at the Google Creative Lab, worked for advertising and experiential agencies, architecture firms, led my own team at Squarespace, and I'm currently contracting at NVIDIA working with their Creative team.
+I've worked at design studios inside Samsung Mobile, a few tours of duty at the Google Creative Lab, worked for advertising and experiential agencies, architecture firms, led my own team at Squarespace, and I'm currently contracting at NVIDIA working with their Creative team on Virtual Production Tools.
 
 ### _What?_
 - How software is _really_ created
