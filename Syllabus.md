@@ -1,13 +1,11 @@
 ## Code Toolkit: Javascript and P5JS, Spring 2022 – LCOD 2012 – Dan Moore
-
+### Introductory Beep Boops
 * Who: Dan Moore, dan@makeitdoathing.com
 * What: Code Toolkit: Javascript and P5.JS, Spring 2022 – LCOD 2012
 * When: Tuesday, 4:00 – 6:40am 
 * Where: 6 East 16th Street, Room: XXX
-
-### Office hours: Tuesday, 2-4pm or by Zoom as needed (just email me and we can set something up)
+### Office hours: Tuesday, 2-4pm or by Zoom as needed (email me and we can set something up)
 This course provides a basic introduction to coding for students with no prior experience using the P5.js Javascript Programing Environment. It will introduce the use of computing and algorithms to web design, data analysis and visualization, and game design. Students will complete integrative projects within each of these areas, and leave the class with a strong foundation in the use of P5js across a range of applications. Access to a working laptop will be expected throughout the semester. This course fulfills the Integrative Course requirement of the Culture and Media major.
-
 ## Class Github & Email
 Rather than using Canvas this semester we will be using this [github repo](https://github.com/danzeeeman/code_toolkit_S2022).  ___Please bookmark that URL and refer back to it often___. 
 
@@ -32,7 +30,7 @@ You will have weekly homework assignments comprised of coding exercises. They wi
 
 Even though the weekly homework is mainly graded pass/fail, notice from the Final Grade Calculation above that it represents the largest fraction of your final grade. The best way to do well in terms of grading will be to keep up with the weekly homework, and if you don’t keep up with the homework it will be difficult to end up with a high grade. The reason I’ve structured things this way is because I have found that the best way for you to do well in terms of learning is also to keep up with the weekly homework. Our semester will proceed through small steps, but we’ll take those steps fairly quickly, and the topics will be like incremental blocks that build on each other, so make sure you understand the concept each week in order to be sure next week will make sense.
 ## Readings and reading responses
-We also have readings and videos about every two weeks. These are indicated in the course schedule below and will be posted to the class website. You will be asked to submit a short reading response of about 150 words that mainly consists of quotes from the text that you wish to highlight and some questions or comments based on those passages. These will be submitted in a shared [Google Doc](https://docs.google.com/document/d/1EVALM_XbkDWo0Y4u45wBYwqAE9h1CCWQFeBrmGzN7p8). I will also pose questions in the Google Doc to serve as a prompt to guide your reading and responses. Like the weekly programming exercises, these will also be due at 12pm the morning before class and will also be graded pass/fail.
+We also have readings and videos about every week weeks. These are indicated in the course schedule below and will be posted to the class github. You will be asked to submit a short reading response of about 150 words that mainly consists of quotes from the text that you wish to highlight and some questions or comments based on those passages. These will be submitted in a shared [Google Doc](https://docs.google.com/document/d/1EVALM_XbkDWo0Y4u45wBYwqAE9h1CCWQFeBrmGzN7p8). I will also pose questions in the Google Doc to serve as a prompt to guide your reading and responses. Like the weekly programming exercises, these will also be due at 12pm the morning before class and will also be graded pass/fail.
 
 ## [READING DISCUSSION GOOGLE DOC](https://docs.google.com/document/d/1EVALM_XbkDWo0Y4u45wBYwqAE9h1CCWQFeBrmGzN7p8)
 ### Projects
@@ -110,30 +108,32 @@ http://www.newschool.edu/provost/course-evaluations-student-instructions.pdf
   * The window as a grid of pixels
 ### Home Work
 * Read Marshall McCluhan's [The Medium is the Message](pdfs/mcluhan.mediummessage.pdf)
-* Read Lev Manovich's [The Language of New Media, Cambridge, MA: MIT Press, 2002. Chapter 1 (pages 18-55)](https://dss-edit.com/plu/Manovich-Lev_The_Language_of_the_New_Media.pdf)
-* Extra Credit Readings 
+* _Extra Credit_
   * The Critical Engineering Working Group's [THE CRITICAL ENGINEERING MANIFESTO](https://criticalengineering.org) [pdf](https://criticalengineering.org/ce.pdf)
   * Watch Zach Lieberman's talk at EYE0 2012 * https://vimeo.com/47203759?t=38m22s
   * Read Casey Reas et al. [{Sofrware} Structures](https://artport.whitney.org/commissions/softwarestructures/text.html#structure)
 ## Week 2 – Adding variance
-  * Variables
-  * Arithmetic (+, -, *, /)
-  * Introduction to functions() and methods()
+* Variables
+* Arithmetic (+, -, *, /, %)
+* Introduction to functions() and methods()
+
 ### Home Work
-  * Coding Assignment #1 __Solve LeWitt's Trapezoid__ 
+* Coding Assignment #1 __Solve LeWitt's Trapezoid__ 
 ![Trapezoid](images/lewitt-trapezoid.jpeg)
+* Read Lev Manovich's [The Language of New Media, Cambridge, MA: MIT Press, 2002. Chapter 1 (pages 18-55)](https://dss-edit.com/plu/Manovich-Lev_The_Language_of_the_New_Media.pdf)
 ## Week 3 – Adding interactivity
 * Code blocks and frames 
 * Debugging
 * Mouse interaction
 * map() and draw()
-* for loops()
+* for() loops
 ### Home Work
-  * Coding Assignment #2 : Patterns
-  * Create a generative patterns
-    * Experiment with _Shape Grammar_
+  * Read [Introduction to Shape Grammars](pdfs/MIT4_540F18_qa1.pdf)
+  * Coding Assignment #2a : Create a generative pattern
     * Experiment with 2D transforms such as scaling, rotation, mirroring
     * Iterate on your designs
+    * Use Plenty of Variables
+  * Coding Assignment #2b : Make your pattern respond to the mouse input (button click and or position)
 
 ## Week 4 – Making things move
 * Conditionals if and else
@@ -149,6 +149,7 @@ Due: Week 8 for in-class presentation and discussion
 
 ## Week 5 – Adding repetition
 * Loops
+* Easing
 * So what is an ___NFTs___ really?
 ### Home Work
   * Coding Assignment #4.a: Create a Endless animation using primitives: Circle, Square, Rectangle, Triangles
@@ -157,18 +158,21 @@ Due: Week 8 for in-class presentation and discussion
 
 ## Week 6 – Timing and state
 * Timing
-* Easing
 * State: a new way to use variables
 ### Home Work
-* Coding Assignment #5: Line Intercept:  Place 4 dots on the screen at at random points.  half of the dots should be on the left side of the screen and half of the dots should be on the right side of the screen, connected each dot to a randomly selected dot.  a dot can only be connected to one other dot. animated the lines connecting. draw a dot if the two lines intercept. 
+* Coding Assignment #5: One Button Game
 * "Data Visualization", from Matthew Fuller's Software Studies: A Lexicon
-* Catherine D'Ignazio and Lauren Klein, "Unicorns, Janitors, Ninjas, Wizards, and Rock
-Stars," from Data Feminism, MIT Press, 2020 [pdf](https://monoskop.org/images/a/a1/Fuller_Matthew_ed_Software_Studies_A_Lexicon.pdf)
+* Catherine D'Ignazio and Lauren Klein, ["Unicorns, Janitors, Ninjas, Wizards, and Rock
+Stars"](https://monoskop.org/images/a/a1/Fuller_Matthew_ed_Software_Studies_A_Lexicon.pdf)
 
 ## Week 7 – Working with many things (lists), and modularity (functions)
-* Data structures: Lists
+* Data structures: Lists, Maps
 * Functions: for project planning, reusability and modularity
 * Data Structures and Data Visualization
+* CSV and JSON
+
+### Home Work
+* Coding Assignment #6: Data Self-Portrait 
 
 ## Week 8 – Midterm project work and review as needed
 * Review & midterm project work
@@ -179,16 +183,23 @@ Stars," from Data Feminism, MIT Press, 2020 [pdf](https://monoskop.org/images/a/
   
 ## Week 9 – Midterm project presentations and discussion
 * Midterm project presentations
+
+### Home Work
+* 
 ### Final project assignment given
 Due: Week 15 – Final projects, Pitches due next week!
    
-Week 10 – Coding Outside of P5.js
+## Week 10 – Coding Outside of p5.js
 * An Introduction to Unity C# Scripting
 * Pitch Your Final Projects
+### Home Work
+* Coding Assignment #6: Browser Extension option
+
 
 ## Week 11 - Special Topics
 * Special Topics in Coding
-Reading due for discussion:
+* P5JS Libraries 
+### Home Work
 * Paul Dourish, “Protocols, Packets, and Proximity: The Materiality of Internet Routing”, from Signal Traffic: Critical Studies of Media Infrastructures, Nicole Starosielski and Lisa Parks, eds.
 
 ## Week 12 - Special Topics
@@ -200,7 +211,7 @@ Reading due for discussion:
 ## Week 13 - Review
 * Course material review & midterm project work
 ### Home Work
-
+* Final Project Check Point - MVP - DUE
 ## Week 14 – Final project work
 * Course material review & midterm project work
 

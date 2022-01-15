@@ -1,5 +1,5 @@
 # __CODE TOOLKIT SPRING 2022__
-
+## Introductory Beep Boops
 # Week One Lecture Notes
 ### _Who?_
 I'm Dan Moore, I'm an Artist, Designer, and Technologist based here in New York City.  I have a desk and robot arm at Pratt Institute's Consortium for Research & Robotics (CRR) in the Brooklyn Navy Yard.  I design and build interactive activations and applications.  I've got a official bio (that needs to be updateddated) on my website [Make It Do A Thing](www.makeitdoathing.com).  
@@ -25,34 +25,16 @@ I've worked at design studios inside Samsung Mobile, a few tours of duty at the 
 ### _Why?_ 
 - Discussion: Why did you take this course?
 - Discussion: What do you hope to take away?
+## __Technology__
+The technologies we will be using in this course are [p5js](https://p5js.org) a sibling of the [Processing framework](https://processing.org) and [Javascript](https://en.m.wikipedia.org/wiki/JavaScript).  We will be using the browser and [vscode](https://code.visualstudio.com) for everything in this course so be sure to bring a laptop to class and install [vscode](https://code.visualstudio.com).
+
+
 ### ___Technology as a Medium___
 - SAAS, Software as a Service
 - Bank Software aka B2B
 - Bots, Botnets, and Hacking for Fun and Profit
 - Interactivity  
 - Arting, with a Computer
-
-#### __Discussion__: 
-- _What does the word ___procedural___ mean to you?_
-- _What is a process?_
-- _What is software?_
-
-### __Technology__
-#### Javascript and P5JS
-The technologies we will be using in this course is p5js a sibling of the Processing framework.  We will be using the browser for everything in this course so be sure to bring a laptop to class.
-
-#### ___Extra Credit: Unity and or openFrameworks___
-Extra Credit for those who midway through switch over to Unity or openFrameworks to make something with a little more complexity for their final project.
-
-#### In-class Assignment: ___A crash course to git___
-
-- Create a [Github](https://github.com) profile and link it to the P5js [Editor](https://editor.p5js.org) 
-- Fork this Repo
-- Install [git](https://git-scm.com)
-- Clone that Repo
-- Copy the _template_ folder and rename it to your chosen handle  
-- add the folder to the repo and push to your upstream 
-- perform a pull request to my repo
 
 ## Computing, Outside a School of ___Computer Science___
 ### _Poetic Computing_
@@ -70,18 +52,45 @@ Extra Credit for those who midway through switch over to Unity or openFrameworks
 * The Critical Engineering Working Group [The Deep Sweep](https://criticalengineering.org/projects/deep-sweep/)
 * Julian Oliver [Stealth Cell Tower](https://julianoliver.com/output/stealth-cell-tower.html)
 
-## Hello World
-### [Examples](https://p5js.org/examples/)
-- [Hello World]()
-- [Hello Shapes](https://p5js.org/examples/hello-p5-simple-shapes.html)
-- [Animation](https://p5js.org/examples/hello-p5-animation.html)
+## In-class Assignment: ___A crash course to git___
 
+- Create a [Github](https://github.com) profile and link it to the P5js [Editor](https://editor.p5js.org) 
+- Fork this Repo
+- Install [git](https://git-scm.com)
+- Clone that Repo
+- Copy the _template_ folder and rename it to your chosen handle  
+- add the folder to the repo and push to your upstream 
+- perform a pull request to my repo
+
+# Introduction to Code
+### Hello World
+- [Hello World](https://editor.p5js.org/danzeeeman/sketches/yyrHi9CAJ)
+#### __Discussion__: 
+- _What does the word ___procedural___ mean to you?_
+- _What is a process?_
+- _What is software?_
+## Drawing with numbers
+- [Hello Shapes](https://editor.p5js.org/danzeeeman/sketches/l21Ut52K6)
 ### The Screen is a Grid
+- [Hello Grid](https://editor.p5js.org/danzeeeman/sketches/kAGXxWYRf)
+
+## [Examples](https://p5js.org/examples/)
+
 ### Home Work
 * Read Marshall McCluhan's [The Medium is the Message](pdfs/mcluhan.mediummessage.pdf)
 * Read Lev Manovich's [The Language of New Media, Cambridge, MA: MIT Press, 2002. Chapter 1 (pages 18-55)](https://dss-edit.com/plu/Manovich-Lev_The_Language_of_the_New_Media.pdf)
-* Extra Credit Readings & Writings 
+* _Extra Credit Readings & Writings_ 
   * The Critical Engineering Working Group's [THE CRITICAL ENGINEERING MANIFESTO](https://criticalengineering.org) [pdf](https://criticalengineering.org/ce.pdf)
   * Watch Zach Lieberman's talk at EYE0 2012 * https://vimeo.com/47203759?t=38m22s
   * Read Casey Reas et al. [{Sofrware} Structures](https://artport.whitney.org/commissions/softwarestructures/text.html#structure)
 
+# Week 2 – Adding variance
+  * Variables
+  * Arithmetic (+, -, *, /, %)
+  * Introduction to functions() and methods()
+## Variables
+* [Hello Variables](https://editor.p5js.org/danzeeeman/sketches/kAGXxWYRf)
+## Arithmetic
+* [Hello Variables](https://editor.p5js.org/danzeeeman/sketches/kAGXxWYRf)
+## functions() and methods()
+* [Hello Functions](https://editor.p5js.org/danzeeeman/sketches/kAGXxWYRf)
