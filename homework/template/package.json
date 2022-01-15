@@ -1,0 +1,10 @@
+{
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "@fal-works/eslint-config-p5js": "^1.0.3",
+    "eslint": "^7.18.0",
+    "eslint-config-prettier": "^7.1.0",
+    "prettier": "^2.2.1"
+  },
+  "private": true
+}
