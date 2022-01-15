@@ -35,6 +35,7 @@ The technologies we will be using in this course are [p5js](https://p5js.org) a 
 * Design I/O, [*Mimic*](https://www.design-io.com/projects/mimic) & [*Connected Worlds*](https://www.design-io.com/projects/connectedworlds)
 * Golan Levin, [*Ghost Pole Propagator I*](http://flong.com/archive/projects/gpp/index.html) & [*Ghost Pole Propagator II*](http://flong.com/archive/projects/gpp-ii/index.html)
 * Kyle McDonald and Jonas Jongejan, [*Light Leaks*](https://vimeo.com/66167082)
+
 ### _Social Justice, Protests, Hacktivism, Jouralism, and Critical Hot Takes_
 * Sam Lavigne, [Database of ICE employee LinkedIn accounts](https://www.theverge.com/2018/6/19/17480912/github-ice-linkedin-scraping-employees)
 * frnsys, [scanmap](https://github.com/frnsys/scanmap)
@@ -44,6 +45,7 @@ The technologies we will be using in this course are [p5js](https://p5js.org) a 
 * The Critical Engineering Working Group [The Deep Sweep](https://criticalengineering.org/projects/deep-sweep/)
 * Julian Oliver [Stealth Cell Tower](https://julianoliver.com/output/stealth-cell-tower.html)
 ## In-class Assignment: ___A crash course to git___
+
 - Create a [Github](https://github.com) profile and link it to the P5js [Editor](https://editor.p5js.org) 
 - Fork this Repo
 - Install [git](https://git-scm.com)
@@ -62,7 +64,7 @@ The technologies we will be using in this course are [p5js](https://p5js.org) a 
 - [Hello Shapes](https://editor.p5js.org/danzeeeman/sketches/l21Ut52K6)
 ### The Screen is a Grid
 - [Hello Grid](https://editor.p5js.org/danzeeeman/sketches/kAGXxWYRf)
-# Tweaking Things Is Essential 
+### Tweaking Things Is Essential 
 ![tweaking](images/changing-stuff.jpeg)
 ## [Examples](https://p5js.org/examples/)
 ### Home Work
