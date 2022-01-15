@@ -4,7 +4,7 @@
 ## Arithmetic
 ## functions() and methods()
 
-* [Hello Variables](https://editor.p5js.org/danzeeeman/sketches/kAGXxWYRf)
+* [Hello Vars](https://editor.p5js.org/danzeeeman/sketches/QR1NPe1TI)
   
 ![Coding](images/var_meme.jpg)
 

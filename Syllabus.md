@@ -91,12 +91,9 @@ Grade policies
 http://www.newschool.edu/registrar/academic-policies/
 Student code of conduct
 https://www.newschool.edu/student-conduct/
-
 ## Student Course Ratings
 During the last two weeks of the semester, students are asked to provide feedback for each of their courses through an online survey. They cannot view grades until providing feedback or officially declining to do so. Course evaluations are a vital space where students can speak about the learning experience. It is an important process which provides valuable data about the successful delivery and support of a course or topic to both the faculty and administrators. Instructors rely on course rating surveys for feedback on the course and teaching methods, so they can understand what aspects of the class are most successful in teaching students, and what aspects might be improved or changed in future. Without this information, it can be difficult for an instructor to reflect upon and improve teaching methods and course design. In addition, program/department chairs and other administrators review course surveys. Instructions are available online at
 http://www.newschool.edu/provost/course-evaluations-student-instructions.pdf
-
-
 # Course Outline
 ## Week 1 – Thinking like a computer?
   * Introductions
@@ -116,16 +113,15 @@ http://www.newschool.edu/provost/course-evaluations-student-instructions.pdf
 * Variables
 * Arithmetic (+, -, *, /, %)
 * Introduction to functions() and methods()
-
+* map() 
 ### Home Work
 * Coding Assignment #1 __Solve LeWitt's Trapezoid__ 
 ![Trapezoid](images/lewitt-trapezoid.jpeg)
 * Read Lev Manovich's [The Language of New Media, Cambridge, MA: MIT Press, 2002. Chapter 1 (pages 18-55)](https://dss-edit.com/plu/Manovich-Lev_The_Language_of_the_New_Media.pdf)
 ## Week 3 – Adding interactivity
-* Code blocks and frames 
+* Classes
 * Debugging
-* Mouse interaction
-* map() and draw()
+* Mouse Interaction
 * for() loops
 ### Home Work
   * Read [Introduction to Shape Grammars](pdfs/MIT4_540F18_qa1.pdf)
