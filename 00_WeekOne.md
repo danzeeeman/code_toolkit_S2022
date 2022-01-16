@@ -29,10 +29,7 @@
 - perform a pull request to my repo
 ## __5-10 min break__
 # Introductory Beep Boops 
-
 ### How we Work: The P5js Development Environment ("PDE")
-
-
 We are going to read a lot of code this semester and we are going to code things together in class as a class.  I will prep examples and they will be hosted on the p5js editor or in the examples folder. 
 
 ___If I am ever going to fast or you have any questions please interrupt me and ask a question___
