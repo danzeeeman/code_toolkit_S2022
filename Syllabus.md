@@ -11,7 +11,7 @@ Rather than using Canvas this semester we will be using this [github repo](https
 
 All deadlines, reading materials, project tutorials, and other course materials will be posted here on the github. You will be using Google Docs, Google Drive, and other platforms to submit your project work and reading responses. The repo will include links to these resources and instructions on how to submit work.
 
-Please check this site as well as your @newschool.edu email regularly for any course announcements, possibly including last minute updates.
+Please check this repo as well as your @newschool.edu email regularly for any course announcements, possibly including last minute updates.
 ## Course Structure
 We will usually begin class by reviewing the previous week’s homework, showing examples of student work and addressing any questions that came up. Then I will offer an interactive lecture on new coding topics. Approximately every other week we will spend 30-40 minutes of class time on conceptual material and reading discussion. We will take a short break halfway through class. Sometimes I can forget – please remind me!
 ### Final Grade Calculation
@@ -118,18 +118,17 @@ http://www.newschool.edu/provost/course-evaluations-student-instructions.pdf
 ![Trapezoid](images/lewitt-trapezoid.jpeg)
 * Read Lev Manovich's [The Language of New Media, Cambridge, MA: MIT Press, 2002. Chapter 1 (pages 18-55)](https://dss-edit.com/plu/Manovich-Lev_The_Language_of_the_New_Media.pdf)
 ## Week 3 – Adding interactivity
-* Classes
 * Debugging
 * Mouse Interaction
 * map() 
 * for() loops
 ### Home Work
-  * Read [Introduction to Shape Grammars](pdfs/MIT4_540F18_qa1.pdf)
-  * Coding Assignment #2a : Create a generative pattern
-    * Experiment with 2D transforms such as scaling, rotation, mirroring
-    * Iterate on your designs
-    * Use Plenty of Variables
-  * Coding Assignment #2b : Make your pattern respond to the mouse input (button click and or position)
+* Read [Introduction to Shape Grammars](pdfs/MIT4_540F18_qa1.pdf)
+* Coding Assignment #2a : Create a generative pattern
+  * Experiment with 2D transforms such as scaling, rotation, mirroring
+  * Iterate on your designs
+  * Use Plenty of Variables
+* Coding Assignment #2b : Make your pattern respond to the mouse input (button click and or position)
 
 ## Week 4 – Making things move
 * Conditionals if and else
@@ -152,7 +151,8 @@ Due: Week 8 for in-class presentation and discussion
   * Coding Assignment #4.b: Create a Endless animation using found objects   
       * MEMEs will be judged by their Dankness
 
-## Week 6 – Timing and state
+## Week 6 – Classes, Timing and state
+* Classes
 * Timing
 * State: a new way to use variables
 ### Home Work
