@@ -93,9 +93,6 @@ lets look at some [code](https://editor.p5js.org/danzeeeman/sketches/QR1NPe1TI)
 * yourOwnFunctions(parameter1, parameter2, paramter3)
 * yourOwnFunction(parameters)
 ![global_meme](images/you-dont-ever-have-to-pass-parameters-if-every-variable-66493518.png)
-## Coding Examples
-* [Hello Vars](https://editor.p5js.org/danzeeeman/sketches/QR1NPe1TI)
-
 
 # Homework
 * Read Lev Manovich's [The Language of New Media, Cambridge, MA: MIT Press, 2002. Chapter 1 (pages 18-55)](pdfs/Manovich-Lev_The_Language_of_the_New_Media.pdf)

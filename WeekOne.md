@@ -31,7 +31,7 @@
 # Introductory Beep Boops 
 
 ### How we Work: The P5js Development Environment ("PDE")
-* P5
+
 
 We are going to read a lot of code this semester and we are going to code things together in class as a class.  I will prep examples and they will be hosted on the p5js editor or in the examples folder. 
 
