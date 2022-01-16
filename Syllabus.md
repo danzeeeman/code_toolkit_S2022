@@ -9,7 +9,7 @@ This course provides a basic introduction to coding for students with no prior e
 ## Class Github & Email
 Rather than using Canvas this semester we will be using this [github repo](https://github.com/danzeeeman/code_toolkit_S2022).  ___Please bookmark that URL and refer back to it often___. 
 
-All deadlines, reading materials, project tutorials, and other course materials will be posted here. You will be using Google Docs, Google Drive, and other platforms such as GitHub to submit your project work and reading responses. The repo will include links to these resources and instructions on how to submit work.
+All deadlines, reading materials, project tutorials, and other course materials will be posted here on the github. You will be using Google Docs, Google Drive, and other platforms to submit your project work and reading responses. The repo will include links to these resources and instructions on how to submit work.
 
 Please check this site as well as your @newschool.edu email regularly for any course announcements, possibly including last minute updates.
 ## Course Structure
@@ -113,7 +113,6 @@ http://www.newschool.edu/provost/course-evaluations-student-instructions.pdf
 * Variables
 * Arithmetic (+, -, *, /, %)
 * Introduction to functions() and methods()
-* map() 
 ### Home Work
 * Coding Assignment #1 __Solve LeWitt's Trapezoid__ 
 ![Trapezoid](images/lewitt-trapezoid.jpeg)
@@ -122,6 +121,7 @@ http://www.newschool.edu/provost/course-evaluations-student-instructions.pdf
 * Classes
 * Debugging
 * Mouse Interaction
+* map() 
 * for() loops
 ### Home Work
   * Read [Introduction to Shape Grammars](pdfs/MIT4_540F18_qa1.pdf)
@@ -179,37 +179,28 @@ Stars"](https://monoskop.org/images/a/a1/Fuller_Matthew_ed_Software_Studies_A_Le
   
 ## Week 9 – Midterm project presentations and discussion
 * Midterm project presentations
-
 ### Home Work
-* 
-### Final project assignment given
-Due: Week 15 – Final projects, Pitches due next week!
-   
+* Final project Due: Week 15 – Final projects, Pitches due next week!
 ## Week 10 – Coding Outside of p5.js
 * An Introduction to Unity C# Scripting
 * Pitch Your Final Projects
 ### Home Work
 * Coding Assignment #6: Browser Extension option
-
-
 ## Week 11 - Special Topics
 * Special Topics in Coding
 * P5JS Libraries 
 ### Home Work
 * Paul Dourish, “Protocols, Packets, and Proximity: The Materiality of Internet Routing”, from Signal Traffic: Critical Studies of Media Infrastructures, Nicole Starosielski and Lisa Parks, eds.
-
 ## Week 12 - Special Topics
 * Bots and Scraping
 * Machine Learning Basics
 ### Home Work
+* Coding Assignment #7: Using Node.js create a twitter bot 
 * Alex Galloway and Eugene Thacker, "Protocol and Counter-Protocol", 2003
-
-## Week 13 - Review
-* Course material review & midterm project work
-### Home Work
-* Final Project Check Point - MVP - DUE
-## Week 14 – Final project work
-* Course material review & midterm project work
-
+## Week 13 - Special Topics
+* Special Topics in Coding
+* Final Project Check Point - Gut Check 
+## Week 14 – Review
+* Course material review & project work-session
 ## Week 15 – Final projects
 * Final project presentations and discussion
