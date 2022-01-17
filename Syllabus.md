@@ -2,7 +2,7 @@
 ### Introductory Beep Boops
 * Who: Dan Moore, dan@makeitdoathing.com
 * What: Code Toolkit: Javascript and P5.JS, Spring 2022 – LCOD 2012
-* When: Tuesday, 4:00 – 6:40am 
+* When: Tuesday, 4:00 – 6:40pm
 * Where: 6 East 16th Street, Room: XXX
 ### Office hours: Tuesday, 2-4pm or by Zoom as needed (email me and we can set something up)
 This course provides a basic introduction to coding for students with no prior experience using the P5.js Javascript Programing Environment. It will introduce the use of computing and algorithms to web design, data analysis and visualization, and game design. Students will complete integrative projects within each of these areas, and leave the class with a strong foundation in the use of P5js across a range of applications. Access to a working laptop will be expected throughout the semester. This course fulfills the Integrative Course requirement of the Culture and Media major.

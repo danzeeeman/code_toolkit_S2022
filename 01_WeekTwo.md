@@ -1,21 +1,34 @@
 # Week 2 – Adding variance
-* Who remembers algebra?
-* Did anyone take Calculus?
-* Did anyone take Physics?
+_Who remembers algebra?_
+```
+y = m * x + b aka the formula for a line
+a**2 + b**2 = c**2 aka Pythagorean Theorem
+```
+_Did anyone take Physics?_
+```
+force = mass * acceleration 
+```
+_Did anyone take Calculus?_
 ## Variables    
-A variable is a way to store something in memory so you can access it later in your code. 
+A variable is a way to store something in memory so you can access it later in your code. You will be using variables all of the time this semester.
+
+You can store multiple types of data as a variable.
+- strings ```"Yo Some Words"```
+- floats ```0.01f```
+- ints  ```5```
+- and more complex data types (we'll get to that much later on in the course)
+
+So lets talk about how you create a variable in code. The word for that is _declare_. 
 
 This is how you _declare_ a variable in p5.js.
-
 ```
 let x;
 ```
-
 There are three places where you can _declare_ a variable
 
-- Inside a function or a block which is called _local variables_
+- Inside a _function_ or a _block_ which is called _local variables_
 - In the definition of function parameters which is called _parameters_
-- Outside of all functions which is called _global variables_
+- Outside of all _functions_ which is called _global variables_
 
 local variable
 ```
@@ -24,7 +37,7 @@ local variable
         let x = 10;
     }
 ```
-function parameters
+function parameter
 ```
     function setup()
     {
