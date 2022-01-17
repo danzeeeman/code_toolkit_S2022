@@ -40,6 +40,7 @@ ___If I am ever going to fast or you have any questions please interrupt me and 
 - _What does the word ___programmatic___ mean to you?_
 - _What is a process?_
 - _What is software?_
+- _What is an algorithm?_
 ## Drawing with numbers
 - [Hello Shapes](https://editor.p5js.org/danzeeeman/sketches/l21Ut52K6)
 ### The Screen is a Grid

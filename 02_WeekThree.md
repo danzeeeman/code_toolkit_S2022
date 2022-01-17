@@ -18,11 +18,10 @@ function draw() {
 _a little bit of calculus_
 ![calc](images/3xksjp.jpg)
 
-Say you wanted the calculate the _acceleration_ of your mouse movements and tie that to your program.  You also want to calculate the _velocity_ of the mouse movements. 
+Say you wanted to calculate the _acceleration_ of your mouse movements and tie that to your program.  You also want to calculate the _velocity_ of the mouse movements. 
 
 So what is the velocity of an object? It's the _derivative_ of the position function.
 
-[Example](https://editor.p5js.org/danzeeeman/sketches/8jrx0Enj8)
 ```
 v_x(t)=d/dt(x(t))
 v_y(t)=d/dt(y(t))

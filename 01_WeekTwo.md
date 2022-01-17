@@ -63,13 +63,15 @@ global variable
 
 My advice is 
 
-```let makeItEasyToRead = 1;```
+```
+let makeItEasyToRead = 1;
 
-```let make_it_easy_to_read = 1;```
+let make_it_easy_to_read = 1;
 
-```let makeItMeanSomethingUnique = 1;```
+let makeItMeanSomethingUnique = 1;
 
-```let make_it_mean_something_unique = 1;```
+let make_it_mean_something_unique = 1;
+```
 
 lets look at some [code](https://editor.p5js.org/danzeeeman/sketches/QR1NPe1TI)
 
@@ -100,11 +102,49 @@ lets look at some [code](https://editor.p5js.org/danzeeeman/sketches/QR1NPe1TI)
   *  3 % 4 = 3
   *  16 % 4 = 0
 ## functions() and methods()
-* translate(x, y)
-* rotate(Radians)
-* scale(x, y)
-* yourOwnFunctions(parameter1, parameter2, paramter3)
-* yourOwnFunction(parameters)
+### Transforms
+- ```rotate()```
+  ```
+  translate(width / 2, height / 2);
+  rotate(PI / 3.0);
+  rect(-26, -26, 52, 52);
+  ```
+- ```scale()```  
+  ```
+  translate(width / 2, height / 2);
+  rotate(PI / 3.0);
+  scale(2.0)
+  rect(-26, -26, 52, 52);
+  ```
+- ```translate()```
+  ```
+  translate(30, 20);
+  rect(0, 0, 55, 55);
+  ```  
+
+- ```random()```
+  ```
+  for (let i = 0; i < 100; i++) {
+    let r = random(50);
+    stroke(r * 5);
+    line(50, i, 50 + r, i);
+  }
+  ```
+
+* ```yourOwnFunctions(p1, p2, p3)```
+
+  ```
+  function  yourOwnFunctions(p1, p2, p3){
+    return ((p1*p2)+p3)/p2
+  }
+  ```
+* ```yourOwnFunction(parameters)```
+
+  ```
+  function  yourOwnFunctions(p){
+    return ((p.p1*p.p2)+p.p3)/p.p2
+  }
+  ```
 ![global_meme](images/you-dont-ever-have-to-pass-parameters-if-every-variable-66493518.png)
 
 # Homework
