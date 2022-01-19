@@ -1,10 +1,16 @@
 # Week 3 – Debugging & Adding interactivity
 ## Debugging
-The joys of ```console.log()``` and ```print()``` and ```breakpoints```
-
-![breakpoints](images/eum8qvgim2u01.jpg)
-
 Figuring out what is wrong and how to fix it is an important skill.  Your best tool to examine what's going on in your code in an instant is to print to the console.  
+
+___The joys of ```console.log()``` and ```print()``` and ```breakpoints```___
+![breakpoints](images/eum8qvgim2u01.jpg)
+## Rubber Duck Debugging
+![rubber_duck](images/programmers-rubber-duck-debugging-5-5be16be174fba__700.jpg)
+
+### ___talk it out___
+One way of debugging is to talk out the problem.  
+
+### Debuggings
 
 let's take this code that won't run.  And try to run it. 
 
