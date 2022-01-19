@@ -1,4 +1,9 @@
 # Week 3 – Debugging & Adding interactivity
+
+## Frames
+__```function draw()```__
+This function gets called at every frame.  Think of a frame as a snapshot in time.  It allows you to 
+
 ## Debugging
 Figuring out what is wrong and how to fix it is an important skill.  Your best tool to examine what's going on in your code in an instant is to print to the console.  
 
@@ -157,50 +162,6 @@ let value = sin(frameCount%500/500);
 let mapped_value = map(value, -1, 1, 0, width);
 rect(mapped_value, height/2, 50, 50);
 ```
-
-
-## for() loops
-You've seen a for loop before in some examples but we will look at them more today.
-
-```
-let some_number = 10;
-for(let i = 0; i < some_number; i++){
-    drawShape(i);
-}
-```
-
-_So what does this tell the computer to do?_
-
-### Nested for() loops
-```
-let some_number = 10;
-for(let i = 0; i < some_number; i++){
-    for(let j = 0; j < some_number; j++){
-        drawShape(i, j);
-    }
-}
-```
-_So what does this tell the computer to do?_
-
-### Comparing everything to everything else
-```
-let some_number = 10;
-let list = [10, 9, 12, 25, 14, 4, 6, 10];
-for(let i = 0; i < list.length; i++){
-    for(let j = i; j < list.length; j++){
-        compare(list[i], list[j])
-    }
-}
-```
-_So what does this tell the computer to do?_
-
-_where is this useful?_ 
- * collision detection algorithms
- * particle systems repulsion algorithms 
- * map making
- * distance checking
- * #Stonks
-
 
 
 ### Home Work
