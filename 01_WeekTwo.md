@@ -1,4 +1,22 @@
 # Week 2 – Adding variance
+## Review of what we've done so far
+```
+function setup(){
+  //this creates the p5 canvas that lets us draw
+  //the canvas is a grid of pixel we can manipulate 
+  createCanvas(512, 512);
+  //the print function allows us to print things to the console 
+  print("Hello World")
+}
+function draw(){
+  //background clears the screen with a specific color
+  background(0, 0, 0);
+  //fill sets the color we use when we draw
+  fill(255, 0, 255);
+  //draws a rectangle on the screen with a given x, y, width, height
+  rect(0, 0, width, height);
+}
+```
 _Who remembers algebra?_
 ```
 y = m * x + b aka the formula for a line
@@ -15,7 +33,7 @@ A variable is a way to store something in memory so you can access it later in y
 You can store multiple types of data as a variable.
 - strings ```"Yo Some Words"```
 - floats ```0.01f```
-- ints  ```5```
+- integers  ```5```
 - and more complex data types (we'll get to that much later on in the course)
 
 So lets talk about how you create a variable in code. The word for that is _declare_. 
@@ -76,6 +94,7 @@ let make_it_mean_something_unique = 1;
 lets look at some [code](https://editor.p5js.org/danzeeeman/sketches/QR1NPe1TI)
 
 ## Arithmetic
+![basic_math](images/1zp2du.jpg)
 ### basic math and some __funky__ _shit_
 * add (+)
   * 1 + 1 = 2
@@ -102,6 +121,10 @@ lets look at some [code](https://editor.p5js.org/danzeeeman/sketches/QR1NPe1TI)
   *  3 % 4 = 3
   *  16 % 4 = 0
 ## functions() and methods()
+
+functions allow you to break up your code into nice little blocks.  
+
+
 ### Transforms
 - ```rotate()```
   ```

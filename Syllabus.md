@@ -183,12 +183,13 @@ Stars"](https://monoskop.org/images/a/a1/Fuller_Matthew_ed_Software_Studies_A_Le
 * Final project Due: Week 15 – Final projects, Pitches due next week!
 ## Week 10 – Coding Outside of p5.js
 * An Introduction to Unity C# Scripting
+* P5JS Libraries 
 * Pitch Your Final Projects
 ### Home Work
 * Coding Assignment #6: Browser Extension option
 ## Week 11 - Special Topics
 * Special Topics in Coding
-* P5JS Libraries 
+
 ### Home Work
 * Paul Dourish, “Protocols, Packets, and Proximity: The Materiality of Internet Routing”, from Signal Traffic: Critical Studies of Media Infrastructures, Nicole Starosielski and Lisa Parks, eds.
 ## Week 12 - Special Topics

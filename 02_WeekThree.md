@@ -4,16 +4,51 @@ The joys of ```console.log()``` and ```print()``` and ```breakpoints```
 
 ![breakpoints](images/eum8qvgim2u01.jpg)
 
+Figuring out what is wrong and how to fix it is an important skill.  Your best tool to examine what's going on in your code in an instant is to print to the console.  
+
+let's take this code that won't run.  And try to run it. 
+
+```
+let value_x = 0;
+let value_y = 10;
+let value_z = 5;
+function setup(){
+    createCanvas(512, 512);
+    value_y = value_y / value_x;
+    value_x = 100;
+}
+
+function draw(){
+    print(computeX());
+}
+
+function computeX(){
+    return (value_x+value_y+value_z)/3.0;
+}
+
+```
+[Error](https://editor.p5js.org/danzeeeman/sketches/RYFoFP0ke)
+
+lets try and debug it?
+
 ## Mouse Interaction
 
-```mouseX, mouseY```
+```mouseX, mouseY``` are some variables that p5.js exposed for you that hold the value of the mouse's current x and y position. 
+
+lets look at how we can use it?
+
 ```
+function setup() {
+  createCanvas(400, 400);
+}
+
 function draw() {
   stroke(0, 0, 0, 100);
-  line(mouseX, 0, mouseX, 100);
-  line(0, mouseY, 100, mouseY);
+  line(mouseX, 0, mouseX, width);
+  line(0, mouseY, height, mouseY);
 }
 ```
+[mouse_lines](https://editor.p5js.org/danzeeeman/sketches/zI8kWXTMH)s
 
 _a little bit of calculus_
 ![calc](images/3xksjp.jpg)
