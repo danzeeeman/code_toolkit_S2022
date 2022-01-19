@@ -121,7 +121,6 @@ http://www.newschool.edu/provost/course-evaluations-student-instructions.pdf
 * Debugging
 * Mouse Interaction
 * map() 
-* for() loops
 ### Home Work
 * Read [Introduction to Shape Grammars](pdfs/MIT4_540F18_qa1.pdf)
 * Coding Assignment #2a : Create a generative pattern
@@ -143,7 +142,7 @@ Link to be posted later
 Due: Week 8 for in-class presentation and discussion
 
 ## Week 5 – Adding repetition
-* Loops
+* for() loops
 * Easing
 * So what is an ___NFTs___ really?
 ### Home Work
