@@ -112,15 +112,16 @@ http://www.newschool.edu/provost/course-evaluations-student-instructions.pdf
 ## Week 2 – Adding variance
 * Variables
 * Arithmetic (+, -, *, /, %)
-* Introduction to functions() and methods()
+* Introduction to ```random()```
 ### Home Work
 * Coding Assignment #1 __Solve LeWitt's Trapezoid__ 
 ![Trapezoid](images/lewitt-trapezoid.jpeg)
 * Read Lev Manovich's [The Language of New Media, Cambridge, MA: MIT Press, 2002. Chapter 1 (pages 18-55)](https://dss-edit.com/plu/Manovich-Lev_The_Language_of_the_New_Media.pdf)
 ## Week 3 – Adding interactivity
+* ```function draw()```
 * Debugging
 * Mouse Interaction
-* map() 
+* ```map()``` function
 ### Home Work
 * Read [Introduction to Shape Grammars](pdfs/MIT4_540F18_qa1.pdf)
 * Coding Assignment #2a : Create a generative pattern
@@ -143,16 +144,13 @@ Due: Week 8 for in-class presentation and discussion
 
 ## Week 5 – Adding repetition
 * for() loops
-* Easing
-* So what is an ___NFTs___ really?
 ### Home Work
   * Coding Assignment #4.a: Create a Endless animation using primitives: Circle, Square, Rectangle, Triangles
   * Coding Assignment #4.b: Create a Endless animation using found objects   
       * MEMEs will be judged by their Dankness
 
-## Week 6 – Classes, Timing and state
-* Classes
-* Timing
+## Week 6 – Timing and State
+* Timing and Easing 
 * State: a new way to use variables
 ### Home Work
 * Coding Assignment #5: One Button Game

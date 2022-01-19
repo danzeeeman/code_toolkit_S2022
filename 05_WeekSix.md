@@ -1,8 +1,8 @@
-## Week 6 – Classes, Timing and state
-* Classes
-* Timing
-* State: a new way to use variables
-### Home Work
+# Week 6 – Timing and state
+## Timing and Easing
+
+## State: a new way to use variables
+## Home Work
 * Coding Assignment #5: One Button Game
 * "Data Visualization", from Matthew Fuller's Software Studies: A Lexicon
 * Catherine D'Ignazio and Lauren Klein, ["Unicorns, Janitors, Ninjas, Wizards, and Rock

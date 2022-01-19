@@ -2,36 +2,38 @@
 ## Review of what we've done so far
 ```
 // the setup function gets called to kick everything off
-function setup(){
-  //this creates the p5 canvas that lets us draw
-  //the canvas is a grid of pixel we can manipulate 
-  createCanvas(512, 512);
-  //the print function allows us to print things to the console 
-  print("Hello World")
-}
-function draw(){
-  //background clears the screen with a specific color
-  background(0, 0, 0);
-  //fill sets the color we use when we draw
+function setup() {
+  createCanvas(500, 500);
+  noStroke()  
+
+  fill(255, 255, 0);
+  rect(0, 0, 250, 250);
+  
   fill(255, 0, 255);
-  //draws a rectangle on the screen with a given x, y, width, height
-  rect(0, 0, width, height);
+  rect(250, 0, 250, 250);
+  
+  fill(255, 255, 0);
+  rect(250, 250, 250, 250);
+  
+  fill(255, 0, 255);
+  rect(0, 250, 250, 250);
 }
+```
 ## Drawing with numbers
 - [Hello Shapes](https://editor.p5js.org/danzeeeman/sketches/l21Ut52K6)
 ### The Screen is a Grid
-- [Hello Grid](https://editor.p5js.org/danzeeeman/sketches/kAGXxWYRf)
-```
-_Who remembers algebra?_
+- [Hello Grid](https://editor.p5js.org/danzeeeman/sketches/aiCnAxqRZ)
+
+### _Who remembers algebra?_
 ```
 y = m * x + b aka the formula for a line
 a**2 + b**2 = c**2 aka Pythagorean Theorem
 ```
-_Did anyone take Physics?_
+### _Did anyone take Physics?_
 ```
 force = mass * acceleration 
 ```
-_Did anyone take Calculus?_
+### _Did anyone take Calculus?_
 ## Variables    
 A variable is a way to store something in memory so you can access it later in your code. You will be using variables all of the time this semester.
 
@@ -44,6 +46,7 @@ You can store multiple types of data as a variable.
 So lets talk about how you create a variable in code. The word for that is _declare_. 
 
 This is how you _declare_ a variable in p5.js.
+
 ```
 let x;
 ```
@@ -96,7 +99,7 @@ let makeItMeanSomethingUnique = 1;
 let make_it_mean_something_unique = 1;
 ```
 
-lets look at some [code](https://editor.p5js.org/danzeeeman/sketches/QR1NPe1TI)
+lets look at some [code](https://editor.p5js.org/danzeeeman/sketches/kAGXxWYRf)
 
 ## Arithmetic
 ![basic_math](images/1zp2du.jpg)
@@ -124,22 +127,6 @@ lets look at some [code](https://editor.p5js.org/danzeeeman/sketches/QR1NPe1TI)
   *  4 % 4 = 0
   *  5 % 4 = 1
   *  6 % 4 = 2
-## functions() and methods()
-
-Functions allow you to break up your code into nice reusable little blocks.  
-
-We've seen functions before
-
-```
-// the setup function that gets called when the page loads
-function setup(){
-
-}
-// the draw function that gets called every frame to update the canvas
-function draw(){
-
-}
-```
 ### 2D Primitives
 
 - ```arc()```
@@ -183,7 +170,13 @@ function draw(){
     rect(30, 20, 55, 55, 20);
     ```
 - ```square()```
+    ```
+    square(30, 20, 55);
+    ```
 - ```triangle()```
+    ```
+    triangle(30, 75, 58, 20, 86, 75);
+    ```
 
 ### Transforms
 - ```rotate()```

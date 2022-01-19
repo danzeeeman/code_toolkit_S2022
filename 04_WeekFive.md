@@ -1,5 +1,4 @@
 ## Week 5 – Adding repetition
-* Loops
 ## for() loops
 You've seen a for loop before in some examples but we will look at them more today.
 
