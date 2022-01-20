@@ -116,20 +116,12 @@ ___If I am ever going to fast or you have any questions please interrupt me and 
   translate(30, 20);
   rect(0, 0, 55, 55);
   ```  
-
-- ```random()```
-  ```
-  for (let i = 0; i < 100; i++) {
-    let r = random(50);
-    stroke(r * 5);
-    line(50, i, 50 + r, i);
-  }
-  ```
 ### Tweaking Things Is Essential 
 ![tweaking](images/changing-stuff.jpeg)
 ## [Examples](https://p5js.org/examples/)
 
 ### Home Work
+Pick One Next Week You'll Read the other
 * Read Marshall McCluhan's [The Medium is the Message](pdfs/mcluhan.mediummessage.pdf)
 * Read Lev Manovich's [The Language of New Media, Cambridge, MA: MIT Press, 2002. Chapter 1 (pages 18-55)](https://dss-edit.com/plu/Manovich-Lev_The_Language_of_the_New_Media.pdf)
 * _Extra Credit Readings & Writings_ 

@@ -1,4 +1,7 @@
 # Week 2 – Adding variance
+* Variables
+* Arithmetic (+, -, *, /, %)
+* Introduction to ```random()```
 ## Review of what we've done so far
 ```
 // the setup function gets called to kick everything off
@@ -127,103 +130,17 @@ lets look at some [code](https://editor.p5js.org/danzeeeman/sketches/kAGXxWYRf)
   *  4 % 4 = 0
   *  5 % 4 = 1
   *  6 % 4 = 2
-### 2D Primitives
-
-- ```arc()```
-    ```
-    arc(50, 55, 50, 50, 0, HALF_PI);
-    noFill();
-    arc(50, 55, 60, 60, HALF_PI, PI);
-    arc(50, 55, 70, 70, PI, PI + QUARTER_PI);
-    arc(50, 55, 80, 80, PI + QUARTER_PI, TWO_PI);
-    ```
-- ```ellipse()```
-    ```
-    ellipse(56, 46, 55, 55);
-    ```
-- ```circle()```
-    ```
-    circle(30, 30, 20);
-    ```
-- ```line()```
-    ```
-    line(30, 20, 85, 75);
-    ```
-- ```point()```
-    ```
-    point(30, 20);
-    point(85, 20);
-    stroke('purple'); // Change the color
-    strokeWeight(10); // Make the points 10 pixels in size
-    point(85, 75);
-    point(30, 75);
-    ```
-- ```quad()```
-    ```
-    quad(38, 31, 86, 20, 69, 63, 30, 76);
-    ```
-- ```rect()```
-    ```
-    rect(30, 20, 55, 55);
-    ```
-    ```
-    rect(30, 20, 55, 55, 20);
-    ```
-- ```square()```
-    ```
-    square(30, 20, 55);
-    ```
-- ```triangle()```
-    ```
-    triangle(30, 75, 58, 20, 86, 75);
-    ```
-
-### Transforms
-- ```rotate()```
+  
+  ## ```random()```
   ```
-  translate(width / 2, height / 2);
-  rotate(PI / 3.0);
-  rect(-26, -26, 52, 52);
-  ```
-- ```scale()```  
-  ```
-  translate(width / 2, height / 2);
-  rotate(PI / 3.0);
-  scale(2.0)
-  rect(-26, -26, 52, 52);
-  ```
-- ```translate()```
-  ```
-  translate(30, 20);
-  rect(0, 0, 55, 55);
-  ```  
-
-- ```random()```
-  ```
-  for (let i = 0; i < 100; i++) {
     let r = random(50);
     stroke(r * 5);
-    line(50, i, 50 + r, i);
-  }
+    line(50, height/2, 50 + r, 0);
   ```
-
-* ```yourOwnFunctions(p1, p2, p3)```
-
-  ```
-  function  yourOwnFunctions(p1, p2, p3){
-    return ((p1*p2)+p3)/p2
-  }
-  ```
-* ```yourOwnFunction(parameters)```
-
-  ```
-  function  yourOwnFunctions(p){
-    return ((p.p1*p.p2)+p.p3)/p.p2
-  }
-  ```
-![global_meme](images/you-dont-ever-have-to-pass-parameters-if-every-variable-66493518.png)
+  [Random Sketch](https://editor.p5js.org/danzeeeman/sketches/poHo3Q87_)
 
 # Homework
-* Read Lev Manovich's [The Language of New Media, Cambridge, MA: MIT Press, 2002. Chapter 1 (pages 18-55)](pdfs/Manovich-Lev_The_Language_of_the_New_Media.pdf)
+* Read Marshall McCluhan's [The Medium is the Message](pdfs/mcluhan.mediummessage.pdf)
+* Read Lev Manovich's [The Language of New Media, Cambridge, MA: MIT Press, 2002. Chapter 1 (pages 18-55)](https://dss-edit.com/plu/Manovich-Lev_The_Language_of_the_New_Media.pdf)
 * Coding Assignment #1 __Solve LeWitt's Trapezoid__ 
 ![Trapezoid](images/lewitt-trapezoid.jpeg)
