@@ -14,8 +14,6 @@
 
   * Drawing with numbers
 
-  * Loading Images
-
   * The window as a grid of pixels
 
 ### Home Work
@@ -37,6 +35,8 @@
 * Arithmetic (+, -, *, /, %)
 
 * Introduction to ```random()```
+
+* Loading Images
 
 ### Home Work
 

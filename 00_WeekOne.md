@@ -56,6 +56,32 @@ Let's look around:
 ___If I am ever going to fast or you have any questions please interrupt me and ask a question___
 ## Hello World
 - [Hello World](https://editor.p5js.org/danzeeeman/sketches/yyrHi9CAJ)
+
+## Drawing with numbers
+- [Hello Shapes](https://editor.p5js.org/danzeeeman/sketches/l21Ut52K6)
+
+```rect(x, y, width, height)```
+```
+createCanvas(512, 512);
+fill(255, 0, 255);
+rect(0, 0, 512, 512);
+```
+
+```ellipse(x, y, width, height)```
+```
+createCanvas(512, 512);
+fill(255, 0, 255);
+ellipse(0, 0, 512, 512);
+```
+
+```triangle(x1, y1, x2, y2, x3, y3)```
+```
+createCanvas(512, 512);
+fill(255, 0, 255);
+triangle(0, 0, 256, 512, 512, 0);
+```
+
+
 ## The Screen is a Grid
 ![Images](images/grid.png)
 ```
@@ -76,9 +102,26 @@ ___If I am ever going to fast or you have any questions please interrupt me and 
   createCanvas(512, 512);
   fill(255, 255, 0);
   stroke(255, 0, 255);
-  rect(0, 0, 512, 512);
+  rect(0, 0, 100, 100);
+  rect(100, 0, 100, 100);
 ```
 
+```
+  createCanvas(500, 500);
+  noStroke()  
+
+  fill(255, 255, 0);
+  rect(0, 0, 250, 250);
+  
+  fill(255, 0, 255);
+  rect(250, 0, 250, 250);
+  
+  fill(255, 255, 0);
+  rect(250, 250, 250, 250);
+  
+  fill(255, 0, 255);
+  rect(0, 250, 250, 250);
+```
 - [Hello Grid](https://editor.p5js.org/danzeeeman/sketches/aiCnAxqRZ)
 
 ## [Examples](https://p5js.org/examples/)
