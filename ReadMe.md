@@ -24,4 +24,20 @@ I recently worked at a UX design studio inside Samsung Mobile. I did a couple to
 ## __Technology__
 The technologies we will be using in this course are [p5js](https://p5js.org) a sibling of the [Processing framework](https://processing.org) and [Javascript](https://en.m.wikipedia.org/wiki/JavaScript).  We will be using the browser and [vscode](https://code.visualstudio.com) for everything in this course so be sure to bring a laptop to class and install [vscode](https://code.visualstudio.com).
 
-#[Week One Notes](WeekOne.md)
+[Syllabus](Syllabus.md)
+[Schedule](Schedule.md)
+[Week 1](00_WeekOne.md)
+[Week 2](01_WeekTwo.md)
+[Week 3](02_WeekThree.md)
+[Week 4](03_WeekFour.md)
+[Week 5](04_WeekFive.md)
+[Week 6](05_WeekSix.md)
+[Week 7](06_WeekSeven.md)
+[Week 8](07_WeekEight.md)
+[Week 9](08_WeekNine.md)
+[Week 10](09_WeekTen.md)
+[Week 11](10_WeekEleven.md)
+[Week 12](11_WeekTwelve.md)
+[Week 13](12_WeekTwelve.2.md)
+[Week 14](13_WeekFourteen.md)
+[Week 15](14_WeekFifteen.md)
