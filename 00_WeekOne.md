@@ -81,8 +81,33 @@ fill(255, 0, 255);
 triangle(0, 0, 256, 512, 512, 0);
 ```
 
+Lets look at ```fill(r, g, b)```
+
+```
+fill(255, 0, 255);
+```
+
+Lets look at ```stroke(r, g, b)```
+```
+stroke(255, 255, 0);
+```
+
+```
+createCanvas(512, 512)
+fill(255, 0, 255);
+stroke(255, 255, 0);
+rect(0, 0, 256, 256);
+rect(256, 256, 256, 256);
+
+fill(255, 255, 0);
+stroke(255, 0, 255);
+rect(0, 256, 256, 256);
+rect(256, 0, 256, 256);
+```
+
 
 ## The Screen is a Grid
+- [Hello Grid](https://editor.p5js.org/danzeeeman/sketches/aiCnAxqRZ)
 ![Images](images/grid.png)
 ```
   createCanvas(512, 512);
@@ -122,7 +147,6 @@ triangle(0, 0, 256, 512, 512, 0);
   fill(255, 0, 255);
   rect(0, 250, 250, 250);
 ```
-- [Hello Grid](https://editor.p5js.org/danzeeeman/sketches/aiCnAxqRZ)
 
 ## [Examples](https://p5js.org/examples/)
 
