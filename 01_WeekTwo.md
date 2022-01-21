@@ -37,6 +37,9 @@ a**2 + b**2 = c**2 aka Pythagorean Theorem
 force = mass * acceleration 
 ```
 ### _Did anyone take Calculus?_
+
+### Tweaking Things Is Essential 
+![tweaking](images/changing-stuff.jpeg)
 ## Variables    
 A variable is a way to store something in memory so you can access it later in your code. You will be using variables all of the time this semester.
 
@@ -141,5 +144,6 @@ lets look at some [code](https://editor.p5js.org/danzeeeman/sketches/kAGXxWYRf)
 
 # Homework
 * Read Lev Manovich's [The Language of New Media, Cambridge, MA: MIT Press, 2002. Chapter 1 (pages 18-55)](https://dss-edit.com/plu/Manovich-Lev_The_Language_of_the_New_Media.pdf)
+  * For the PDF Page 18 of the book is really 29
 * Coding Assignment #1 __Solve LeWitt's Trapezoid__ 
 ![Trapezoid](images/lewitt-trapezoid.jpeg)
