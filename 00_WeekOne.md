@@ -6,7 +6,7 @@
 - Advertising and _how they track you_ 
 - Bots, Botnets, and Hacking for Fun and Profit
 - Interactivity & Arting, with a Computer
-## Computing, Outside of ___Computer Science___
+- ## Computing, Outside of ___Computer Science___
 ### _Poetic Computing_
 * Madeline Gannon, [*Mimus*](https://atonaton.com/mimus/)
 * Design I/O, [*Mimic*](https://www.design-io.com/projects/mimic) & [*Connected Worlds*](https://www.design-io.com/projects/connectedworlds)
@@ -37,12 +37,48 @@ git push origin main
 ## __5-10 min break__
 # Introductory Beep Boops 
 ### How we Work: The P5js Development Environment ("PDE")
-We are going to read a lot of code this semester and we are going to code things together in class as a class.  I will prep examples and they will be hosted on the p5js editor or in the examples folder. 
+We are going to read a lot of code this semester and we are going to code things together in class as a class.  I will prep examples and they will be hosted on the p5js editor or in the examples folder.
+
+Download [Processing](https://processing.org/download)
+
+- Install P5js Mode
+
+![mode](images/Screen%20Shot%202022-01-21%20at%205.00.53%20PM.png)
+![add mode](iamges/../images/Screen%20Shot%202022-01-21%20at%205.01.01%20PM.png)
+![install p5js](images/Screen%20Shot%202022-01-21%20at%205.01.05%20PM.png)
+
+Let's look around:
+- play button
+- stop button
+- File > Open
+- File > Examples
 
 ___If I am ever going to fast or you have any questions please interrupt me and ask a question___
-### Hello World
+## Hello World
 - [Hello World](https://editor.p5js.org/danzeeeman/sketches/yyrHi9CAJ)
-### The Screen is a Grid
+## The Screen is a Grid
+![Images](images/grid.png)
+```
+  createCanvas(512, 512);
+  fill(255, 255, 0);
+  stroke(255, 0, 255);
+  rect(0, 0, 512, 512);
+```
+
+```
+  createCanvas(512, 512);
+  fill(255, 255, 0);
+  stroke(255, 0, 255);
+  rect(100, 100, 200, 200);
+```
+
+```
+  createCanvas(512, 512);
+  fill(255, 255, 0);
+  stroke(255, 0, 255);
+  rect(0, 0, 512, 512);
+```
+
 - [Hello Grid](https://editor.p5js.org/danzeeeman/sketches/aiCnAxqRZ)
 
 ## [Examples](https://p5js.org/examples/)
