@@ -140,7 +140,6 @@ lets look at some [code](https://editor.p5js.org/danzeeeman/sketches/kAGXxWYRf)
   [Random Sketch](https://editor.p5js.org/danzeeeman/sketches/poHo3Q87_)
 
 # Homework
-* Read Marshall McCluhan's [The Medium is the Message](pdfs/mcluhan.mediummessage.pdf)
 * Read Lev Manovich's [The Language of New Media, Cambridge, MA: MIT Press, 2002. Chapter 1 (pages 18-55)](https://dss-edit.com/plu/Manovich-Lev_The_Language_of_the_New_Media.pdf)
 * Coding Assignment #1 __Solve LeWitt's Trapezoid__ 
 ![Trapezoid](images/lewitt-trapezoid.jpeg)

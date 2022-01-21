@@ -1,4 +1,4 @@
-# __CODE TOOLKIT SPRING 2022__
+# __CODE TOOLKIT SPRING 2022 LCOD2010__
 # ReadME
 ### _Who?_
 I'm Dan Moore, I'm an Artist, Designer, and Technologist based here in New York City.  I have a desk and robot arm at Pratt Institute's Consortium for Research & Robotics (CRR) in the Brooklyn Navy Yard.  I design and build interactive activations and applications.  
@@ -14,9 +14,9 @@ I recently worked at a UX design studio inside Samsung Mobile. I did a couple to
 - How to read and write code
 - How to use code to do what you want
 ### _When?_
-- Tuesdays from 16:00-18:00 aka 4-6pm
+- Tuesdays from 16:00-18:00 aka 4-6:40pm
 ### _Where_
-- This room and/or on Zoom depending on the pannorama? 
+- 6 East 16th Street Room: 605 and/or on Zoom depending on the pannorama? 
 - But I mean we could even do it in the ___Metaverse___
 ### _Why?_ 
 - Discussion: Why did you take this course?

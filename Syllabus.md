@@ -26,7 +26,7 @@ contributions to student work sharing, and questions via office hours and email.
 
 # Course Requirements & Assignments
 ## Weekly homework exercises
-You will have weekly homework assignments comprised of coding exercises. They will be due the morning before class on Tuesday at 12pm, and you will submit as a pull request to your folder in our class repo on github.  Homeworks will be graded as pass/fail, on a scale of 0 or 1, based on effort. You will not be evaluated weekly on whether your code runs perfectly or has bugs, but rather on whether you engaged the topic and made progress. Occasionally I may give a fraction of a point (e.g. .85) to indicate that the level of completeness is not quite enough. Late submissions will be marked down, but submitting something is always better than submitting nothing, even if late. I will try my best to keep on posting homework grades throughout the semester, but if I fall behind, at the time of the midterm and final I will get caught up so you know where you stand. If at any time you would like more feedback * about one piece of work specifically or about your standing in the class overall * ___please do not hesitate to ask___.
+You will have weekly homework assignments comprised of coding exercises. They will be due the morning before class on Tuesday at 12pm, and you will submit as a zip to my New School Email address.  Homeworks will be graded as pass/fail, on a scale of 0 or 1, based on effort. You will not be evaluated weekly on whether your code runs perfectly or has bugs, but rather on whether you engaged the topic and made progress. Occasionally I may give a fraction of a point (e.g. .85) to indicate that the level of completeness is not quite enough. Late submissions will be marked down, but submitting something is always better than submitting nothing, even if late. I will try my best to keep on posting homework grades throughout the semester, but if I fall behind, at the time of the midterm and final I will get caught up so you know where you stand. If at any time you would like more feedback * about one piece of work specifically or about your standing in the class overall * ___please do not hesitate to ask___.
 
 Even though the weekly homework is mainly graded pass/fail, notice from the Final Grade Calculation above that it represents the largest fraction of your final grade. The best way to do well in terms of grading will be to keep up with the weekly homework, and if you don’t keep up with the homework it will be difficult to end up with a high grade. The reason I’ve structured things this way is because I have found that the best way for you to do well in terms of learning is also to keep up with the weekly homework. Our semester will proceed through small steps, but we’ll take those steps fairly quickly, and the topics will be like incremental blocks that build on each other, so make sure you understand the concept each week in order to be sure next week will make sense.
 ## Readings and reading responses
@@ -94,7 +94,7 @@ https://www.newschool.edu/student-conduct/
 ## Student Course Ratings
 During the last two weeks of the semester, students are asked to provide feedback for each of their courses through an online survey. They cannot view grades until providing feedback or officially declining to do so. Course evaluations are a vital space where students can speak about the learning experience. It is an important process which provides valuable data about the successful delivery and support of a course or topic to both the faculty and administrators. Instructors rely on course rating surveys for feedback on the course and teaching methods, so they can understand what aspects of the class are most successful in teaching students, and what aspects might be improved or changed in future. Without this information, it can be difficult for an instructor to reflect upon and improve teaching methods and course design. In addition, program/department chairs and other administrators review course surveys. Instructions are available online at
 http://www.newschool.edu/provost/course-evaluations-student-instructions.pdf
-# Course Outline
+# [Schedule](Schedule.md) 
 ## Week 1 – Thinking like a computer?
   * Introductions
   * About the course
@@ -102,6 +102,7 @@ http://www.newschool.edu/provost/course-evaluations-student-instructions.pdf
   * Computing, Outside a School of ___Computer Science___
   * How we Work: The P5js Development Environment ("PDE")
   * Drawing with numbers
+  * Loading Images
   * The window as a grid of pixels
 ### Home Work
 * Read Marshall McCluhan's [The Medium is the Message](pdfs/mcluhan.mediummessage.pdf)
@@ -109,6 +110,7 @@ http://www.newschool.edu/provost/course-evaluations-student-instructions.pdf
   * The Critical Engineering Working Group's [THE CRITICAL ENGINEERING MANIFESTO](https://criticalengineering.org) [pdf](https://criticalengineering.org/ce.pdf)
   * Watch Zach Lieberman's talk at EYE0 2012 * https://vimeo.com/47203759?t=38m22s
   * Read Casey Reas et al. [{Sofrware} Structures](https://artport.whitney.org/commissions/softwarestructures/text.html#structure)
+  
 ## Week 2 – Adding variance
 * Variables
 * Arithmetic (+, -, *, /, %)
@@ -117,6 +119,8 @@ http://www.newschool.edu/provost/course-evaluations-student-instructions.pdf
 * Coding Assignment #1 __Solve LeWitt's Trapezoid__ 
 ![Trapezoid](images/lewitt-trapezoid.jpeg)
 * Read Lev Manovich's [The Language of New Media, Cambridge, MA: MIT Press, 2002. Chapter 1 (pages 18-55)](https://dss-edit.com/plu/Manovich-Lev_The_Language_of_the_New_Media.pdf)
+
+
 ## Week 3 – Adding interactivity
 * ```function draw()```
 * Debugging

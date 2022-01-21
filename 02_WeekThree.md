@@ -1,5 +1,4 @@
 # Week 3 – Debugging & Adding interactivity
-
 ## Frames
 __```function draw()```__
 This function gets called at every frame.  Think of a frame as a snapshot in time.  It allows you to 
