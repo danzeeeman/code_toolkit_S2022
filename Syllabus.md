@@ -178,8 +178,6 @@ http://www.newschool.edu/provost/course-evaluations-student-instructions.pdf
 
   * Drawing with numbers
 
-  * Loading Images
-
   * The window as a grid of pixels
 
 ### Home Work
@@ -201,6 +199,8 @@ http://www.newschool.edu/provost/course-evaluations-student-instructions.pdf
 * Arithmetic (+, -, *, /, %)
 
 * Introduction to ```random()```
+
+* Loading Images
 
 ### Home Work
 
