@@ -23,11 +23,16 @@
 - Create a [Github](https://github.com) profile and link it to the P5js [Editor](https://editor.p5js.org) 
 - Fork this Repo
   - Click the fork button
-- Install [git](https://git-scm.com)
-- Clone your fork Repo
+- Install [git](https://git-scm.com) 
+- on Windows open git-bash
+  - IMAGE
+- on Mac open terminal
+  - IMAGE
+- Clone your fork Repo to your home directory
 ```
 git clone your_repo_url
 ```
+Cloning a repository of code is basically making a copy but with 
 - Copy the _template_ folder and rename it to your chosen name
 ```
 git add --all
@@ -110,28 +115,35 @@ rect(256, 0, 256, 256);
 - [Hello Grid](https://editor.p5js.org/danzeeeman/sketches/aiCnAxqRZ)
 ![Images](images/grid.png)
 ```
+function setup(){
   createCanvas(512, 512);
   fill(255, 255, 0);
   stroke(255, 0, 255);
   rect(0, 0, 512, 512);
+}
 ```
 
 ```
+function setup(){
   createCanvas(512, 512);
   fill(255, 255, 0);
   stroke(255, 0, 255);
   rect(100, 100, 200, 200);
+}
 ```
 
 ```
+function setup(){
   createCanvas(512, 512);
   fill(255, 255, 0);
   stroke(255, 0, 255);
   rect(0, 0, 100, 100);
   rect(100, 0, 100, 100);
+}
 ```
 
 ```
+function setup(){
   createCanvas(500, 500);
   noStroke()  
 
@@ -146,12 +158,23 @@ rect(256, 0, 256, 256);
   
   fill(255, 0, 255);
   rect(0, 250, 250, 250);
+}
 ```
 
 ## [Examples](https://p5js.org/examples/)
 
+## Loading Images 
+```
+let img;
+function preload() {
+  img = loadImage('assets/laDefense.jpg');
+}
+function setup() {
+  image(img, 0, 0);
+}
+```
 ### Home Work
-* Read Marshall McCluhan's [The Medium is the Message](pdfs/mcluhan.mediummessage.pdf)
+* Read Marshall McLuhan's [The Medium is the Message](pdfs/mcluhan.mediummessage.pdf)
 * _Extra Credit Readings & Watching_ 
   * The Critical Engineering Working Group's [THE CRITICAL ENGINEERING MANIFESTO](https://criticalengineering.org) [pdf](https://criticalengineering.org/ce.pdf)
   * Watch Zach Lieberman's talk at EYE0 2012 * https://vimeo.com/47203759?t=38m22s
