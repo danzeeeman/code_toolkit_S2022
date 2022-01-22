@@ -35,6 +35,5 @@ function draw(){
 
 ### Data Structures and Data Visualization
 
-### CSV and JSON
 ### Home Work
 * Coding Assignment #6: Data Self-Portrait 

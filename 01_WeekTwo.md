@@ -142,6 +142,17 @@ lets look at some [code](https://editor.p5js.org/danzeeeman/sketches/kAGXxWYRf)
   ```
   [Random Sketch](https://editor.p5js.org/danzeeeman/sketches/poHo3Q87_)
 
+## Loading Images 
+```
+let img;
+function preload() {
+  img = loadImage('assets/laDefense.jpg');
+}
+function setup() {
+  image(img, 0, 0);
+}
+```
+
 # Homework
 * Read Lev Manovich's [The Language of New Media, Cambridge, MA: MIT Press, 2002. Chapter 1 (pages 18-55)](https://dss-edit.com/plu/Manovich-Lev_The_Language_of_the_New_Media.pdf)
   * For the PDF Page 18 of the book is really 29
