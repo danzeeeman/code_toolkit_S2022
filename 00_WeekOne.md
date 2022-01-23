@@ -62,6 +62,9 @@ ___If I am ever going to fast or you have any questions please interrupt me and 
 ## Hello World
 - [Hello World](https://editor.p5js.org/danzeeeman/sketches/yyrHi9CAJ)
 
+
+### abstractions 
+
 ## Drawing with numbers
 - [Hello Shapes](https://editor.p5js.org/danzeeeman/sketches/l21Ut52K6)
 
