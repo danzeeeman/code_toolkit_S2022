@@ -23,11 +23,15 @@
 - Create a [Github](https://github.com) profile and link it to the P5js [Editor](https://editor.p5js.org) 
 - Fork this Repo
   - Click the fork button
-- Install [git](https://git-scm.com) 
-- on Windows open git-bash
-  - IMAGE
-- on Mac open terminal
-  - IMAGE
+- On Windows 
+  - Install [git](https://git-scm.com)
+  - open git-bash [see screen shot] 
+  - go to cloning
+- on Mac 
+  - install [brew](https://brew.sh)
+  - install git
+    - ```brew install git```
+  - go to cloning
 - Clone your fork Repo to your home directory
 ```
 git clone your_repo_url
@@ -61,10 +65,19 @@ Let's look around:
 ___If I am ever going to fast or you have any questions please interrupt me and ask a question___
 ## Hello World
 - [Hello World](https://editor.p5js.org/danzeeeman/sketches/yyrHi9CAJ)
+- 
+With p5js we start with:
+```
+function setup(){
 
+}
+```
 
-### abstractions 
+a ```function``` is a thing we will get into later (week 3).  But for now just know that this function gets automatically called by the p5js library when the page finishes loading.  
 
+we call the ```print('some text')``` function and say 'Hello World'
+
+this is the traditional first program you write as a programmer.
 ## Drawing with numbers
 - [Hello Shapes](https://editor.p5js.org/danzeeeman/sketches/l21Ut52K6)
 
