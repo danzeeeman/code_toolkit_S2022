@@ -220,22 +220,22 @@ function setup(){
 }
 ```
 
-## [Examples](https://p5js.org/examples/)
-
 ## Loading Images 
 ```
-let img;
 function preload() {
-  img = loadImage('assets/laDefense.jpg');
-}
-function setup() {
+  let img = loadImage('assets/laDefense.jpg');
   image(img, 0, 0);
 }
 ```
+As an introduction to next weeks topics I'm going to introduce variables.  Here we define a variable ```let img``` to hold the image that we want to load.  We call the ```loadImage(image_path)``` function and it returns the image which we store as the variable ```img```.
+
+___did I just confuse everyone?___
+
 ### Home Work
 * Read Marshall McLuhan's [The Medium is the Message](pdfs/mcluhan.mediummessage.pdf)
 * _Extra Credit Readings & Watching_ 
   * The Critical Engineering Working Group's [THE CRITICAL ENGINEERING MANIFESTO](https://criticalengineering.org) [pdf](https://criticalengineering.org/ce.pdf)
   * Watch Zach Lieberman's talk at EYE0 2012 * https://vimeo.com/47203759?t=38m22s
   * Read Casey Reas et al. [{Sofrware} Structures](https://artport.whitney.org/commissions/softwarestructures/text.html#structure)
+  * Check out 2 [examples](https://p5js.org/examples/)
 
