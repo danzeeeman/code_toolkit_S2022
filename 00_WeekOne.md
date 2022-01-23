@@ -47,6 +47,9 @@ git add --all
 git commit -a -m "adding my homework folder where I will store all of my homework"
 git push origin main
 ```
+### we might run into a little issue here!
+
+
 ## __5-10 min break__
 # Introductory Beep Boops 
 ### How we Work: The P5js Development Environment ("PDE")
@@ -231,7 +234,7 @@ As an introduction to next weeks topics I'm going to introduce variables.  Here 
 
 ___did I just confuse everyone?___
 
-### Home Work
+## Home Work
 * Read Marshall McLuhan's [The Medium is the Message](pdfs/mcluhan.mediummessage.pdf)
 * _Extra Credit Readings & Watching_ 
   * The Critical Engineering Working Group's [THE CRITICAL ENGINEERING MANIFESTO](https://criticalengineering.org) [pdf](https://criticalengineering.org/ce.pdf)

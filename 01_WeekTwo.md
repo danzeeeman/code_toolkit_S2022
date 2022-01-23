@@ -160,7 +160,7 @@ function setup() {
 }
 ```
 
-# Homework
+## Homework
 * Read Lev Manovich's [The Language of New Media, Cambridge, MA: MIT Press, 2002. Chapter 1 (pages 18-55)](https://dss-edit.com/plu/Manovich-Lev_The_Language_of_the_New_Media.pdf)
   * For the PDF Page 18 of the book is really 29
 * Coding Assignment #1 __Solve LeWitt's Trapezoid__ 
