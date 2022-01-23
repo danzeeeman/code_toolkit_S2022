@@ -32,9 +32,10 @@
   - open terminal
     - ![terminal](images/CloneMac.png)
   - install git
-    - ```brew install git```
+    - type ```brew install git``` into your terminal
   - go to cloning
 - Clone your fork Repo to your home directory
+- type into your terminal
 ```
 git clone your_repo_url
 ```
@@ -66,22 +67,59 @@ Let's look around:
 - File > Examples
 
 ___If I am ever going to fast or you have any questions please interrupt me and ask a question___
-## Hello World
-- [Hello World](https://editor.p5js.org/danzeeeman/sketches/yyrHi9CAJ)
-- 
+## [Hello World](https://editor.p5js.org/danzeeeman/sketches/yyrHi9CAJ)
+
 With p5js we start with:
 ```
 function setup(){
   print("Hello World");
 }
 ```
-a ```function``` is a thing we will get into later (week 3).  But for now just know that this function gets automatically called by the p5js library when the page finishes loading.  
+a ```function``` is a thing we will get into later (week 3).  But for now just know that the setup function gets automatically called by the p5js library when the page finishes loading.  
 
-we call the ```print('Hello World');``` function and say 'Hello World'
+we call the ```print(string)``` function and pass in the string "Hello World"
 
-this is the traditional first program you write as a programmer.
+this is the traditional first program you write as a programmer
 ## Drawing with numbers
+
 - [Hello Shapes](https://editor.p5js.org/danzeeeman/sketches/l21Ut52K6)
+
+Lets break down what's going on here:
+```
+// Setup gets called to kick off the program
+function setup() {
+  // Before we can start drawing we need to create the canvas 
+  createCanvas(512, 512);
+  // we can make it the window width and height by doing this
+  // createCanvas(windowWidth, windowHeight);
+  // we set a background color;
+  background(255);
+  //lets comment this out and see what happens
+  //we turn off ugly stroke outlines
+  noStroke()
+  
+  // Drawing a rectangle
+  // we set the fill the magenta with some alpha 
+  fill(255, 0, 255, 127);
+  // we call the fill function and we set the fill color to magenta with some alpha 
+  rect(40, 120, 120, 40);
+  
+  // Drawing an ellipse
+  // we call the fill function and we set the fill color to yellow with some alpha 
+  fill(255, 255, 0, 127);
+  // we call the ellipse function and draw a ellipse which in this case is a circle because the sides are equal. 
+  ellipse(50, 50, 80, 80);
+  
+  // Drawing a triangle
+  // we call the fill function and we set the fill color to magenta with some alpha 
+  fill(255, 0, 255, 127);
+  // we call the triangle function and draw a triangle
+  triangle(300, 100, 320, 100, 310, 80);
+}
+```
+
+Lets look at the functions we use to draw shapes
+
 
 ```rect(x, y, width, height)```
 ```
@@ -104,13 +142,15 @@ fill(255, 0, 255);
 triangle(0, 0, 256, 512, 512, 0);
 ```
 
-Lets look at ```fill(r, g, b)```
+Let's look at this ```fill``` function that we keep calling.  Fill sets the fill color for our shapes.
+
+```fill(r, g, b)```
 
 ```
 fill(255, 0, 255);
 ```
 
-Lets look at ```stroke(r, g, b)```
+```stroke(r, g, b)```
 ```
 stroke(255, 255, 0);
 ```
@@ -129,7 +169,6 @@ function setup(){
   rect(256, 0, 256, 256);
 }
 ```
-
 
 ## The Screen is a Grid
 - [Hello Grid](https://editor.p5js.org/danzeeeman/sketches/aiCnAxqRZ)
