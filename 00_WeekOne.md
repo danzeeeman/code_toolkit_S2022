@@ -25,10 +25,12 @@
   - Click the fork button
 - On Windows 
   - Install [git](https://git-scm.com)
-  - open git-bash [see screen shot] 
+  - open git-bash [see screen shot]
   - go to cloning
 - on Mac 
   - install [brew](https://brew.sh)
+  - open terminal
+    - ![terminal](images/CloneMac.png)
   - install git
     - ```brew install git```
   - go to cloning
@@ -36,6 +38,7 @@
 ```
 git clone your_repo_url
 ```
+![terminal](images/CloneMac.png)
 Cloning a repository of code is basically making a copy but with 
 - Copy the _template_ folder and rename it to your chosen name
 ```
@@ -69,13 +72,12 @@ ___If I am ever going to fast or you have any questions please interrupt me and 
 With p5js we start with:
 ```
 function setup(){
-
+  print("Hello World");
 }
 ```
-
 a ```function``` is a thing we will get into later (week 3).  But for now just know that this function gets automatically called by the p5js library when the page finishes loading.  
 
-we call the ```print('some text')``` function and say 'Hello World'
+we call the ```print('Hello World');``` function and say 'Hello World'
 
 this is the traditional first program you write as a programmer.
 ## Drawing with numbers
