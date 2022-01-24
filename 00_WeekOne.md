@@ -29,7 +29,7 @@ I invited you all to our slack and to our channel.  If I have missed anyone plea
 * Adam Harvey [CV Dazzle](https://cvdazzle.com)  
 * The Critical Engineering Working Group [The Deep Sweep](https://criticalengineering.org/projects/deep-sweep/)
 * Julian Oliver [Stealth Cell Tower](https://julianoliver.com/output/stealth-cell-tower.html)
-## In-class Assignment: _A crash course to git_s
+## In-class Assignment: _A crash course to git_
 - Create a [Github](https://github.com) profile and link it to the P5js [Editor](https://editor.p5js.org) 
 - Fork this Repo
   - Click the fork button
