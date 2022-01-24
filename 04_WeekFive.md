@@ -1,10 +1,21 @@
-# Week 5 – Adding repetition
+## Week 5 – Adding repetition
+## while() loop
+```
+while (i < 10) {
+  text += "The number is " + i;
+  i++;
+}
+```
 ## for() loops
 You've seen a for loop before in some examples but we will look at them more today.
 
 ```
 let some_number = 10;
-for(let i = 0; i < some_number; i++){
+for(
+    let i = 0; 
+    i < some_number; 
+    i++
+    ){
     drawShape(i);
 }
 ```

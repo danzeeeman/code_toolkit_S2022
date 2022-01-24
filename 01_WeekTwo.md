@@ -24,9 +24,16 @@ function setup() {
 ```
 ## Drawing with numbers
 - [Hello Shapes](https://editor.p5js.org/danzeeeman/sketches/l21Ut52K6)
-### The Screen is a Grid
+## The Screen is a Grid
 - [Hello Grid](https://editor.p5js.org/danzeeeman/sketches/aiCnAxqRZ)
 
+## Loading Images
+```
+function preload() {
+  let img = loadImage('assets/laDefense.jpg');
+  image(img, 0, 0);
+}
+```
 ### _Who remembers algebra?_
 ```
 y = m * x + b aka the formula for a line
@@ -37,6 +44,9 @@ a**2 + b**2 = c**2 aka Pythagorean Theorem
 force = mass * acceleration 
 ```
 ### _Did anyone take Calculus?_
+
+### Tweaking Things Is Essential 
+![tweaking](images/changing-stuff.jpeg)
 ## Variables    
 A variable is a way to store something in memory so you can access it later in your code. You will be using variables all of the time this semester.
 
@@ -182,8 +192,19 @@ Stop and run that a few times to see what kinds of variation we've just created.
 
   [Random Sketch](https://editor.p5js.org/danzeeeman/sketches/poHo3Q87_)
 
-# Homework
-* Read Marshall McCluhan's [The Medium is the Message](pdfs/mcluhan.mediummessage.pdf)
+## Loading Images 
+```
+let img;
+function preload() {
+  img = loadImage('assets/laDefense.jpg');
+}
+function setup() {
+  image(img, 0, 0);
+}
+```
+
+## Homework
 * Read Lev Manovich's [The Language of New Media, Cambridge, MA: MIT Press, 2002. Chapter 1 (pages 18-55)](https://dss-edit.com/plu/Manovich-Lev_The_Language_of_the_New_Media.pdf)
+  * For the PDF Page 18 of the book is really 29
 * Coding Assignment #1 __Solve LeWitt's Trapezoid__ 
 ![Trapezoid](images/lewitt-trapezoid.jpeg)
