@@ -1,12 +1,19 @@
 # __CODE TOOLKIT SPRING 2022__
 # Week One Lecture Notes
-### ___Technology as a Medium___
+
+## One on Ones
+I want to schedule 1:Ones with everyone in the class periodically throughout the semester.  These informal chats will help me gage progress, help with confusion, and help me get to know each of you a bit better.
+
+## Office Hours
+
+Office hours will be on demand this semester.  I'm usually available during the day except for some standing meetings I have at work at 12:30 and 1pm.  If you send me an email or slack me on our slack I will usually get back to you soon.  I basically live in front of a computer so if I'm not getting back to you promptly its because I'm on a call or something (even then I'll reach out and tell you I'll be available soon).  
+## ___Technology as a Medium___
 - SAAS, Software as a Service
 - Bank Software aka B2B
 - Advertising and _how they track you_ 
 - Bots, Botnets, and Hacking for Fun and Profit
 - Interactivity & Arting, with a Computer
-- ## Computing, Outside of ___Computer Science___
+## Computing, Outside of ___Computer Science___
 ### _Poetic Computing_
 * Madeline Gannon, [*Mimus*](https://atonaton.com/mimus/)
 * Design I/O, [*Mimic*](https://www.design-io.com/projects/mimic) & [*Connected Worlds*](https://www.design-io.com/projects/connectedworlds)
