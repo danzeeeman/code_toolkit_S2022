@@ -40,12 +40,6 @@ force = mass * acceleration
 ## Variables    
 A variable is a way to store something in memory so you can access it later in your code. You will be using variables all of the time this semester.
 
-You can store multiple types of data as a variable.
-- strings ```"Yo Some Words"```
-- floats ```0.01f```
-- integers  ```5```
-- and more complex data types (we'll get to that much later on in the course)
-
 So lets talk about how you create a variable in code. The word for that is _declare_. 
 
 This is how you _declare_ a variable in p5.js.
@@ -53,6 +47,14 @@ This is how you _declare_ a variable in p5.js.
 ```
 let x;
 ```
+
+Before you can use a variable you have to assign it a value.
+
+This is how you _assign_ a variable in p5.js.
+```
+let x = 10;
+```
+
 There are three places where you can _declare_ a variable
 
 - Inside a _function_ or a _block_ which is called _local variables_
@@ -61,32 +63,37 @@ There are three places where you can _declare_ a variable
 
 local variable
 ```
-    function setup()
-    { 
-        let x = 10;
-    }
+function setup()
+{ 
+    let x;
+    print(x)
+}
 ```
 function parameter
 ```
-    function setup()
-    {
-        print(getValue(100));
-    } 
+function setup()
+{
+    print(getValue(100));
+} 
 
-    function getValue(t)
-    {
-        return t*0.01;
-    } 
+function getValue(t)
+{
+    return t*0.01;
+} 
 ```
 global variable
 ```
-    let x = 10;
-    function setup()
-    {
-        let y = x*10;
-        print(y);
-    }
+let x;
+function setup()
+{
+    print(x);
+}
 ```
+### Variable Names 
+* must start with a letter or the underscore character
+* cannot start with a number
+* can only contain alpha-numeric characters and underscores (A-Z, a-z, 0-9, and _)
+* are case-sensitive (treeheight, TREEHEIGHT, TreeHeight, and treeHeight are all different variables)
 
 ![Matrix](images/matrix_var_names.jpg)
 
@@ -101,6 +108,13 @@ let makeItMeanSomethingUnique = 1;
 
 let make_it_mean_something_unique = 1;
 ```
+
+You can store multiple types of data as a variable.
+- strings ```"Yo Some Words"```
+- floats ```0.01f```
+- integers  ```5```
+- booleans ```True``` 
+- and more complex data types (we'll get to that much later on in the course)
 
 lets look at some [code](https://editor.p5js.org/danzeeeman/sketches/kAGXxWYRf)
 
@@ -137,6 +151,35 @@ lets look at some [code](https://editor.p5js.org/danzeeeman/sketches/kAGXxWYRf)
     stroke(r * 5);
     line(50, height/2, 50 + r, 0);
   ```
+
+One thing that works really nicely with variables is creating randomized variation of those variable values.  In p5.js, this is done with the function ```random()```. ```random()``` returns a floating point (a number with a decimal point).
+Like this:
+```
+	  firstSquareHeight = random(10,300)
+```
+The parameters to ```random()``` are minimum and maximum values. They define a range from which ```random()``` chooses a number. Like asking a person to "pick a number between 10 and 300".
+
+Here is how we could use random values to draw the above composition:
+
+```
+  squareWidth = random(10,300) # variable assignment (creates the variable)
+  firstSquareHeight = random(10,300)
+
+  size(600, 600)
+  background(255)
+  stroke(100, 100, 100)
+
+  fill(255, 100, 100, 100)
+  rect(250, 100, squareWidth, firstSquareHeight)
+
+  fill(255, 255, 100, 100)
+  rect(250, 100 + firstSquareHeight, squareWidth, 100)
+
+  fill(100, 100, 255, 100)
+  rect(250, 100 + firstSquareHeight + 100, squareWidth, 100)
+```
+Stop and run that a few times to see what kinds of variation we've just created.
+
   [Random Sketch](https://editor.p5js.org/danzeeeman/sketches/poHo3Q87_)
 
 # Homework

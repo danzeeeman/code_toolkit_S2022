@@ -1,5 +1,43 @@
 # Week 3 – Debugging & Adding interactivity
 
+## Review
+### Variables 
+```
+let makeItEasyToRead = 1;
+
+let make_it_easy_to_read = 1;
+
+let makeItMeanSomethingUnique = 1;
+
+let make_it_mean_something_unique = 1;
+```
+[Grid](https://editor.p5js.org/danzeeeman/sketches/kAGXxWYRf)
+## Arithmetic
+* add (+)
+  * 1 + 1 = 2
+  * 1++ = 2
+* subtract (-)
+  * 1 - 1 = 0
+  * 1-- = 0
+* multiply (*)
+  * 2*2 = 4
+  * 4*4 = 16
+* divide (/)
+  * 2/2 = 1
+  * 1 / 2 = 0.5
+* pow (**)
+  * 2**2 = 4
+  * 3**4 = 81 
+* modulus (%) 
+  *  1 % 4 = 1
+  *  2 % 4 = 2
+  *  3 % 4 = 3
+  *  4 % 4 = 0
+  *  5 % 4 = 1
+  *  6 % 4 = 2
+
+### ```random()```
+[Random Sketch](https://editor.p5js.org/danzeeeman/sketches/poHo3Q87_)]
 ## Frames
 __```function draw()```__
 This function gets called at every frame.  Think of a frame as a snapshot in time.  It allows you to 

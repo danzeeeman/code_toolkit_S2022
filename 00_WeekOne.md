@@ -12,6 +12,7 @@
 * Design I/O, [*Mimic*](https://www.design-io.com/projects/mimic) & [*Connected Worlds*](https://www.design-io.com/projects/connectedworlds)
 * Golan Levin, [*Ghost Pole Propagator I*](http://flong.com/archive/projects/gpp/index.html) & [*Ghost Pole Propagator II*](http://flong.com/archive/projects/gpp-ii/index.html)
 * Kyle McDonald and Jonas Jongejan, [*Light Leaks*](https://vimeo.com/66167082)
+* Acne-studios-x-Robbie-Barrat, [Fall/Winter 2020](https://xrgoespop.com/home/acne-studios-x-robbie-barrat)
 ### _Social Justice, Protests, Hacktivism, Jouralism, and Critical Hot Takes_ ___but also ART___
 * Sam Lavigne, [Database of ICE employee LinkedIn accounts](https://www.theverge.com/2018/6/19/17480912/github-ice-linkedin-scraping-employees)
 * The Markup, [COVID in Amazon Warehouses](https://github.com/the-markup/investigation-amazon-covid)

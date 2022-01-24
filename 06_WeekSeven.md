@@ -1,5 +1,27 @@
-## Week 7 – Working with many things (lists), and modularity (functions)
-### functions() and methods()
+# Week 7 – Working with many things (lists), and modularity (functions)
+
+## Data structures: Lists, Maps
+
+### Lists
+
+```
+let _list = [0, 1, 2, 3, 4, 5];
+```
+
+Iterating over a list
+```
+let _list = [0, 1, 2, 3, 4, 5];
+for(let i = 0 ; i < _list.length; i++){
+  print(_list[i])
+}
+```
+
+### Maps
+
+```
+let _map = {"key":"value"};
+```
+## functions() 
 
 Functions allow you to break up your code into nice reusable little blocks.  
 
@@ -29,12 +51,8 @@ function draw(){
     return ((p.p1*p.p2)+p.p3)/p.p2
   }
   ```
-### Data structures: Lists, Maps
+## Data Structures and Data Visualization
 
-### Functions: for project planning, reusability and modularity
-
-### Data Structures and Data Visualization
-
-### CSV and JSON
-### Home Work
+## CSV and JSON
+## Home Work
 * Coding Assignment #6: Data Self-Portrait 
