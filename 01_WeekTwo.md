@@ -29,7 +29,7 @@ function setup() {
 
 ## Loading Images
 ```
-function preload() {
+function setup() {
   let img = loadImage('assets/laDefense.jpg');
   image(img, 0, 0);
 }

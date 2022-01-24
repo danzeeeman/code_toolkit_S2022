@@ -2,7 +2,7 @@
 # Week One Lecture Notes
 
 ## One on Ones
-I want to schedule 1:Ones with everyone in the class periodically throughout the semester.  These informal chats will help me gage progress, help with confusion, and help me get to know each of you a bit better.
+I want to schedule Virtual 1:Ones with everyone in the class periodically throughout the semester.  These informal chats will help me gage progress, help with confusion, and help me get to know each of you a bit better. 
 
 ## Office Hours
 
@@ -233,7 +233,7 @@ function setup(){
 
 ## Loading Images 
 ```
-function preload() {
+function setup() {
   let img = loadImage('assets/laDefense.jpg');
   image(img, 0, 0);
 }
