@@ -1,12 +1,14 @@
 # __CODE TOOLKIT SPRING 2022__
 # Week One Lecture Notes
 
-## One on Ones
+## One on One
 I want to schedule Virtual 1:Ones with everyone in the class periodically throughout the semester.  These informal chats will help me gage progress, help with confusion, and help me get to know each of you a bit better. 
 
 ## Office Hours
+Office hours will be on demand this semester.  I'm usually available during the day except for some standing meetings I have at work at 12:30 and 1pm.  If you send me an email or slack me on our slack I will usually get back to you soon.  I basically live in front of a multiple computers so if I'm not getting back to you promptly its because I'm on a call or something (even then I'll reach out and tell you I'll be available soon probably).
 
-Office hours will be on demand this semester.  I'm usually available during the day except for some standing meetings I have at work at 12:30 and 1pm.  If you send me an email or slack me on our slack I will usually get back to you soon.  I basically live in front of a computer so if I'm not getting back to you promptly its because I'm on a call or something (even then I'll reach out and tell you I'll be available soon).  
+## Slack
+I invited you all to our slack and to our channel.  If I have missed anyone please let me know right now!  Please sign up as it is a way to contact me directly about issues with homework or readings. 
 ## ___Technology as a Medium___
 - SAAS, Software as a Service
 - Bank Software aka B2B
@@ -20,14 +22,14 @@ Office hours will be on demand this semester.  I'm usually available during the 
 * Golan Levin, [*Ghost Pole Propagator I*](http://flong.com/archive/projects/gpp/index.html) & [*Ghost Pole Propagator II*](http://flong.com/archive/projects/gpp-ii/index.html)
 * Kyle McDonald and Jonas Jongejan, [*Light Leaks*](https://vimeo.com/66167082)
 * Acne-studios-x-Robbie-Barrat, [Fall/Winter 2020](https://xrgoespop.com/home/acne-studios-x-robbie-barrat)
-### _Social Justice, Protests, Hacktivism, Jouralism, and Critical Hot Takes_ ___but also ART___
+### _Social Justice, Protests, Hacktivism, Jouralism, and Critical Hot Takes but also art_
 * Sam Lavigne, [Database of ICE employee LinkedIn accounts](https://www.theverge.com/2018/6/19/17480912/github-ice-linkedin-scraping-employees)
 * The Markup, [COVID in Amazon Warehouses](https://github.com/the-markup/investigation-amazon-covid)
 * Kyle McDonald, [Ethereum Emissions: A Bottom-up Estimate](https://kylemcdonald.github.io/ethereum-emissions/)
 * Adam Harvey [CV Dazzle](https://cvdazzle.com)  
 * The Critical Engineering Working Group [The Deep Sweep](https://criticalengineering.org/projects/deep-sweep/)
 * Julian Oliver [Stealth Cell Tower](https://julianoliver.com/output/stealth-cell-tower.html)
-## In-class Assignment: ___A crash course to git___
+## In-class Assignment: _A crash course to git_s
 - Create a [Github](https://github.com) profile and link it to the P5js [Editor](https://editor.p5js.org) 
 - Fork this Repo
   - Click the fork button
