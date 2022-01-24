@@ -60,10 +60,16 @@ function setup(){
 ```
 This is the traditional first program you write as a programmer. 
 
-a ```function``` is a thing we will get into later (week 3).  But for now just know that the ```function setup()``` gets automatically called by the p5js library when the page finishes loading.  
+A ```function``` is a thing we will get into later.  But for now just know that the ```function setup()``` gets automatically called by the p5js library when the page finishes loading and eveything within the ```{}``` code block get executed. 
 
-we call the ```print(string)``` function and pass in the string "Hello World"
+Inside the code block we call the ```print(string)``` function and pass in the string "Hello World".  This prints ```Hello World``` to the console. 
 
+So to review
+* ```function setup()``` gets called to start our program
+* Eveything within the ```{}``` code block get executed 
+* We can call ```functions``` from p5js such as 
+  * ```print(string)``` to print something to the console 
+  * Lets look at more of those ```functions```
 
 ## Drawing with numbers
 
