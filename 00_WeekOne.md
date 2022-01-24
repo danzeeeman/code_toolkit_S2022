@@ -29,36 +29,6 @@ I invited you all to our slack and to our channel.  If I have missed anyone plea
 * Adam Harvey [CV Dazzle](https://cvdazzle.com)  
 * The Critical Engineering Working Group [The Deep Sweep](https://criticalengineering.org/projects/deep-sweep/)
 * Julian Oliver [Stealth Cell Tower](https://julianoliver.com/output/stealth-cell-tower.html)
-## In-class Assignment: _A crash course to git_
-- Create a [Github](https://github.com) profile and link it to the P5js [Editor](https://editor.p5js.org) 
-- Install Git
-  - On Windows 
-    - Install [git](https://git-scm.com)
-    - open git-bash [see screen shot]
-    - go to cloning
-  - on Mac 
-    - install [brew](https://brew.sh)
-    - open terminal
-      - ![terminal](images/CloneMac.png)
-    - install git
-      - type ```brew install git``` into your terminal
-    - go to cloning
-  - Clone the repo: 
-    - type ```get clone https://github.com/danzeeeman/code_toolkit_S2022``` into the terminal
-
-```
-git clone your_repo_url
-```
-![terminal](images/CloneMac.png)
-Cloning a repository of code is basically making a copy but with 
-- Copy the _template_ folder and rename it to your chosen name
-```
-git add path_your_new_file_folder_name/*
-git commit -a -m "adding my homework folder where I will store all of my homework"
-git push origin main
-```
-### we might run into a little issue here!
-
 
 ## __5-10 min break__
 # Introductory Beep Boops 
@@ -88,11 +58,13 @@ function setup(){
   print("Hello World");
 }
 ```
-a ```function``` is a thing we will get into later (week 3).  But for now just know that the setup function gets automatically called by the p5js library when the page finishes loading.  
+This is the traditional first program you write as a programmer. 
+
+a ```function``` is a thing we will get into later (week 3).  But for now just know that the ```function setup()``` gets automatically called by the p5js library when the page finishes loading.  
 
 we call the ```print(string)``` function and pass in the string "Hello World"
 
-this is the traditional first program you write as a programmer
+
 ## Drawing with numbers
 
 - [Hello Shapes](https://editor.p5js.org/danzeeeman/sketches/l21Ut52K6)
