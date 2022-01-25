@@ -3,12 +3,11 @@
 - Install Git
   - On Windows 
     - Install [git](https://git-scm.com)
-    - open git-bash [see screen shot]
+    - open git-cmd [see screen shot] ![terminal](images/terminal.png)
     - go to cloning
   - on Mac 
     - install [brew](https://brew.sh)
-    - open terminal
-      - ![terminal](images/CloneMac.png)
+    - open terminal ![terminal](images/CloneMac.png)
     - install git
       - type ```brew install git``` into your terminal
     - go to cloning

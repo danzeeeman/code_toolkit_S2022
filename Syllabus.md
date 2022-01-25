@@ -54,7 +54,7 @@ Even though the weekly homework is mainly graded pass/fail, notice from the Fina
 
 We also have readings and videos about every week weeks. These are indicated in the course schedule below and will be posted to the class github. You will be asked to submit a short reading response of about 150 words that mainly consists of quotes from the text that you wish to highlight and some questions or comments based on those passages. These will be submitted in a shared [Google Doc](https://docs.google.com/document/d/1EVALM_XbkDWo0Y4u45wBYwqAE9h1CCWQFeBrmGzN7p8). I will also pose questions in the Google Doc to serve as a prompt to guide your reading and responses. Like the weekly programming exercises, these will also be due at 12pm the morning before class and will also be graded pass/fail.
 
-## [READING DISCUSSION GOOGLE DOC](https://docs.google.com/document/d/1EVALM_XbkDWo0Y4u45wBYwqAE9h1CCWQFeBrmGzN7p8)
+## [READING DISCUSSION GOOGLE DOC](https://docs.google.com/document/d/1mZeyjKicprIcDLHriPR3u19A-r9DTYlfPIC0iXvcp58)
 
 ### Projects
 
