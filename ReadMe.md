@@ -21,7 +21,7 @@ I recently worked at a UX design studio inside Samsung Mobile. I did a couple to
 - Discussion: Why did you take this course?
 - Discussion: What do you hope to take away?
 ## __Technology__
-The technologies we will be using in this course are [p5js](https://p5js.org) a sibling of the [Processing framework](https://processing.org) and [Javascript](https://en.m.wikipedia.org/wiki/JavaScript).  We will be using the browser and [vscode](https://code.visualstudio.com) for everything in this course so be sure to bring a laptop to class and install [vscode](https://code.visualstudio.com).
+The technologies we will be using in this course are [p5js](https://p5js.org) a sibling of the [Processing framework](https://processing.org) and [Javascript](https://en.m.wikipedia.org/wiki/JavaScript).  
 
 - [Syllabus](Syllabus.md)
 - [Schedule](Schedule.md)
