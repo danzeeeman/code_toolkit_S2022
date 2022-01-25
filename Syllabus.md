@@ -46,7 +46,7 @@ contributions to student work sharing, and questions via office hours and email.
 
 ## Weekly homework exercises
 
-You will have weekly homework assignments comprised of coding exercises. They will be due the morning before class on Tuesday at 12pm, and you will submit as a zip to my New School Email address.  Homeworks will be graded as pass/fail, on a scale of 0 or 1, based on effort. You will not be evaluated weekly on whether your code runs perfectly or has bugs, but rather on whether you engaged the topic and made progress. Occasionally I may give a fraction of a point (e.g. .85) to indicate that the level of completeness is not quite enough. Late submissions will be marked down, but submitting something is always better than submitting nothing, even if late. I will try my best to keep on posting homework grades throughout the semester, but if I fall behind, at the time of the midterm and final I will get caught up so you know where you stand. If at any time you would like more feedback * about one piece of work specifically or about your standing in the class overall * ___please do not hesitate to ask___.
+You will have weekly homework assignments comprised of coding exercises. They will be due the morning before class on Tuesday at 12pm, and you will submit as a zip to my New School Email address ```moored1@newschool.edu```.  Homeworks will be graded as pass/fail, on a scale of 0 or 1, based on effort. You will not be evaluated weekly on whether your code runs perfectly or has bugs, but rather on whether you engaged the topic and made progress. Occasionally I may give a fraction of a point (e.g. .85) to indicate that the level of completeness is not quite enough. Late submissions will be marked down, but submitting something is always better than submitting nothing, even if late. I will try my best to keep on posting homework grades throughout the semester, but if I fall behind, at the time of the midterm and final I will get caught up so you know where you stand. If at any time you would like more feedback * about one piece of work specifically or about your standing in the class overall * ___please do not hesitate to ask___.
 
 Even though the weekly homework is mainly graded pass/fail, notice from the Final Grade Calculation above that it represents the largest fraction of your final grade. The best way to do well in terms of grading will be to keep up with the weekly homework, and if you don’t keep up with the homework it will be difficult to end up with a high grade. The reason I’ve structured things this way is because I have found that the best way for you to do well in terms of learning is also to keep up with the weekly homework. Our semester will proceed through small steps, but we’ll take those steps fairly quickly, and the topics will be like incremental blocks that build on each other, so make sure you understand the concept each week in order to be sure next week will make sense.
 
@@ -86,7 +86,7 @@ After successful completion of this course, students will:
 
 Course readings & materials
 
-Lecture notes: I will post my notes in the ReadMe.md of the repo and will treat is as a living document.  The most recent lecture will be on top. 
+Lecture notes: I will post my notes in the the repo and will treat is as a living document. 
 
 All readings will be provided via the repo or links to files. There are no required textbooks to purchase for this course.
 
