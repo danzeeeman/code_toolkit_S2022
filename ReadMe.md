@@ -1,4 +1,4 @@
-# __CODE TOOLKIT SPRING 2022 LCOD2010__
+# __CODE TOOLKIT SPRING 2022 LCOD 2012__
 ### _Who?_
 I'm Dan Moore, I'm an Artist, Designer, and Technologist based here in New York City.  I have a desk and robot arm at Pratt Institute's Consortium for Research & Robotics (CRR) in the Brooklyn Navy Yard.  I design and build interactive activations and applications.  
 
