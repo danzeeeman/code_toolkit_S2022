@@ -27,13 +27,7 @@ function setup() {
 ## The Screen is a Grid
 - [Hello Grid](https://editor.p5js.org/danzeeeman/sketches/aiCnAxqRZ)
 
-## Loading Images
-```
-function setup() {
-  let img = loadImage('assets/laDefense.jpg');
-  image(img, 0, 0);
-}
-```
+
 ### _Who remembers algebra?_
 ```
 y = m * x + b aka the formula for a line

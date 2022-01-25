@@ -212,16 +212,6 @@ function setup(){
 }
 ```
 
-## Loading Images 
-```
-function setup() {
-  let img = loadImage('assets/laDefense.jpg');
-  image(img, 0, 0);
-}
-```
-As an introduction to next weeks topics I'm going to introduce variables.  Here we define a variable ```let img``` to hold the image that we want to load.  We call the ```loadImage(image_path)``` function and it returns the image which we store as the variable ```img```.
-
-___did I just confuse everyone?___
 
 ## Home Work
 * Read Marshall McLuhan's [The Medium is the Message](pdfs/mcluhan.mediummessage.pdf)
@@ -231,3 +221,4 @@ ___did I just confuse everyone?___
   * Read Casey Reas et al. [{Sofrware} Structures](https://artport.whitney.org/commissions/softwarestructures/text.html#structure)
   * Check out 2 [examples](https://p5js.org/examples/)
 
+this is a change
