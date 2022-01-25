@@ -86,7 +86,7 @@ After successful completion of this course, students will:
 
 Course readings & materials
 
-Lecture notes: I will post my notes in the ReadMe.md of the repo and will treat is as a living document.  The most recent lecture will be on top. 
+Lecture notes: I will post my notes in the the repo and will treat is as a living document. 
 
 All readings will be provided via the repo or links to files. There are no required textbooks to purchase for this course.
 
