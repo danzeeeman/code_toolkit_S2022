@@ -13,7 +13,7 @@ I recently worked at a UX design studio inside Samsung Mobile. I did a couple to
 - How to read and write code
 - How to use code to do what you want
 ### _When?_
-- Tuesdays from 16:00-18:00 aka 4-6:40pm
+- Tuesdays from 16:00-18:40 aka 4-6:40pm
 ### _Where_
 - 6 East 16th Street Room: 605 and/or on Zoom depending on the pannorama? 
 - But I mean we could even do it in the ___Metaverse___
