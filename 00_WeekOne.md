@@ -5,7 +5,7 @@
 I want to schedule Virtual 1:Ones with everyone in the class periodically throughout the semester.  These informal chats will help me gage progress, help with confusion, and help me get to know each of you a bit better. 
 
 ## Office Hours
-Office hours will be on demand this semester.  I'm usually available during the day except for some standing meetings I have at work at 12:30 and 1pm.  If you send me an email or slack me on our slack I will usually get back to you soon.  I basically live in front of a multiple computers so if I'm not getting back to you promptly its because I'm on a call or something (even then I'll reach out and tell you I'll be available soon probably).
+Office hours will be on-demand this semester.  I'm usually available during the day except for some standing meetings I have at my day job at 1pm.  If you send me an email or slack me on our slack I will usually get back to you soon.  I basically live in front of a multiple computers so if I'm not getting back to you promptly its because I'm on a call (even then I'll reach out and tell you I'll be available soon probably) or asleep.
 
 ## Slack
 I invited you all to our slack and to our channel.  If I have missed anyone please let me know right now!  Please sign up as it is a way to contact me directly about issues with homework or readings. 
@@ -32,7 +32,7 @@ I invited you all to our slack and to our channel.  If I have missed anyone plea
 
 ## __5-10 min break__
 # Introductory Beep Boops 
-### How we Work: The P5js Development Environment ("PDE")
+## How we Work: The P5js Development Environment ("PDE")
 We are going to read a lot of code this semester and we are going to code things together in class as a class.  I will prep examples and they will be hosted on the p5js editor or in the examples folder.
 
 Download [Processing](https://processing.org/download)
@@ -164,6 +164,7 @@ function setup(){
 ## The Screen is a Grid
 - [Hello Grid](https://editor.p5js.org/danzeeeman/sketches/aiCnAxqRZ)
 ![Images](images/grid.png)
+
 ```
 function setup(){
   createCanvas(512, 512);
