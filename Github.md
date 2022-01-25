@@ -1,9 +1,9 @@
 # _A crash course to git_
-- Create a [Github](https://github.com) profile and link it to the P5js [Editor](https://editor.p5js.org) 
+- Create a [Github](https://github.com) profile 
 - Install Git
   - On Windows 
     - Install [git](https://git-scm.com)
-    - open git-cmd [see screen shot] ![terminal](images/terminal.png)
+    - open git-cmd [see screen shot] ![terminal](images/terminal.PNG)
     - go to cloning
   - on Mac 
     - install [brew](https://brew.sh)
