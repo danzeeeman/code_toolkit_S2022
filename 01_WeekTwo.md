@@ -216,6 +216,77 @@ function setup() {
 }
 ```
 
+
+# More Draw Functions
+### We've looked at these
+- triangle()
+- rect()
+- ellipse()
+
+## New Draw Functions
+### arc()
+```
+arc(x, y, w, h, start, stop, [mode], [detail])
+```
+- x Number: x-coordinate of the arc's ellipse
+- y Number: y-coordinate of the arc's ellipse
+- w Number: width of the arc's ellipse by default
+- h Number: height of the arc's ellipse by default
+- start Number: angle to start the arc, specified in radians
+- stop Number: angle to stop the arc, specified in radians
+- mode Constant: optional parameter to determine the way of drawing the arc. either CHORD, PIE or OPEN (Optional)
+- detail Integer: optional parameter for WebGL mode only. This is to specify the number of vertices that makes up the perimeter of the arc. Default value is 25. Won't draw a stroke for a detail of more than 50. (Optional)
+
+### circle()
+```
+circle(x, y, diameter);
+```
+- x Number: x-coordinate of the centre of the circle.
+- y Number: y-coordinate of the centre of the circle.
+- d Number: diameter of the circle.
+
+### line()
+```
+line(x1, y1, x2, y2);
+```
+- x1 Number: the x-coordinate of the first point
+- y1 Number: the y-coordinate of the first point
+- x2 Number: the x-coordinate of the second point
+- y2 Number: the y-coordinate of the second point
+
+### point()
+```
+point(x, y);
+```
+- x Number: the x-coordinate
+- y Number: the y-coordinate
+### quad()
+```
+quad(x1, y1, x2, y2, x3, y3, x4, y4, [detailX], [detailY]);
+```
+- x1 Number: the x-coordinate of the first point
+- y1 Number: the y-coordinate of the first point
+- x2 Number: the x-coordinate of the second point
+- y2 Number: the y-coordinate of the second point
+- x3 Number: the x-coordinate of the third point
+- y3 Number: the y-coordinate of the third point
+- x4 Number: the x-coordinate of the fourth point
+- y4 Number: the y-coordinate of the fourth point
+- detailX Integer: number of segments in the x-direction (Optional)
+- detailY Integer: number of segments in the y-direction (Optional)
+
+### square()
+```
+square(x, y, s, [tl], [tr], [br], [bl])
+```
+- x Number: x-coordinate of the square.
+- y Number: y-coordinate of the square.
+- s Number: side size of the square.
+- tl Number: optional radius of top-left corner. (Optional)
+- tr Number: optional radius of top-right corner. (Optional)
+- br Number: optional radius of bottom-right corner. (Optional)
+- bl Number: optional radius of bottom-left corner. (Optional)
+
 ## Homework
 * Read Lev Manovich's [The Language of New Media, Cambridge, MA: MIT Press, 2002. Chapter 1 (pages 18-55)](https://dss-edit.com/plu/Manovich-Lev_The_Language_of_the_New_Media.pdf)
   * For the PDF Page 18 of the book is really 29
