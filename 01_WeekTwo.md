@@ -2,6 +2,7 @@
 * Variables
 * Arithmetic (+, -, *, /, %)
 * Introduction to ```random()```
+* Loading Images
 ## Review of what we've done so far
 ```
 // the setup function gets called to kick everything off
@@ -22,27 +23,33 @@ function setup() {
   rect(0, 250, 250, 250);
 }
 ```
-## Drawing with numbers
+### Drawing with numbers
 - [Hello Shapes](https://editor.p5js.org/danzeeeman/sketches/l21Ut52K6)
-## The Screen is a Grid
+### The Screen is a Grid
 - [Hello Grid](https://editor.p5js.org/danzeeeman/sketches/aiCnAxqRZ)
 
-
-### _Who remembers algebra?_
-```
-y = m * x + b aka the formula for a line
-a**2 + b**2 = c**2 aka Pythagorean Theorem
-```
-### _Did anyone take Physics?_
-```
-force = mass * acceleration 
-```
-### _Did anyone take Calculus?_
-
-### Tweaking Things Is Essential 
-![tweaking](images/changing-stuff.jpeg)
 ## Variables    
-A variable is a way to store something in memory so you can access it later in your code. You will be using variables all of the time this semester.
+### What is a variable?  
+  
+- A way to introduce variation on a theme, generalization within a formal structure, or the abstraction of some parts of a process. The word comes from vary like variety and variance, and means a thing that is able to change.
+- A variable is a placeholder. A placeholder for a value. Instead of using a specific value (like a number), you create a name, and then use that name in your code. When looking at your code, you don't know exactly what the value of that variable is. You can set it to a specific value, or change that value later. This means that one bit of code is now able to do different things.
+- A variable is a way to store something in memory so you can access it later in your code.
+#### _Who remembers algebra?_
+  ```
+  y = m * x + b aka the formula for a line
+  ```
+
+```Y``` is equal to the variable ```M``` times the variable ```X``` plus the variable ```B``` this gives us the forumla of a line where ```M``` defines the slope of the line and ```B``` define the point that the line crosses the ```Y``` axis, when ```x = 0```.
+
+  ```
+  a**2 + b**2 = c**2 aka Pythagorean Theorem
+  ```
+#### _Did anyone take Physics?_
+  ```
+  force = mass * acceleration 
+  ```
+####  _Did anyone take Calculus?_
+
 
 So lets talk about how you create a variable in code. The word for that is _declare_. 
 
@@ -56,16 +63,18 @@ Before you can use a variable you have to assign it a value.
 
 This is how you _assign_ a variable in p5.js.
 ```
+let x; 
+x = 10;
+
+or 
+
 let x = 10;
 ```
 
 There are three places where you can _declare_ a variable
 
-- Inside a _function_ or a _block_ which is called _local variables_
-- In the definition of function parameters which is called _parameters_
-- Outside of all _functions_ which is called _global variables_
+- Inside a _function_ or a _code block_ which is called _local variables_
 
-local variable
 ```
 function setup()
 { 
@@ -73,7 +82,8 @@ function setup()
     print(x)
 }
 ```
-function parameter
+
+- In the definition of function parameters which is called _parameters_
 ```
 function setup()
 {
@@ -85,7 +95,8 @@ function getValue(t)
     return t*0.01;
 } 
 ```
-global variable
+
+- Outside of all _functions_ which is called _global variables_
 ```
 let x;
 function setup()
@@ -94,7 +105,7 @@ function setup()
 }
 ```
 ### Variable Names 
-* must start with a letter or the underscore character
+* must start with a letter or an underscore character
 * cannot start with a number
 * can only contain alpha-numeric characters and underscores (A-Z, a-z, 0-9, and _)
 * are case-sensitive (treeheight, TREEHEIGHT, TreeHeight, and treeHeight are all different variables)
@@ -104,12 +115,16 @@ function setup()
 My advice is 
 
 ```
+camelCase
 let makeItEasyToRead = 1;
 
+snake_case
 let make_it_easy_to_read = 1;
 
+camelCase
 let makeItMeanSomethingUnique = 1;
 
+snake_case
 let make_it_mean_something_unique = 1;
 ```
 
@@ -117,10 +132,14 @@ You can store multiple types of data as a variable.
 - strings ```"Yo Some Words"```
 - floats ```0.01f```
 - integers  ```5```
-- booleans ```True``` 
+- booleans ```True/False```  
 - and more complex data types (we'll get to that much later on in the course)
 
 lets look at some [code](https://editor.p5js.org/danzeeeman/sketches/kAGXxWYRf)
+
+
+### Tweaking Things Is Essential 
+![tweaking](images/changing-stuff.jpeg)
 
 ## Arithmetic
 ![basic_math](images/1zp2du.jpg)
@@ -202,3 +221,5 @@ function setup() {
   * For the PDF Page 18 of the book is really 29
 * Coding Assignment #1 __Solve LeWitt's Trapezoid__ 
 ![Trapezoid](images/lewitt-trapezoid.jpeg)
+
+
