@@ -3,6 +3,7 @@
 * Arithmetic (+, -, *, /, %)
 * Introduction to ```random()```
 * Loading Images
+* More Draw Functions
 ## Review of what we've done so far
 ```
 // the setup function gets called to kick everything off
@@ -178,44 +179,72 @@ lets look at some [code](https://editor.p5js.org/danzeeeman/sketches/kAGXxWYRf)
 One thing that works really nicely with variables is creating randomized variation of those variable values.  In p5.js, this is done with the function ```random()```. ```random()``` returns a floating point (a number with a decimal point).
 Like this:
 ```
-	  firstSquareHeight = random(10,300)
+let firstSquareHeight = random(10,300);
 ```
 The parameters to ```random()``` are minimum and maximum values. They define a range from which ```random()``` chooses a number. Like asking a person to "pick a number between 10 and 300".
 
 Here is how we could use random values to draw the above composition:
 
 ```
-  squareWidth = random(10,300) # variable assignment (creates the variable)
-  firstSquareHeight = random(10,300)
+function setup() {
+  createCanvas(600, 600);
+  let squareWidth = random(10,300);
+  let firstSquareHeight = random(10,300);
 
-  size(600, 600)
-  background(255)
-  stroke(100, 100, 100)
+  background(255);
+  noStroke()
 
-  fill(255, 100, 100, 100)
-  rect(250, 100, squareWidth, firstSquareHeight)
+  fill(255, 100, 100, 100);
+  rect(250, 100, squareWidth, firstSquareHeight);
 
-  fill(255, 255, 100, 100)
-  rect(250, 100 + firstSquareHeight, squareWidth, 100)
+  fill(255, 255, 100, 100);
+  rect(250, 100 + firstSquareHeight, squareWidth, 100);
 
   fill(100, 100, 255, 100)
-  rect(250, 100 + firstSquareHeight + 100, squareWidth, 100)
+  rect(250, 100 + firstSquareHeight + 100, squareWidth, 100);
+}
 ```
 Stop and run that a few times to see what kinds of variation we've just created.
 
-  [Random Sketch](https://editor.p5js.org/danzeeeman/sketches/poHo3Q87_)
+[Random Sketch](https://editor.p5js.org/danzeeeman/sketches/poHo3Q87_)
 
 ## Loading Images 
 ```
 let img;
 function preload() {
-  img = loadImage('assets/laDefense.jpg');
+  img = loadImage('/assets/PRI_220306753.webp');
 }
 function setup() {
+  createCanvas(img.width, img.height);
   image(img, 0, 0);
 }
 ```
 
+### Preload
+
+```function preload()``` is automatically called before ```function setup()```.  When you want to use images in your ```function setup()``` you must load them within ```function preload()```.
+
+```
+function preload(){
+
+}
+```
+
+### Loading an Image
+```
+loadImage(path)
+```
+- path String: Path of the image to be loaded (this must be relative to your project directory)
+
+### Drawing an Image
+```
+image(img, x, y, [width], [height])
+```
+- img p5.Image|p5.Element: the image to display
+- x Number: the x-coordinate of the top-left corner of the image
+- y Number: the y-coordinate of the top-left corner of the image
+- width Number: the width to draw the image (Optional)
+- height Number: the height to draw the image (Optional)
 
 # More Draw Functions
 ### We've looked at these
