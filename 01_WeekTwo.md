@@ -1,9 +1,12 @@
 # Week 2 – Adding variance
 * Variables
 * Arithmetic (+, -, *, /, %)
+* [BREAK]
 * Introduction to ```random()```
 * Loading Images
+* [BREAK]
 * More Draw Functions
+* Homework Prep
 ## Review of what we've done so far
 ```
 // the setup function gets called to kick everything off
@@ -230,11 +233,13 @@ function preload(){
 }
 ```
 
-### Loading an Image
 ```
-loadImage(path)
+let img = loadImage(path)
 ```
 - path String: Path of the image to be loaded (this must be relative to your project directory)
+
+
+```loadImage(path)``` is a function that returns an image.  It must be called in ```function preload()``` and used to assign a variable if you want to use the image in the ```function setup()``` code block.
 
 ### Drawing an Image
 ```
