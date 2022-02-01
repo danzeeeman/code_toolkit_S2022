@@ -141,7 +141,6 @@ You can store multiple types of data as a variable.
 
 lets look at some [code](https://editor.p5js.org/danzeeeman/sketches/kAGXxWYRf)
 
-
 ### Tweaking Things Is Essential 
 ![tweaking](images/changing-stuff.jpeg)
 
@@ -172,12 +171,12 @@ lets look at some [code](https://editor.p5js.org/danzeeeman/sketches/kAGXxWYRf)
   *  5 % 4 = 1
   *  6 % 4 = 2
   
-  ## ```random()```
-  ```
-    let r = random(50);
-    stroke(r * 5);
-    line(50, height/2, 50 + r, 0);
-  ```
+## ```random()```
+```
+ let r = random(50);
+ stroke(r * 5);
+ line(50, height/2, 50 + r, 0);
+```
 
 One thing that works really nicely with variables is creating randomized variation of those variable values.  In p5.js, this is done with the function ```random()```. ```random()``` returns a floating point (a number with a decimal point).
 Like this:
