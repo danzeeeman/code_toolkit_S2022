@@ -1,6 +1,19 @@
 # Week 3 – Debugging & Adding interactivity
 
 ## Review
+
+### ```function preload()```
+
+```function preload()``` get called at the start of the program automatically by p5js. 
+
+### ```function setup()```
+
+```function setup()``` is called directly after ```function preload()```
+
+### ```createCanvas(width, height)```
+
+In the ```function setup()``` code block ```{}``` we must call ```createCanvas(width, height)``` to create a canvas to draw into.
+
 ### Variables 
 ```
 let makeItEasyToRead = 1;
@@ -11,6 +24,9 @@ let makeItMeanSomethingUnique = 1;
 
 let make_it_mean_something_unique = 1;
 ```
+
+```width``` ```height`` are Variables provided by p5js that describe the canvas width and height. 
+
 [Grid](https://editor.p5js.org/danzeeeman/sketches/kAGXxWYRf)
 ## Arithmetic
 * add (+)
@@ -38,6 +54,10 @@ let make_it_mean_something_unique = 1;
 
 ### ```random()```
 [Random Sketch](https://editor.p5js.org/danzeeeman/sketches/poHo3Q87_)]
+
+```random(max_value)``` returns a random number from 0 to the ```max_value```
+
+# Introduction to Interactivity
 ## Frames
 __```function draw()```__
 This function gets called at every frame.  Think of a frame as a snapshot in time.  It allows you to 
