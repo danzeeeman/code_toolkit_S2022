@@ -59,8 +59,72 @@ let make_it_mean_something_unique = 1;
 
 # Introduction to Interactivity
 ## Frames
-__```function draw()```__
-This function gets called at every frame.  Think of a frame as a snapshot in time.  It allows you to 
+Think of a frame as a snapshot in time.  
+
+Lets look at one of the first 'animations' from Eadweard Muybridge. 
+_The Horse in Motion_
+![Horse](images/The_Horse_in_Motion_high_res.jpeg)
+Here it is as an animated gif
+![Horse Gif](images/Muybridge_race_horse_animated.gif)
+
+A frame simply represents a moment in time. p5js gives us this value as ```frameCount```
+
+_How are frames called in p5js?_
+
+### ```function draw()```
+```function draw()``` gets called at every frame automatically by p5js.
+
+Lets look at how that works
+
+```
+function setup() {
+  # we create the canvas
+  createCanvas(512, 512);
+  # we set the frame rate of our app to 30 FPS
+  frameRate(30);
+  # we set the size of the text we are going to draw
+  textSize(30);
+  # we say align the text at the center of the object
+  textAlign(CENTER);
+}
+
+function draw() {
+  background(200);
+  # text draws the variable frameCount to the screen
+  text(frameCount, width / 2, height / 2);
+}
+```
+[Example](https://editor.p5js.org/danzeeeman/sketches/x1UXy-OhP)
+
+### [In-class coding](https://editor.p5js.org/danzeeeman/sketches/h8Osij9fY) 
+
+```
+let x; 
+let y;
+let rect_width;
+let rect_height;
+let num_steps;
+
+function setup() {
+  createCanvas(400, 400);
+  frameRate(5);
+  rect_width = width/4;
+  rect_height = width/4;
+  x = rect_width/2;
+  y = rect_height/2;
+  num_steps = 10;
+  noStroke();
+}
+
+function draw() {
+  background(220);
+  fill(0)
+  rect(x, y, rect_width, rect_height);
+  x = (x + rect_width/num_steps) % width;
+  text(frameCount, 350, 350);
+}
+```
+## BREAK
 
 ## Debugging
 Figuring out what is wrong and how to fix it is an important skill.  Your best tool to examine what's going on in your code in an instant is to print to the console.  
@@ -100,6 +164,26 @@ function computeX(){
 
 lets try and debug it?
 
+
+## map() 
+```map()``` is a very useful function.  It is a shortcut for this mathematical operation that takes a value in a range between two numbers ```[input_start, input_stop]``` and remaps it to a value in another range defined by two numbers ```[output_start, output_stop]```.
+
+```
+function map(value, input_start, input_stop, output_start, output_stop) {
+    return output_start + (output_stop - output_start) * ((value - input_start) / (input_stop - input_start));
+}
+```
+
+So in other words it remaps a value from one range to another.  So if I had the output of a sin wave going from ```[-1, 1]``` and wanted to use that value draw a rectangle along the x axis of my window I could do this:
+
+```
+let value = sin(frameCount%500/500);
+let mapped_value = map(value, -1, 1, 0, width);
+rect(mapped_value, height/2, 50, 50);
+```
+
+## BREAK
+
 ## Mouse Interaction
 
 ```mouseX, mouseY``` are some variables that p5.js exposed for you that hold the value of the mouse's current x and y position. 
@@ -138,8 +222,6 @@ Well if we know the position of the mouse at each frame given as ```mouseX``` an
 
 ```
 // position cache
-let previous_mouseX = 0;
-let previous_mouseY = 0;
 //velocity
 let velocityX = 0;
 let velocityY = 0;
@@ -169,8 +251,8 @@ function draw(){
 }
 
 function calcVelocity(){
-    velocityY = mouseY - previous_mouseY;
-    velocityX = mouseX - previous_mouseX;
+    velocityY = mouseY - pmouseY;
+    velocityX = mouseX - pmouseX;
     maxVelocity = max(velocityX, maxVelocity);
     maxVelocity = max(velocityY, maxVelocity);
     minVelocity = min(minVelocity, velocityX);
@@ -185,41 +267,38 @@ function calcAcceleration(){
     minAccel = min(minAccel, accelY);
 }
 function cachePrevious(){
-    previous_mouseX = mouseX;
-    previous_mouseY = mouseY;
+    pmouseX = mouseX;
+    pmouseY = mouseY;
     previous_velocityX = velocityX;
     previous_velocityY = velocityY;
 }
 
 function drawMotion(){
+  let barHeight = height/6;
   background(0, 0, 0);
-  fill(255, 255, 0);
-  rect(0, 0, map(velocityX, minVelocity, maxVelocity, 0, 512), height/4);
   fill(255, 0, 255);
-  rect(0, height/4, map(velocityY, minVelocity, maxVelocity, 0, 512), height/4);
+  rect(0, 0, mouseX, barHeight);
   fill(255, 255, 0);
-  rect(0, 2*height/4, map(accelX, minAccel, maxAccel, 0, 512), height/4);
+  rect(0, barHeight, mouseY, barHeight);
+  fill(255, 255, 0);
+  rect(0, 2*barHeight, map(velocityX, minVelocity, maxVelocity, 0, 512), barHeight);
   fill(255, 0, 255);
-  rect(0, 3*height/4, map(accelY, minAccel, maxAccel, 0, 512), height/4);
+  rect(0, 3*barHeight, map(velocityY, minVelocity, maxVelocity, 0, 512), barHeight);
+  fill(255, 255, 0);
+  rect(0, 4*barHeight, map(accelX, minAccel, maxAccel, 0, 512), barHeight);
+  fill(255, 0, 255);
+  rect(0, 5*barHeight, map(accelY, minAccel, maxAccel, 0, 512), barHeight);
 }
 ```
 
-## map() 
-```map()``` is a very useful function.  It is a shortcut for this mathematical operation that takes a value in a range between two numbers ```[input_start, input_stop]``` and remaps it to a value in another range defined by two numbers ```[output_start, output_stop]```.
+### BREAK
 
-```
-function map(value, input_start, input_stop, output_start, output_stop) {
-    return output_start + (output_stop - output_start) * ((value - input_start) / (input_stop - input_start));
-}
-```
 
-So in other words it remaps a value from one range to another.  So if I had the output of a sin wave going from ```[-1, 1]``` and wanted to use that value draw a rectangle along the x axis of my window I could do this:
 
-```
-let value = sin(frameCount%500/500);
-let mapped_value = map(value, -1, 1, 0, width);
-rect(mapped_value, height/2, 50, 50);
-```
+## Putting Everything together
+Lets look at something a bit more complex
+
+[Frames](https://editor.p5js.org/danzeeeman/sketches/QR1NPe1TI)
 
 
 ### Home Work
