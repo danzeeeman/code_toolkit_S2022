@@ -25,7 +25,7 @@ let makeItMeanSomethingUnique = 1;
 let make_it_mean_something_unique = 1;
 ```
 
-```width``` ```height`` are Variables provided by p5js that describe the canvas width and height. 
+```width``` ```height``` are Variables provided by p5js that describe the canvas width and height. 
 
 [Grid](https://editor.p5js.org/danzeeeman/sketches/kAGXxWYRf)
 ## Arithmetic
