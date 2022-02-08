@@ -124,6 +124,14 @@ function draw() {
   text(frameCount, 350, 350);
 }
 ```
+
+
+
+rotate(degree)
+
+scale(x, y)
+
+translate(x, y)
 ## BREAK
 
 ## Debugging
@@ -292,6 +300,7 @@ function drawMotion(){
 ```
 
 ### BREAK
+
 
 
 
