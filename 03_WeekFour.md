@@ -310,10 +310,12 @@ function draw(){
 
 ```===``` equal to
 ```
-let x = width/2;
-let y = width/2;
+let x;
+let y;
 function setup(){
     createCanvas(600,600);
+    x = width/2;
+    y = width/2;
 }
 
 function draw(){
@@ -321,7 +323,7 @@ function draw(){
     if(frameCount%10 === 1){
         x = (x + width/2/100) % width;
     }
-    ellipse(width/2,width/2, 50,50);
+    ellipse(x,y, 50,50);
 }
 ```
 
