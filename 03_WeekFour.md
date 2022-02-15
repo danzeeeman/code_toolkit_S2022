@@ -5,7 +5,7 @@
 
 # Cool Stuff Alert 
 
-[srcsnap](ttps://srcsnap.glitch.me) by someone you should know about artist [Lingdong Huang](https://lingdong.works) aka Lingdong.  His work is amazing! [fishdraw](https://fishdraw.glitch.me) [doodle-place](https://doodle-place.glitch.me) [trashscape](https://vimeo.com/204271262)
+[srcsnap](https://srcsnap.glitch.me) by someone you should know about artist [Lingdong Huang](https://lingdong.works) aka Lingdong.  His work is amazing! [fishdraw](https://fishdraw.glitch.me) [doodle-place](https://doodle-place.glitch.me) [trashscape](https://vimeo.com/204271262)
 
 So srcsnap works like this every time you take a screenshot of your project, srcsnap takes a snapshot of all your code too, and associate it with the screenshot. it organizes your screenshots in a nice list in the menubar: your code can "time travel" back to the very moment when you took each of the screenshots.
 
@@ -935,6 +935,12 @@ And now, believe it or not, you have all the basic pieces to implement a game li
 
 ## Lets play around with this in class
 
+- Make the circle bounce off all of the walls
+- Make it work with WASD
+  - W goes Up
+  - A goes Left
+  - S goes Down
+  - D goes Right
 
 # Stuff you need for your homework
 
@@ -982,6 +988,12 @@ text('Current year: \n' + y, 5, 50);
 
 [Maeda’s 12 o’clocks](http://cmuems.com/2016/60212/lectures/lecture-09-09b-clocks/maedas-clocks/)
 [Evan Roth's Christopher George Latore Wallace.com](http://christopher-george-latore-wallace.com)
+
+
+## Homework Review 
+![one](homework/01/parse.png)
+![two](homework/01/instructions-60-210.png)
+# Who wants to show their solution?
 
 ### Home Work
 * Coding Assignment #3 : A Clock with an Alarm 
