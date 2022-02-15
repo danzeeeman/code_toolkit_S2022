@@ -690,7 +690,7 @@ A new function from p5js:
 
 ```
 function keyPressed(){
-    # commands in here
+    // commands in here
 }
 ```
 
@@ -702,39 +702,64 @@ This style of interactive programming is called event handling because your code
 Let's look at our previous example implemented in this way:
 
 ```
+let drawEllipse = false;
+let drawRect = false;
 function setup(){
   createCanvas(600,600);
-  rectMode(CENTER); # Adding this back for clarity
+  rectMode(CENTER); 
 }
 
 function draw(){
   background(255);
+  if(drawRect)
+    rect(width/2, height/2, 50, 50);
+  if(drawEllipse)
+    ellipse(width/2, height/2, 50, 50);
 }
 
 function keyPressed(){
   if(key === 'e'){
-    ellipse(300,300, 50,50);
+    drawEllipse = !drawEllipse;
   }
 
   if(key === 'r'){
-    rect(300,300, 50,50);
+    drawRect = !drawRect;
   }
 }
 ```
 
 Sidenote: There is a similar pattern here for the mouse. The ```mousePressed()``` function is also valid syntax and would be used in a similar way:
 ```
+let drawEllipse = false;
+let drawRect = false;
+let drawTriangle = false;
 function setup(){
   createCanvas(600,600);
-  rectMode(CENTER); # Adding this back for clarity
+  rectMode(CENTER); 
 }
 
 function draw(){
   background(255);
+  if(drawRect)
+    rect(width/2, height/2, 50, 50);
+  if(drawEllipse)
+    ellipse(width/2, height/2, 50, 50);
+  if(drawTriangle)
+    triangle(0, 0, width/2, height/2, width, 0);
+}
+
+function keyPressed(){
+  if(key === 'e'){
+    drawEllipse = !drawEllipse;
+  }
+
+  if(key === 'r'){
+    drawRect = !drawRect;
+  }
 }
 
 function mousePressed(){
-  ellipse(300,300, 50,50);
+  drawTriangle = !drawTriangle;
 }
 ```
 Making things move
@@ -924,7 +949,7 @@ function keyPressed(){
 }
 ```
 
-And now, believe it or not, you have all the basic pieces to implement a game like Pong. To be clear, Pong combines many of these elements in a way that may still appear complex, but you should be able to look at this code and have some understanding of what is going on. Take a look:
+And now, believe it or not, you have all the basic pieces to implement a game like Pong.
 
 ## Lets play around with this in class
 
