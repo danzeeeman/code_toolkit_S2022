@@ -3,6 +3,14 @@
 * Keyboard interaction * Motion
 * Keeping Time 
 
+# Cool Stuff Alert 
+
+[srcsnap](ttps://srcsnap.glitch.me) by someone you should know about artist [Lingdong Huang](https://lingdong.works) aka Lingdong.  His work is amazing! [fishdraw](https://fishdraw.glitch.me) [doodle-place](https://doodle-place.glitch.me) [trashscape](https://vimeo.com/204271262)
+
+So srcsnap works like this every time you take a screenshot of your project, srcsnap takes a snapshot of all your code too, and associate it with the screenshot. it organizes your screenshots in a nice list in the menubar: your code can "time travel" back to the very moment when you took each of the screenshots.
+
+please try it out with your work!
+
 ## Review of what we've done so far
 ```
 // the setup function gets called to kick everything off
@@ -312,15 +320,18 @@ function draw(){
 
 ```===``` equal to
 ```
+let x = width/2;
+let y = width/2;
 function setup(){
     createCanvas(600,600)
 }
 
 function draw(){
     background(255)
-    if(frameCount%4 === 1){
-        ellipse(width/2,width/2, 50,50)
+    if(frameCount%10 === 1){
+        x = (x + width/2/100) % width;
     }
+    ellipse(width/2,width/2, 50,50)
 }
 ```
 
@@ -445,7 +456,7 @@ if(mouseX < 400){
 ```
 The square would never get drawn. Why? What would make the first if statement False? If mouseX is greater than or equal to 400. But if this is the case, it could never be less than 200.
 If ```else if``` seems confusing to you, that's OK. It is confusing. Even expert programmers get tripped up about these kinds of logical statements all the time, and they are often the source of time-consuming and expensive bugs. Fortunately, you can write this example in a way that is more clear and readable, and that is also logically equivalent — based on the left-side pseudocode above, like this:
-
+```
 function setup(){
     size(600,600)
     noFill()
@@ -466,6 +477,7 @@ function draw(){
       triangle( 300,275, 325,325, 275,325)
     }
 }
+```
 This example is totally clear and explicit about each quesiton that you are asking, and is probably the easiest and most understandable way to implement this.
 As a final example, let's stitch together several Boolean variables to ask a slightly more complicated question.
 
@@ -475,15 +487,18 @@ Draw a small square
 If the mouse is inside this square
     then draw a circle
 Start with the basics:
-
-def setup():
-    size(600,600)
+```
+function setup(){
+    createCanvas(600,600)
     noFill()
     rectMode(CENTER)
+}
  
-def draw():
+function draw(){
     background(255)
     rect(300,300, 50,50)
+}
+```
 Now before we try to implement the conditional, let's diagram what's going on here:
 
 
@@ -506,38 +521,77 @@ def draw():
     rect(300,300, 50,50)
     if mouseX > 275 and mouseX < 325 and mouseY > 275 and mouseY < 325:
         ellipse(300,300, 50,50)
-Note that you must write mouseX twice. In other words, Python does not allow you to say something like this:
+
+```
+function setup(){
+    createCanvas(600,600)
+    noFill()
+    rectMode(CENTER)
+}
+ 
+function draw(){
+    background(255)
+    rect(300,300, 50,50)
+    if(mouseX > 275 && mouseX < 325 && mouseY > 275 && mouseY < 325){
+        ellipse(300,300, 50,50)
+    }
+}
+```
+Note that you must write mouseX twice. In other words, javascript does not allow you to say something like this:
 
   275 < mouseX < 325 # INVALID! Sorry :(
 You must write it out as:
-  mouseX > 275 and mouseX < 325
+  if(mouseX > 275 && mouseX < 325)
 In other words, our Boolean comparison operators are binary operators, meaning that they only take two arguments.
 If you'd like, if it is more clear to you, you could write it like this:
 
-  275 < mouseX && mouseX < 325
+  (275 < mouseX && mouseX < 325)
 which is equivalent (note the change from > to <). Personally I find this more confusing, but it may look nicer to your eye.
 Keyboard interaction
-So far we've seen how you can use the special P5js variable keyPressed to let the user press any key to trigger a conditional action. But this only tells us if any key is being pressed or not. What if we want to get more specific and create code that responds to specific keys?
+So far we've seen how you can use the special P5js variable ```keyPressed``` to let the user press any key to trigger a conditional action. But this only tells us if any ```key``` is being pressed or not. What if we want to get more specific and create code that responds to specific keys?
 
-Fortunately, P5js offers us another special variable just for this purpose: key. (P5js reference. That says "example is broken", but it actually seems to work OK for me. Maybe there is something I'm missing.)
+Fortunately, P5js offers us another special variable just for this purpose: ```key```
 
-With this variable, we are now working with a variable type that I have mentioned before called a string: a bit of text surrounded in single or double quotes. For example: 'a' or "b". You can read more about strings in the P5js reference, or in the Python reference.
+```
+// Click any key to display it!
+// (Not Guaranteed to be Case Sensitive)
+function setup() {
+  fill(245, 123, 158);
+  textSize(50);
+}
 
-Like everything in Python and P5js, strings are case-sensitive, so:
+function draw() {
+  background(200);
+  text(key, 33, 65); // Display last key pressed.
+}
+```
+### try this out!
 
-print('a' == 'a') # would print True, but
+With this variable, we are now working with a variable type that I have mentioned before called a string: a bit of text surrounded in single or double quotes. For example: 'a' or "b". You can read more about strings in the P5js reference, or in the javascript reference.
 
-print('A' == 'a') # would print false.
+Like everything in javascript and P5js, strings are case-sensitive, so:
+
+print('a' === 'a') # would print True, but
+
+print('A' === 'a') # would print false.
+
 Let's add to our example above:
 
-def setup():
-    size(600,600)
+```
+function setup(){
+    createCanvas(600,600)
+}
 
-def draw():
+function draw(){
     background(255)
-    if keyPressed:
-        if key == 'e':
+    if(keyPressed){
+        if(key === 'e'){
             ellipse(300,300, 50,50)
+        }
+    }
+}
+```
+
 Note that I have added a new if statement inside the previous if statement. Programmers call this a nested if statement, because one is inside the block of another. It might look complicated, but hopefully if you think carefully about the logic, it is really simple. Let's think about it with pseudocode:
   If any key is being pressed,
     if that key is a lowercase 'e'
@@ -550,72 +604,103 @@ In reading that pseudocode, you might have gotten the impression that I could al
     and that key is a lowercase 'e'
       then draw an ellipse.
 and that would make perfect sense. They are logically equivalent. In fact, I could implement that pseudocode in P5js syntax, and it would also work perfectly well:
-def setup():
-    size(600,600)
+```
+function setup(){
+    createCanvas(600,600)
+}
 
-def draw():
+function draw(){
     background(255)
-    if keyPressed and key == 'e':
+    if(keyPressed && key === 'e')
         ellipse(300,300, 50,50)
+}
+```
 Use whichever form makes more sense to you and is easier for you to translate back-and-forth from your natural langauge to P5js syntax. The important thing to understand is that nesting if statements is kind of like and in that both conditional parts must be True.
 Now let's expand on that example and see if you prefer one method or the other. What if we want to add a second key command to draw a square?
-
-def setup():
-    size(600,600)
+```
+function setup(){
+    createCanvas(600,600)
     rectMode(CENTER) # Adding this back for clarity
+}
 
-def draw():
+function draw(){
     background(255)
-    if keyPressed and key == 'e':
+    if(keyPressed && key === 'e'){
       ellipse(300,300, 50,50)
+    }
 
-    if keyPressed and key == 'r':
+    if(keyPressed && key === 'r'){
       rect(300,300, 50,50)
+    }
+}
+```
 Adding more key commands would simply repeat that pattern. And maybe now you can see here why writing it this way for many key commands might be a little bit annoying. You have to add that keyPressed and check every time. Programmers usually hate redundancy like this and prefer to write things only once if possible, as it makes code less prone to errors.
 Let's change it back to the previous style. Making a change like this is called refactoring. This is a fancy word that programmers like to use that just means re-writing code in a way that is equivalent and usually clearer or more efficient. So let's refactor this example:
 
-def setup():
-    size(600,600)
-    rectMode(CENTER)
+```
+function setup(){
+    createCanvas(600,600)
+    rectMode(CENTER) # Adding this back for clarity
+}
 
-def draw():
+function draw(){
     background(255)
-    if keyPressed:
-      if key == 'e':
-        ellipse(300,300, 50,50)
-
-      if key == 'r':
-        rect(300,300, 50,50)
+    if(keyPressed){
+        if(key === 'e'){
+            ellipse(300,300, 50,50)
+        }
+        if(key === 'r'){
+            rect(300,300, 50,50)
+        }
+    }
+}
+```
 With this style, you are only checking that they key is pressed once, and if that is True, you have a series of nested if statements that then check which character was pressed.
 Events
 In addition to these conditionals using keyPressed and key, there is even an important third way of handling keyboard interaction. Try running the following code and make very quick key presses:
 
-def setup():
-    size(600, 600)
-    frameRate(60)
+```
+function setup(){
+    createCanvas(600,600)
+    rectMode(CENTER) # Adding this back for clarity
+}
 
-def draw():
-    if keyPressed:
-      ellipse( random(0,width),random(0,height), 50,50 )
+function draw(){
+    background(255)
+    if(keyPressed){
+        ellipse( random(0,width),random(0,height), 50,50 )
+    }
+}
+```
+
 My goal was to draw a single circle at a random location each time a key is pressed. But one key press will likely draw many circles. That's because the code is responding to a single key press more than once. Because the frame rate is going fast relative to human reflexes, it appears that the user has pressed the key on multiple frame renderings, or in other words, during multiple executions of the draw() block.
 Another problematic example would be if you slow down the framerate:
 
-def setup():
-    size(600, 600)
-    frameRate(1)
+```
+function setup(){
+    createCanvas(600,600)
+    rectMode(CENTER) # Adding this back for clarity
+}
 
-def draw():
+function draw(){
     background(255)
-    if keyPressed:
-      ellipse(300, 300, 50, 50)
+    if(keyPressed){
+        ellipse(300,300, 50,50 )
+    }
+}
+```
 This is an exagerated example, but it shows that when you are only checking for key presses inside the draw() block, it is possible that you may not respond to all of them. By pressing keys more quickly than the frame rate refreshes, you are causing P5js to "miss" your action. When the frame is being rendered, you are not pressing the key, you are essentially pressing the key between frames.
 
 These may be behaviors that you want. But if not, there is another option.
 
-A new code block:
+A new function from p5js:
 
-def keyPressed():
+```
+function keyPressed(){
     # commands in here
+}
+```
+
 This special block is triggered exactly once, every single time a key is pressed. That means that you don't have to worry about it not being called, and you don't have to worry about it being called more than once.
 Also, inside this new block (which must always be global, outside all other blocks), you do not need to check if keyPressed is True. You know that your code is responding to one single key press.
 
@@ -623,29 +708,42 @@ This style of interactive programming is called event handling because your code
 
 Let's look at our previous example implemented in this way:
 
-def setup():
-    size(600,600)
-    rectMode(CENTER)
+```
+function setup(){
+  createCanvas(600,600)
+  rectMode(CENTER) # Adding this back for clarity
+}
 
-def draw():
-    background(255)
+function draw(){
+  background(255)
+}
 
-def keyPressed():
-    if key == 'e':
-        ellipse(300,300, 50,50)
+function keyPressed(){
+  if(key === 'e'){
+    ellipse(300,300, 50,50)
+  }
 
-    if key == 'r':
-        rect(300,300, 50,50)
-Sidenote: There is a similar pattern here for the mouse. The mousePressed() block is also valid syntax and would be used in a similar way:
-def setup():
-    size(600,600)
-    rectMode(CENTER)
+  if(key === 'r'){
+    rect(300,300, 50,50)
+  }
+}
+```
 
-def draw():
-    background(255)
+Sidenote: There is a similar pattern here for the mouse. The ```mousePressed()``` function is also valid syntax and would be used in a similar way:
+```
+function setup(){
+  createCanvas(600,600)
+  rectMode(CENTER) # Adding this back for clarity
+}
 
-def mousePressed():
-    ellipse( 300,300, 50,50 )
+function draw(){
+  background(255)
+}
+
+function mousePressed(){
+  ellipse(300,300, 50,50)
+}
+```
 Making things move
 Changing topics, let's look at how we can make things move on their own, instead of only moving in response to mouseX and mouseY, as well as mouse and key presses.
 
@@ -653,114 +751,114 @@ This is not a complicated topic and only brings together several things we've al
 
 Let's begin with the simple example that we've been starting with:
 
-def setup():
-    size(600,600)
-    stroke(50,50,150)
-    fill(200,200,255)
+```
+function setup(){
+  createCanvas(600,600)
+  rectMode(CENTER) # Adding this back for clarity
+}
 
-def draw():
-    background(255)
-    ellipse( 300,300, 50,50)
+function draw(){
+  background(255)
+  ellipse(300,300, 50,50)
+}
+```
 Now if we want that circle to move side to side, what do we need to add? We want it's position to change and to "vary" ... so we'll add a variable:
 
-circleX = 300
-def setup():
-    size(600,600)
-    stroke(50,50,150)
-    fill(200,200,255)
+```
+let circle_x = 300;
+function setup(){
+  createCanvas(600,600)
+  rectMode(CENTER) # Adding this back for clarity
+}
 
-def draw():
-    background(255)
-    ellipse( circleX,300, 50,50)
+function draw(){
+  background(255)
+  ellipse(circle_x, 300, 50,50)
+}
+```
 Just by itself, this change isn't going to make the circle move. How could we do that? What we've seen so far would be to use something like mouseX. So we could maybe try to modify draw() like this:
-def draw():
-    background(255)
-    global circleX
-    circleX = mouseX
-    ellipse( circleX,300, 50,50)
-But what if we want the position of the circle to change "on its own"?
-Using pieces that you've already seen, all we'd need to do is modify the value of the variable inside draw() so that it changes a little bit each frame. Like this:
-circleX = 300
-def setup():
-    size(600,600)
-    stroke(50,50,150)
-    fill(200,200,255)
 
-def draw():
-    background(255)
-    ellipse( circleX,300, 50,50)
-    global circleX
-    circleX = circleX + 1
-If that new line is confusing for you to understand, try writing it this way, which is equivalent, and maybe a little more clear:
+```
+let circle_x = 0;
+function setup(){
+  createCanvas(600,600)
+  rectMode(CENTER) # Adding this back for clarity
+}
 
-def draw():
-    background(255)
-    ellipse( circleX,300, 50,50)
-    temp = circleX + 1
-    circleX = temp
-That might clarify what may to you look like circular logic of assigning that variable to itself.
-But! The circle disappears! How can we make it come back? Let's make it so that if the circle moves off to the right, we have it re-appear at the left. To do this, let's think through some pseudocode:
+function draw(){
+  background(255)
+  circle_x = mouseX
+  ellipse(circle_x, 300, 50,50)
+}
+```
 
-  Draw a circle at location circleX
-  Increment the value of circleX by 1
-  If the circle goes off the window to the right
-    then redraw the circle on the left.
-Or, getting more specific:
-  Draw a circle at location circleX
-  Increment the value of circleX by 1
-  If the circleX > width
-    then circleX = 0
-Now it should be pretty easy to translate this into valid P5js syntax:
-circleX = 300
-def setup():
-    size(600,600)
-    stroke(50,50,150)
-    fill(200,200,255)
+Let look at what we where doing last week with moving a shape across the screen:
 
-def draw():
-    background(255)
-    ellipse( circleX,300, 50,50)
-    global circleX
-    circleX = circleX + 1
-    if circleX > width:
-      circleX = 0
-Nice! I'm sure with a little adjusting, you can modify that so that we let the circle completely disappear, and then re-appear smoothly. (Hint: you can set circleX to a negative value.)
+```
+let circle_x = 300;
+let circle_width = 50;
+function setup(){
+    createCanvas(600,600);
+    stroke(50,50,150);
+    fill(200,200,255);
+}
+
+function draw(){
+    background(255);
+    ellipse(circle_x,300, circle_width,circle_width);
+    circle_x = circle_x + 1;
+    if(circle_x + circle_width/2 > width){
+      circle_x = -circle_width/2;
+    }
+}
+```
+
+Remember from last class when someone asked if we could make the box bounce off the wall?
+
 Let's get a little more complicated. What if we don't want the circle to re-appear on the other side, but rather to "bounce" off the wall of the window? Now, instead of only moving to the right, sometimes we'll want the shape to move to the left. In other words, we want the direction of the circle to change. And when we want something to change, what do we need?
 
 A variable.
 
 So let's add a new variable for the direction of the circle:
+```
+let circle_x = 300;
+let circle_width = 50;
+let circle_direction = 1;
+function setup(){
+    createCanvas(600,600);
+    stroke(50,50,150);
+    fill(200,200,255);
+}
 
-circleX = 300
-circleDirection = 1
-def setup():
-    size(600,600)
-    stroke(50,50,150)
-    fill(200,200,255)
-
-def draw():
-    background(255)
-    ellipse( circleX,300, 50,50)
-    global circleX
-    circleX = circleX + circleDirection
-    if circleX > width:
-      circleX = 0
+function draw(){
+    background(255);
+    ellipse(circle_x,300, circle_width,circle_width);
+    circle_x = circle_x + circle_direction;
+    if(circle_x + circle_width/2 > width){
+      circle_x = -circle_width/2;
+    }
+}
+```
 So far nothing has changed. I've merely swapped in a variable for a hard-coded value. But now, instead of changing the position of the circle when it hits the wall, I want to change the direction. Like this:
-circleX = 300
-circleDirection = 1
-def setup():
-    size(600,600)
-    stroke(50,50,150)
-    fill(200,200,255)
+```
+let circle_x = 300;
+let circle_width = 50;
+let circle_direction = 1;
+function setup(){
+    createCanvas(600,600);
+    stroke(50,50,150);
+    fill(200,200,255);
+}
 
-def draw():
-    background(255)
-    ellipse( circleX,300, 50,50)
-    global circleX
-    global circleDirection
-    circleX = circleX + circleDirection
-    if circleX > width:
-      circleDirection = -1
+function draw(){
+    background(255);
+    ellipse(circle_x,300, circle_width,circle_width);
+    circle_x = circle_x + circle_direction;
+    if(circle_x > width){
+      circle_direction = -1;
+    }
+}
+```
 Great. But now it disappears off the left side. How do we fix this? Do we need a new variable? To answer that, ask yourself: is anything new is changing? No, nothing new is changing, so we don't need a new variable. But we want to change when and how that variable changes. In order to do that, there is another question that we want to ask and respond to. Let's work through the pseudocode:
 
   Draw a circle at location circleX
@@ -775,62 +873,116 @@ And how do we want to modify this?
   If the circleX < 0
     then change the increment to 1
 Looks like we need another conditional. Let's add that:
-circleX = 300
-circleDirection = 1
-def setup():
-    size(600,600)
-    stroke(50,50,150)
-    fill(200,200,255)
+```
+let circle_x = 300;
+let circle_width = 50;
+let circle_direction = 1;
+function setup(){
+  createCanvas(600,600);
+  stroke(50,50,150);
+  fill(200,200,255);
+}
 
-def draw():
-    background(255)
-    ellipse( circleX,300, 50,50)
-    global circleX
-    global circleDirection
-    circleX = circleX + circleDirection
-    if circleX > width:
-        circleDirection = -1
-    if circleX < 0:
-      circleDirection = 1
+function draw(){
+  background(255);
+  ellipse(circle_x,300, circle_width,circle_width);
+  circle_x = circle_x + circle_direction;
+  if(circle_x > width){
+    circle_direction = -1;
+  }
+  if(circle_x < 0){
+    circle_direction = 1;
+  }
+}
+```
+
 Great!
 Let's add one more thing. Let's allow the user to also change the circle direction by pressing some keys. Let's use 'j' for left and 'l' for right. All we need to add is the keyPressed() block and two conditionals:
 
-circleX = 300
-circleDirection = 1
-def setup():
-    size(600,600)
-    stroke(50,50,150)
-    fill(200,200,255)
+```
+let circle_x = 300;
+let circle_width = 50;
+let circle_direction = 1;
+function setup(){
+  createCanvas(600,600);
+  stroke(50,50,150);
+  fill(200,200,255);
+}
 
-def draw():
-    background(255)
-    ellipse( circleX,300, 50,50)
-    global circleX
-    global circleDirection
-    circleX = circleX + circleDirection
-    if circleX > width:
-        circleDirection = -1
-    if circleX < 0:
-      circleDirection = 1
+function draw(){
+  background(255);
+  ellipse(circle_x,300, circle_width,circle_width);
+  circle_x = circle_x + circle_direction;
+  if(circle_x > width){
+    circle_direction = -1;
+  }
+  if(circle_x < 0){
+    circle_direction = 1;
+  }
+}
 
-def keyPressed():
-    if key == 'j':
-        circleDirection = -1
+function keyPressed(){
+    if(key === 'a'){
+        circle_direction = -1;
+    }
+    if(key === 'd'){
+        circle_direction = 1;
+    }
+}
+```
 
-    if key == 'l':
-        circleDirection = 1
 And now, believe it or not, you have all the basic pieces to implement a game like Pong. To be clear, Pong combines many of these elements in a way that may still appear complex, but you should be able to look at this code and have some understanding of what is going on. Take a look:
 
-basic_pong.pyde
-
-Maybe try messing around with that a little bit this week as you work on the homework.
+## Lets play around with this in class
 
 
-Last Updated: Wed Sep 22 2021 19:02:25 GMT-0400 (EDT)
+# Stuff you need for your homework
 
+```day()```
+```
+let d = day();
+text('Current day: \n' + d, 5, 50);
+```
 
+```hour()```
+```
+let h = hour();
+text('Current hour:\n' + h, 5, 50);
+```
+```minute()```
+```
+let m = minute();
+text('Current minute: \n' + m, 5, 50);
+```
 
+```millis()```
+Returns the number of milliseconds (thousandths of a second) since starting the sketch (when setup() is called). This information is often used for timing events and animation sequences.
+```
+let millisecond = millis();
+text('Milliseconds \nrunning: \n' + millisecond, 5, 40);
+```
+
+```month()```
+```
+let m = month();
+text('Current month: \n' + m, 5, 50);
+```
+
+```second()```
+```
+let s = second();
+text('Current second: \n' + s, 5, 50);
+```
+
+```year()```
+```
+let y = year();
+text('Current year: \n' + y, 5, 50);
+```
+
+[Maeda’s 12 o’clocks](http://cmuems.com/2016/60212/lectures/lecture-09-09b-clocks/maedas-clocks/)
+[Evan Roth's Christopher George Latore Wallace.com](http://christopher-george-latore-wallace.com)
 
 ### Home Work
-* Coding Assignment #3 : A Clock
+* Coding Assignment #3 : A Clock with an Alarm 
 * Reading Selections from Matthew Fuller, [Software Studies: A Lexicon: Introduction, "Algorithm", "Code", "Programmability", and "Source Code".](https://monoskop.org/images/a/a1/Fuller_Matthew_ed_Software_Studies_A_Lexicon.pdf)
