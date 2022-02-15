@@ -549,7 +549,7 @@ With this variable, we are now working with a variable type that I have mentione
 
 Like everything in javascript and P5js, strings are case-sensitive, so:
 
-print('a' === 'a') # would print True, but
+print('a' === 'a') # would print true, but
 
 print('A' === 'a') # would print false.
 
