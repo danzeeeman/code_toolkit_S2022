@@ -254,7 +254,7 @@ function setup(){
 
 function draw(){
     background(255);
-    if(mouseIsPressed && keyPressed){
+    if(mouseIsPressed && keyIsPressed){
         ellipse(300,300, 50,50);
     }
 }
@@ -269,7 +269,7 @@ function setup(){
 
 function draw(){
     background(255);
-    if(mouseIsPressed || keyPressed){
+    if(mouseIsPressed || keyIsPressed){
         ellipse(300,300, 50,50);
     }
 }
@@ -567,7 +567,7 @@ function setup(){
 
 function draw(){
     background(255);
-    if(keyPressed){
+    if(keyIsPressed){
         if(key === 'e'){
             ellipse(300,300, 50,50);
         }
@@ -629,7 +629,7 @@ function setup(){
 
 function draw(){
     background(255);
-    if(keyPressed){
+    if(keyIsPressed){
         if(key === 'e'){
             ellipse(300,300, 50,50);
         }
@@ -651,7 +651,7 @@ function setup(){
 
 function draw(){
     background(255);
-    if(keyPressed){
+    if(keyIsPressed){
         ellipse( random(0,width),random(0,height), 50,50 );
     }
 }
@@ -668,7 +668,7 @@ function setup(){
 
 function draw(){
     background(255);
-    if(keyPressed){
+    if(keyIsPressed){
         ellipse(300,300, 50,50 );
     }
 }
