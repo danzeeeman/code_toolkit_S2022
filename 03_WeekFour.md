@@ -349,9 +349,10 @@ function setup(){
 
 function draw(){
     background(255);
-    if(mouseX >= width/2){{
-        ellipse(width/2,width/2, 50,50);
+    if(mouseX >= width/2){
+      ellipse(width/2,width/2, 50,50);
     }
+    rect(0, 0, 100, 100);
 }
 ```
 
@@ -373,6 +374,7 @@ function draw(){
     background(255);
     if(mouseX >= width/2){
         ellipse(width/2,width/2, 50,50);
+
     }else{
         ellipse(0,0, 50,50);
     }
