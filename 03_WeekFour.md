@@ -194,7 +194,7 @@ Let's keep all of this in the back of our minds as we explore the logic of discr
 In addition to ```mouseX``` and ```mouseY```, P5js gives us some other built-in variables that we can use to create user interaction:
 - ```mousePressed``` tells us if the mouse is currently being pressed, and
 - ```keyPressed``` tells us if the any key is currently being pressed
-- 
+
 But what is if? So far, variables have only had numeric values. How can a variable tell us "if" something?
 These variables are of a new kind of value. We say that they are a new type, and it is called ```Boolean```.
 Just like with the numerical values and variables that we have been using, ```Boolean``` variables can be used whenever we want to keep track of something with only two possible values: yes or no, on or off, visible or hidden. Their value is always only either True or False. So you would use them like this:
