@@ -602,20 +602,29 @@ function draw(){
 Use whichever form makes more sense to you and is easier for you to translate back-and-forth from your natural langauge to P5js syntax. The important thing to understand is that nesting if statements is kind of like and in that both conditional parts must be True.
 Now let's expand on that example and see if you prefer one method or the other. What if we want to add a second key command to draw a square?
 ```
+let drawEllipse = false;
+let drawRect = false;
 function setup(){
-    createCanvas(600,600);
-    rectMode(CENTER); # Adding this back for clarity
+  createCanvas(600,600);
+  rectMode(CENTER); 
 }
 
 function draw(){
-    background(255);
-    if(keyPressed && key === 'e'){
-      ellipse(300,300, 50,50);
-    }
+  background(255);
+  if(drawRect)
+    rect(width/2, height/2, 50, 50);
+  if(drawEllispe)
+    ellipse(width/2, height/2, 50, 50);
+}
 
-    if(keyPressed && key === 'r'){
-      rect(300,300, 50,50);
-    }
+function keyPressed(){
+  if(key === 'e'){
+    drawEllipse = !drawEllipse;
+  }
+
+  if(key === 'r'){
+    drawRect = !drawRect;
+  }
 }
 ```
 Adding more key commands would simply repeat that pattern. And maybe now you can see here why writing it this way for many key commands might be a little bit annoying. You have to add that keyPressed and check every time. Programmers usually hate redundancy like this and prefer to write things only once if possible, as it makes code less prone to errors.
