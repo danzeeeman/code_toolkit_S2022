@@ -127,11 +127,66 @@ function draw() {
 
 
 
-rotate(degree)
+```rotate(degree)```
 
-scale(x, y)
+```
+function setup() {
+  createCanvas(512, 512);
+  frameRate(25);
+}
 
-translate(x, y)
+
+function draw() {
+  //background(255);
+  push();
+  translate(width/2, height/2);
+  rotate(radians(frameCount));
+  let scale_x = sin(map(frameCount%1000, 0, 1000, 0, 2*PI))*3;
+  let scale_y = cos(map(frameCount%1000, 0, 1000, 0, 2*PI))*3;
+  scale(scale_x, scale_y);
+  rect(-25, -25, 50, 50);
+  pop();
+}
+```
+
+
+```scale(x, y)```
+
+```
+function setup() {
+  createCanvas(512, 512);
+  frameRate(25);
+}
+
+
+function draw() {
+  background(255);
+  push();
+  translate(width/2, height/2);
+  let scale_x = sin(map(frameCount%1000, 0, 1000, 0, 2*PI))*3;
+  let scale_y = cos(map(frameCount%1000, 0, 1000, 0, 2*PI))*3;
+  scale(scale_x, scale_y);
+  rect(-25, -25, 50, 50);
+  pop();
+}
+```
+
+```translate(x, y)```
+
+```
+function setup() {
+  createCanvas(512, 512);
+}
+
+
+function draw() {
+  background(255);
+  push();
+  translate(width/2, height/2);
+  rect(-25, -25, 50, 50);
+  pop();
+}
+```
 ## BREAK
 
 ## Debugging
