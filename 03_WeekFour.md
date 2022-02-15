@@ -170,23 +170,20 @@ rect(mapped_value, height/2, 50, 50);
 ```
 
 
-# Review
+# Conditionals
 
-
-Making things move and conditionals
-This week we will build on last week in two ways.
 
 First, we will learn how to use conditionals so that instead of the continuous change of mouse movement, you can create movement that is discrete and discontinuous.
 
 Second, we will build on our use of variables and P5js's interactive mode to create things that move on their own, not only as directly controlled by the mouse.
 
 
-Background
+## Background
 Last week we saw how to make interactive compositions, but they were always moving in continuous, connected ways. Colors that changed as smooth gradients, shapes that moved along with the mouse, or that left smooth trails.
 
 Today we will see how to work with one of the fundamental principles of digital media with is how to work with discontinuity, or on/off relationships. This kind of behavior is often described as discrete. (Not to be confused with "discreet"!)
 
-In 1997, the net artist John Simon created a project called [Every Icon](http://www.numeral.com/appletsoftware/eicon.html). This conceptul work enacts a play of combinatorics by starting with the first (top, left) pixel of a 32 by 32 grid, and advances in sequence, creating every possible combination of pixels, or in other works, every possible icon.
+In 1997, the net artist John Simon created a project called [Every Icon](http://www.numeral.com/appletsoftware/eicon.html). This conceptual work enacts a play of combinatorics by starting with the first (top, left) pixel of a 32 by 32 grid, and advances in sequence, creating every possible combination of pixels, or in other works, every possible icon.
 
 This work emphasizes the way that all digital images are created not as smooth strokes, continuous marks, or smooth lines, but rather always as grids of pixels, always turned either on or off.
 To similar ends but in a more poetic and ironic way, the artist Hito Steyerl, in her documentary How Not to be Seen: A Fucking Didactic Educational .MOV File, explores (and blurs) the boundary between the analog and digital, between the physical world and the world of digital representations, or in other words, between the smooth and the discrete.
