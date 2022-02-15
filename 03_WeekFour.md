@@ -166,7 +166,7 @@ let mapped_value = map(value, -1, 1, 0, width);
 rect(mapped_value, height/2, 50, 50);
 ```
 
-# Week 4 – Making things move
+# Week 4 – Conditional more Interaction!
 * Conditionals
 * Keyboard interaction * Motion
 * Keeping Time 
