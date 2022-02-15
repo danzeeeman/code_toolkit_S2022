@@ -1,8 +1,3 @@
-# Week 4 – Making things move
-* Conditionals if and else
-* Keyboard interaction * Motion
-* Keeping Time 
-
 # Cool Stuff Alert 
 
 [srcsnap](https://srcsnap.glitch.me) by someone you should know about artist [Lingdong Huang](https://lingdong.works) aka Lingdong.  His work is amazing! [fishdraw](https://fishdraw.glitch.me) [doodle-place](https://doodle-place.glitch.me) [trashscape](https://vimeo.com/204271262)
@@ -169,9 +164,10 @@ let mapped_value = map(value, -1, 1, 0, width);
 rect(mapped_value, height/2, 50, 50);
 ```
 
-
-# Conditionals
-
+# Week 4 – Making things move
+* Conditionals
+* Keyboard interaction * Motion
+* Keeping Time 
 
 First, we will learn how to use conditionals so that instead of the continuous change of mouse movement, you can create movement that is discrete and discontinuous.
 
@@ -929,11 +925,14 @@ And now, believe it or not, you have all the basic pieces to implement a game li
 ## Lets play around with this in class
 
 - Make the circle bounce off all of the walls
-- Make it work with WASD
+- Make WASD work
   - W goes Up
   - A goes Left
   - S goes Down
   - D goes Right
+
+
+# BREAK
 
 # Stuff you need for your homework
 
