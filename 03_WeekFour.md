@@ -417,6 +417,7 @@ In this case, to get more specific, we could say this in two different ways that
     then draw a square
   Otherwise
     draw a triangle
+
 Here on the left, we are being explicit about each logical case. While on the right side, we are using this "otherwise" idea to say: "if mouseX is less than 200, then draw a circle, otherwise (if it is not less than 200) if it is less than 400, then draw a square."
 This idea of "otherwise if" has its own syntax, and that is else if. We would write the above right-side example in the following way:
 ```
@@ -452,7 +453,7 @@ The square would never get drawn. Why? What would make the first if statement Fa
 If ```else if``` seems confusing to you, that's OK. It is confusing. Even expert programmers get tripped up about these kinds of logical statements all the time, and they are often the source of time-consuming and expensive bugs. Fortunately, you can write this example in a way that is more clear and readable, and that is also logically equivalent — based on the left-side pseudocode above, like this:
 ```
 function setup(){
-    size(600,600);
+    createCanvas(600,600);
     noFill();
     rectMode(CENTER);
 }
