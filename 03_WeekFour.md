@@ -4,7 +4,7 @@
 
 So srcsnap works like this every time you take a screenshot of your project, srcsnap takes a snapshot of all your code too, and associate it with the screenshot. it organizes your screenshots in a nice list in the menubar: your code can "time travel" back to the very moment when you took each of the screenshots.
 
-please try it out with your work!
+please try it out with your work and report bugs!
 
 ## Review of what we've done so far
 ```
@@ -687,21 +687,21 @@ Let's look at our previous example implemented in this way:
 
 ```
 function setup(){
-  createCanvas(600,600)
-  rectMode(CENTER) # Adding this back for clarity
+  createCanvas(600,600);
+  rectMode(CENTER); # Adding this back for clarity
 }
 
 function draw(){
-  background(255)
+  background(255);
 }
 
 function keyPressed(){
   if(key === 'e'){
-    ellipse(300,300, 50,50)
+    ellipse(300,300, 50,50);
   }
 
   if(key === 'r'){
-    rect(300,300, 50,50)
+    rect(300,300, 50,50);
   }
 }
 ```
@@ -709,16 +709,16 @@ function keyPressed(){
 Sidenote: There is a similar pattern here for the mouse. The ```mousePressed()``` function is also valid syntax and would be used in a similar way:
 ```
 function setup(){
-  createCanvas(600,600)
-  rectMode(CENTER) # Adding this back for clarity
+  createCanvas(600,600);
+  rectMode(CENTER); # Adding this back for clarity
 }
 
 function draw(){
-  background(255)
+  background(255);
 }
 
 function mousePressed(){
-  ellipse(300,300, 50,50)
+  ellipse(300,300, 50,50);
 }
 ```
 Making things move
@@ -730,13 +730,13 @@ Let's begin with the simple example that we've been starting with:
 
 ```
 function setup(){
-  createCanvas(600,600)
+  createCanvas(600,600);
   rectMode(CENTER) # Adding this back for clarity
 }
 
 function draw(){
-  background(255)
-  ellipse(300,300, 50,50)
+  background(255);
+  ellipse(300,300, 50,50);
 }
 ```
 Now if we want that circle to move side to side, what do we need to add? We want it's position to change and to "vary" ... so we'll add a variable:
@@ -744,13 +744,13 @@ Now if we want that circle to move side to side, what do we need to add? We want
 ```
 let circle_x = 300;
 function setup(){
-  createCanvas(600,600)
-  rectMode(CENTER) # Adding this back for clarity
+  createCanvas(600,600);
+  rectMode(CENTER); # Adding this back for clarity
 }
 
 function draw(){
-  background(255)
-  ellipse(circle_x, 300, 50,50)
+  background(255);
+  ellipse(circle_x, 300, 50,50);
 }
 ```
 Just by itself, this change isn't going to make the circle move. How could we do that? What we've seen so far would be to use something like mouseX. So we could maybe try to modify draw() like this:
@@ -758,14 +758,14 @@ Just by itself, this change isn't going to make the circle move. How could we do
 ```
 let circle_x = 0;
 function setup(){
-  createCanvas(600,600)
-  rectMode(CENTER) # Adding this back for clarity
+  createCanvas(600,600);
+  rectMode(CENTER); # Adding this back for clarity
 }
 
 function draw(){
-  background(255)
-  circle_x = mouseX
-  ellipse(circle_x, 300, 50,50)
+  background(255);
+  circle_x = mouseX;
+  ellipse(circle_x, 300, 50,50);
 }
 ```
 
