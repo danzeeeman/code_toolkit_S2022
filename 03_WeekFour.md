@@ -219,25 +219,25 @@ If the answer to some question is Yes:
 As an example, let's start with this code that draws a circle in the middle of the window:
 ```
 function setup(){
-    createCanvas(600,600)
+    createCanvas(600,600);
 }
 
 function draw(){
-    background(255)
-    ellipse(300,300, 50,50)
+    background(255);
+    ellipse(300,300, 50,50);
 }
 ```
 Now, let's draw this circle only if the user is pressing the mouse by adding this new syntax for conditionals:
 
 ```
 function setup(){
-    createCanvas(600,600)
+    createCanvas(600,600);
 }
 
 function draw(){
-    background(255)
+    background(255);
     if(mousePressed){
-        ellipse(300,300, 50,50)
+        ellipse(300,300, 50,50);
     }
 }
 ```
@@ -248,13 +248,12 @@ now lets look at some boolean operators:
 
 ```
 function setup(){
-    createCanvas(600,600)
-}
+    createCanvas(600,600);
 
 function draw(){
-    background(255)
+    background(255);
     if(mousePressed && keyPressed){
-        ellipse(300,300, 50,50)
+        ellipse(300,300, 50,50);
     }
 }
 ```
@@ -263,13 +262,13 @@ function draw(){
 
 ```
 function setup(){
-    createCanvas(600,600)
+    createCanvas(600,600);
 }
 
 function draw(){
-    background(255)
+    background(255);
     if(mousePressed || keyPressed){
-        ellipse(300,300, 50,50)
+        ellipse(300,300, 50,50);
     }
 }
 ```
@@ -281,13 +280,13 @@ You can also compare numbers to create boolean operators:
 
 ```
 function setup(){
-    createCanvas(600,600)
+    createCanvas(600,600);
 }
 
 function draw(){
-    background(255)
+    background(255);
     if(mouseX < width/2){
-        ellipse(width/2,width/2, 50,50)
+        ellipse(width/2,width/2, 50,50);
     }
 }
 ```
@@ -296,13 +295,13 @@ function draw(){
 ```>``` greater than
   ```
 function setup(){
-    createCanvas(600,600)
+    createCanvas(600,600);
 }
 
 function draw(){
-    background(255)
+    background(255);
     if(mouseX > width/2){
-        ellipse(width/2,width/2, 50,50)
+        ellipse(width/2,width/2, 50,50);
     }
 }
 ```
@@ -312,7 +311,7 @@ function draw(){
 let x = width/2;
 let y = width/2;
 function setup(){
-    createCanvas(600,600)
+    createCanvas(600,600);
 }
 
 function draw(){
@@ -320,20 +319,20 @@ function draw(){
     if(frameCount%10 === 1){
         x = (x + width/2/100) % width;
     }
-    ellipse(width/2,width/2, 50,50)
+    ellipse(width/2,width/2, 50,50);
 }
 ```
 
 ```<=``` less than or equal
 ```
 function setup(){
-    createCanvas(600,600)
+    createCanvas(600,600);
 }
 
 function draw(){
-    background(255)
+    background(255);
     if(mouseX <= width/2){
-        ellipse(width/2,width/2, 50,50)
+        ellipse(width/2,width/2, 50,50);
     }
 }
 ```
@@ -341,13 +340,13 @@ function draw(){
 
 ```
 function setup(){
-    createCanvas(600,600)
+    createCanvas(600,600);
 }
 
 function draw(){
-    background(255)
+    background(255);
     if(mouseX >= width/2){{
-        ellipse(width/2,width/2, 50,50)
+        ellipse(width/2,width/2, 50,50);
     }
 }
 ```
@@ -363,30 +362,30 @@ function draw(){
 
 ```
 function setup(){
-    createCanvas(600,600)
+    createCanvas(600,600);
 }
 
 function draw(){
-    background(255)
-    if(mouseX >= width/2){{
-        ellipse(width/2,width/2, 50,50)
+    background(255);
+    if(mouseX >= width/2){
+        ellipse(width/2,width/2, 50,50);
     }else{
-        ellipse(0,0, 50,50)
+        ellipse(0,0, 50,50);
     }
 }
 ```
 
 ```
 function setup(){
-    createCanvas(600,600)
+    createCanvas(600,600);
 }
 
 function draw(){
     background(255)
     if(frameCount%200 < 100){{
-        ellipse(width/2,width/2, 50,50)
+        ellipse(width/2,width/2, 50,50);
     }else{
-        ellipse(width/4,width/2, 50,50)
+        ellipse(width/4,width/2, 50,50);
     }
 }
 ```
@@ -416,19 +415,19 @@ Here on the left, we are being explicit about each logical case. While on the ri
 This idea of "otherwise if" has its own syntax, and that is else if. We would write the above right-side example in the following way:
 ```
 function setup(){
-    createCanvas(600,600)
-    noFill()
-    rectMode(CENTER)
+    createCanvas(600,600);
+    noFill();
+    rectMode(CENTER);
 }
  
 function draw(){
-    background(255)
+    background(255);
     if(mouseX < 200){
-      ellipse(300,300, 50,50)
+      ellipse(300,300, 50,50);
     }else if(mouseX < 400){
-        rect(300,300, 50,50)
+        rect(300,300, 50,50);
     }else{
-      triangle(300,275, 325,325, 275,325)
+      triangle(300,275, 325,325, 275,325);
     }
 }
 ```
@@ -436,34 +435,34 @@ This new syntax ```else if``` uses the fact that the first part of the condition
 Note that the order is important here. For example, think about what would happen if we switched the order of the first two conditionals. If you wrote the following:
 ```
 if(mouseX < 400){
-    ellipse(300,300, 50,50)
+    ellipse(300,300, 50,50);
 }else if(mouseX < 200){
-    rect(300,300, 50,50)
+    rect(300,300, 50,50);
 }else{
-    triangle( 300,275, 325,325, 275,325)
+    triangle( 300,275, 325,325, 275,325);
 }
 ```
 The square would never get drawn. Why? What would make the first if statement False? If mouseX is greater than or equal to 400. But if this is the case, it could never be less than 200.
 If ```else if``` seems confusing to you, that's OK. It is confusing. Even expert programmers get tripped up about these kinds of logical statements all the time, and they are often the source of time-consuming and expensive bugs. Fortunately, you can write this example in a way that is more clear and readable, and that is also logically equivalent — based on the left-side pseudocode above, like this:
 ```
 function setup(){
-    size(600,600)
-    noFill()
-    rectMode(CENTER)
+    size(600,600);
+    noFill();
+    rectMode(CENTER);
 }
  
 function draw(){
-    background(255)
+    background(255);
     if(mouseX < 200){
-      ellipse(300,300, 50,50)
+      ellipse(300,300, 50,50);
     }
 
     if (mouseX >= 200 && mouseX < 400){
-      rect(300,300, 50,50)
+      rect(300,300, 50,50);
     }
 
     if (mouseX >= 400){
-      triangle( 300,275, 325,325, 275,325)
+      triangle( 300,275, 325,325, 275,325);
     }
 }
 ```
@@ -478,14 +477,14 @@ If the mouse is inside this square
 Start with the basics:
 ```
 function setup(){
-    createCanvas(600,600)
-    noFill()
-    rectMode(CENTER)
+    createCanvas(600,600);
+    noFill();
+    rectMode(CENTER);
 }
  
 function draw(){
-    background(255)
-    rect(300,300, 50,50)
+    background(255);
+    rect(300,300, 50,50);
 }
 ```
 Now before we try to implement the conditional, let's diagram what's going on here:
@@ -499,30 +498,18 @@ With these coordinates in mind, let's refine our pseudocode:
     then draw a circle
 If that's not totally clear, pause for a second and think through the logic of those comparisons to see how that pseudocode describes a check that the mouse is inside the above box.
 Moving forward from there, we can now implement a conditional for this description:
-
-def setup():
-    size(600,600)
-    noFill()
-    rectMode(CENTER)
- 
-def draw():
-    background(255)
-    rect(300,300, 50,50)
-    if mouseX > 275 and mouseX < 325 and mouseY > 275 and mouseY < 325:
-        ellipse(300,300, 50,50)
-
 ```
 function setup(){
-    createCanvas(600,600)
-    noFill()
-    rectMode(CENTER)
+    createCanvas(600,600);
+    noFill();
+    rectMode(CENTER);
 }
  
 function draw(){
-    background(255)
-    rect(300,300, 50,50)
+    background(255);
+    rect(300,300, 50,50);
     if(mouseX > 275 && mouseX < 325 && mouseY > 275 && mouseY < 325){
-        ellipse(300,300, 50,50)
+        ellipse(300,300, 50,50);
     }
 }
 ```
@@ -568,14 +555,14 @@ Let's add to our example above:
 
 ```
 function setup(){
-    createCanvas(600,600)
+    createCanvas(600,600);
 }
 
 function draw(){
-    background(255)
+    background(255);
     if(keyPressed){
         if(key === 'e'){
-            ellipse(300,300, 50,50)
+            ellipse(300,300, 50,50);
         }
     }
 }
@@ -595,31 +582,32 @@ In reading that pseudocode, you might have gotten the impression that I could al
 and that would make perfect sense. They are logically equivalent. In fact, I could implement that pseudocode in P5js syntax, and it would also work perfectly well:
 ```
 function setup(){
-    createCanvas(600,600)
+    createCanvas(600,600);
 }
 
 function draw(){
-    background(255)
-    if(keyPressed && key === 'e')
-        ellipse(300,300, 50,50)
+    background(255);
+    if(keyPressed && key === 'e'){
+        ellipse(300,300, 50,50);
+    }
 }
 ```
 Use whichever form makes more sense to you and is easier for you to translate back-and-forth from your natural langauge to P5js syntax. The important thing to understand is that nesting if statements is kind of like and in that both conditional parts must be True.
 Now let's expand on that example and see if you prefer one method or the other. What if we want to add a second key command to draw a square?
 ```
 function setup(){
-    createCanvas(600,600)
-    rectMode(CENTER) # Adding this back for clarity
+    createCanvas(600,600);
+    rectMode(CENTER); # Adding this back for clarity
 }
 
 function draw(){
-    background(255)
+    background(255);
     if(keyPressed && key === 'e'){
-      ellipse(300,300, 50,50)
+      ellipse(300,300, 50,50);
     }
 
     if(keyPressed && key === 'r'){
-      rect(300,300, 50,50)
+      rect(300,300, 50,50);
     }
 }
 ```
@@ -628,18 +616,18 @@ Let's change it back to the previous style. Making a change like this is called 
 
 ```
 function setup(){
-    createCanvas(600,600)
-    rectMode(CENTER) # Adding this back for clarity
+    createCanvas(600,600);
+    rectMode(CENTER); # Adding this back for clarity
 }
 
 function draw(){
-    background(255)
+    background(255);
     if(keyPressed){
         if(key === 'e'){
-            ellipse(300,300, 50,50)
+            ellipse(300,300, 50,50);
         }
         if(key === 'r'){
-            rect(300,300, 50,50)
+            rect(300,300, 50,50);
         }
     }
 }
@@ -650,14 +638,14 @@ In addition to these conditionals using keyPressed and key, there is even an imp
 
 ```
 function setup(){
-    createCanvas(600,600)
-    rectMode(CENTER) # Adding this back for clarity
+    createCanvas(600,600);
+    rectMode(CENTER); # Adding this back for clarity
 }
 
 function draw(){
-    background(255)
+    background(255);
     if(keyPressed){
-        ellipse( random(0,width),random(0,height), 50,50 )
+        ellipse( random(0,width),random(0,height), 50,50 );
     }
 }
 ```
@@ -667,14 +655,14 @@ Another problematic example would be if you slow down the framerate:
 
 ```
 function setup(){
-    createCanvas(600,600)
-    rectMode(CENTER) # Adding this back for clarity
+    createCanvas(600,600);
+    rectMode(CENTER); # Adding this back for clarity
 }
 
 function draw(){
-    background(255)
+    background(255);
     if(keyPressed){
-        ellipse(300,300, 50,50 )
+        ellipse(300,300, 50,50 );
     }
 }
 ```
