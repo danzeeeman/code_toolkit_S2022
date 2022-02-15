@@ -184,7 +184,7 @@ Today we will see how to work with one of the fundamental principles of digital 
 In 1997, the net artist John Simon created a project called [Every Icon](http://www.numeral.com/appletsoftware/eicon.html). This conceptual work enacts a play of combinatorics by starting with the first (top, left) pixel of a 32 by 32 grid, and advances in sequence, creating every possible combination of pixels, or in other works, every possible icon.
 
 This work emphasizes the way that all digital images are created not as smooth strokes, continuous marks, or smooth lines, but rather always as grids of pixels, always turned either on or off.
-To similar ends but in a more poetic and ironic way, the artist Hito Steyerl, in her documentary How Not to be Seen: A Fucking Didactic Educational .MOV File, explores (and blurs) the boundary between the analog and digital, between the physical world and the world of digital representations, or in other words, between the smooth and the discrete.
+To similar ends but in a more poetic and ironic way, the artist Hito Steyerl, in her documentary [How Not to be Seen: A Fucking Didactic Educational .MOV File](https://www.artforum.com/video/hito-steyerl-how-not-to-be-seen-a-fucking-didactic-educational-mov-file-2013-51651), explores (and blurs) the boundary between the analog and digital, between the physical world and the world of digital representations, or in other words, between the smooth and the discrete.
 
 Let's keep all of this in the back of our minds as we explore the logic of discrete on/off structures today and dive in to binary logic.
 
