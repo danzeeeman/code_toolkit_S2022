@@ -188,10 +188,10 @@ To similar ends but in a more poetic and ironic way, the artist Hito Steyerl, in
 
 Let's keep all of this in the back of our minds as we explore the logic of discrete on/off structures today and dive in to binary logic.
 
-## ```mousePressed``` and ```keyPressed```
+## ```mouseIsPressed``` and ```keyIsPressed```
 In addition to ```mouseX``` and ```mouseY```, P5js gives us some other built-in variables that we can use to create user interaction:
-- ```mousePressed``` tells us if the mouse is currently being pressed, and
-- ```keyPressed``` tells us if the any key is currently being pressed
+- ```mouseIsPressed``` tells us if the mouse is currently being pressed, and
+- ```keyIsPressed``` tells us if the any key is currently being pressed
 
 But what is if? So far, variables have only had numeric values. How can a variable tell us "if" something?
 These variables are of a new kind of value. We say that they are a new type, and it is called ```Boolean```.
@@ -206,7 +206,7 @@ let is_drawing = true;
 Notice that I'm writing ```true``` and ```false``` as valid javascript. That is because they are actual values that you can use in your code just like numbers, which in technical jargon we call ```literals```. So far we have seen numerical literals like 0, 1, 2, 10, 300, etc, and string literals like "hello". Now we have the Boolean literals ```true``` and ```false```. You can see this if you use print() to display the value of mousePressed:
 ```
 function draw(){
-    print(mousePressed);
+    print(mouseIsPressed);
 }
 ```
 But how do we actually use these variables?
@@ -238,7 +238,7 @@ function setup(){
 
 function draw(){
     background(255);
-    if(mousePressed){
+    if(mouseIsPressed){
         ellipse(300,300, 50,50);
     }
 }
@@ -254,7 +254,7 @@ function setup(){
 
 function draw(){
     background(255);
-    if(mousePressed && keyPressed){
+    if(mouseIsPressed && keyPressed){
         ellipse(300,300, 50,50);
     }
 }
@@ -269,7 +269,7 @@ function setup(){
 
 function draw(){
     background(255);
-    if(mousePressed || keyPressed){
+    if(mouseIsPressed || keyPressed){
         ellipse(300,300, 50,50);
     }
 }
