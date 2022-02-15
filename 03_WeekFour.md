@@ -531,7 +531,7 @@ If you'd like, if it is more clear to you, you could write it like this:
   (275 < mouseX && mouseX < 325)
 which is equivalent (note the change from > to <). Personally I find this more confusing, but it may look nicer to your eye.
 Keyboard interaction
-So far we've seen how you can use the special P5js variable ```keyPressed``` to let the user press any key to trigger a conditional action. But this only tells us if any ```key``` is being pressed or not. What if we want to get more specific and create code that responds to specific keys?
+So far we've seen how you can use the special P5js variable ```keyIsPressed``` to let the user press any key to trigger a conditional action. But this only tells us if any ```key``` is being pressed or not. What if we want to get more specific and create code that responds to specific keys?
 
 Fortunately, P5js offers us another special variable just for this purpose: ```key```
 
