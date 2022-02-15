@@ -35,11 +35,7 @@ function setup() {
 - [Hello Shapes](https://editor.p5js.org/danzeeeman/sketches/l21Ut52K6)
 ### The Screen is a Grid
 - [Hello Grid](https://editor.p5js.org/danzeeeman/sketches/aiCnAxqRZ)
-
-# Week 3 – Debugging & Adding interactivity
-
-## Review
-
+- 
 ### ```function preload()```
 
 ```function preload()``` get called at the start of the program automatically by p5js. 
