@@ -335,6 +335,46 @@ function draw(){
 
 ## 15-20 MIN TRYING THINGS OUT
 
+```
+let rect_width;
+let rect_height;
+let offset;
+let index = 0;
+function setup(){
+    createCanvas(1024, 512);
+    rect_width = 5;
+    rect_height = height;
+    offset = rect_width;
+    // noStroke();
+    
+    rectMode(CENTER);
+}
+function draw(){
+    background(255)
+    let x = 10;
+    let count = 0;
+    let total_rect =  (width/2)/offset;
+    index = frameCount % 500;
+    translate(width/4, height/2);
+    while (count < total_rect) {
+        push();
+        {
+          translate(x, 0)
+          if(index < 250)
+            rotate(sin(count/total_rect*(TWO_PI)))
+          if(index > 250)
+            rotate(cos(count/total_rect*(TWO_PI)))
+          fill(count*255/(width/offset), 100);
+          stroke(255-count*255/(width/offset), 10); 
+          rect(0, 0, rect_width, rect_height);
+          x = x + offset;
+          count += 1;
+        }
+        pop();
+    }
+}
+```
+
 ## ```for()``` loops
 
 ```for``` loops are far more common than ```while``` loops because they are much less problematic.  They are kind of self contained packages that tell the computer how many times to loop.
