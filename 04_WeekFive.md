@@ -335,8 +335,6 @@ function draw(){
 
 ## 15-20 MIN TRYING THINGS OUT
 
-make a 
-
 ## ```for()``` loops
 
 ```for``` loops are far more common than ```while``` loops because they are much less problematic.  They are kind of self contained packages that tell the computer how many times to loop.
@@ -430,8 +428,6 @@ function draw() {
 
 
 
-
-
 ## Nested for() loops
 ```
 let some_number = 10;
@@ -467,7 +463,26 @@ function setup() {
 }
 ```
 
-
+```
+function setup() {
+  createCanvas(512, 512);
+  noStroke()
+  let numSquares = 11;
+  let squareWidth = width/numSquares;
+  let squareHeight = height/numSquares;
+  
+  let count = 0;
+  for(let x = 0; x < numSquares; x++){
+    for(let y = 0; y < numSquares; y++){
+      push();
+      translate(x*squareWidth, y*squareHeight);
+      rect(0,0, squareWidth, squareHeight);
+      pop();
+      count++;
+    }
+  }
+}
+```
 
 
 ## Comparing everything to everything else
