@@ -8,11 +8,6 @@ function preload() {
 
 function setup() {
   createCanvas(img.width, img.height);
-  
-  // Resize the image to fit the canvas
-  //img.resize(width, height);
-
-  // Disable the stroke
   noStroke();
 
 }
@@ -24,7 +19,7 @@ function draw() {
     
     // Load the pixels
     img.loadPixels();
-    let skip = 5;
+    let skip = 1;
     // Loop through the pixels X and Y
     for (let y = 0; y < img.height; y+=skip) {
       for (let x = 0; x < img.width; x+=skip) {
