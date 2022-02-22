@@ -509,7 +509,6 @@ function setup() {
       fill(255, 0, 255)
       circle(10, 10, squareWidth/2, squareHeight/2);
       pop();
-      count++;
     }
   }
 }
