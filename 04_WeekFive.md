@@ -181,7 +181,7 @@ If this idea sounds a lot like computer programming to you, you wouldn't be alon
 
 In fact, one of the creators of Processing, Casey Reas, produced a 2004 Processing project related to Lewitt's work: {Software} Structures project at the Whitney, curated by Christiane Paul.
 
-Beyond this general connection to software, this week we'll look at Sol Lewitt's work as an example of creative experimentation with formal pattern and repetition. This [video]((https://www.youtube.com/watch?v=YvOpvam8CSM)) documents a 2008 installion of his work at [MoMA](https://www.moma.org/calendar/exhibitions/305):
+Beyond this general connection to software, this week we'll look at Sol Lewitt's work as an example of creative experimentation with formal pattern and repetition. This [video](https://www.youtube.com/watch?v=YvOpvam8CSM) documents a 2008 installion of his work at [MoMA](https://www.moma.org/calendar/exhibitions/305):
 
 In addition to the way that Lewitt uses language to create something like a computer program to generate a drawing, let's also pay attention to the way that he uses logic, combinatorics, and repetition, rendered here in the form of a grid of geometric shapes.
 
