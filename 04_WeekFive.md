@@ -475,6 +475,10 @@ function setup() {
   for(let x = 0; x < numSquares; x++){
     for(let y = 0; y < numSquares; y++){
       push();
+      if(count%2 === 0)
+        fill(255, 0, 255)
+      else
+        fill(255, 255, 0)
       translate(x*squareWidth, y*squareHeight);
       rect(0,0, squareWidth, squareHeight);
       pop();
