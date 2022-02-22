@@ -682,7 +682,7 @@ function draw(){
     }
 }
 ```
-This is an exagerated example, but it shows that when you are only checking for key presses inside the draw() block, it is possible that you may not respond to all of them. By pressing keys more quickly than the frame rate refreshes, you are causing P5js to "miss" your action. When the frame is being rendered, you are not pressing the key, you are essentially pressing the key between frames.
+This is an example, but it shows that when you are only checking for key presses inside the draw() block, it is possible that you may not respond to all of them. By pressing keys more quickly than the frame rate refreshes, you are causing P5js to "miss" your action. When the frame is being rendered, you are not pressing the key, you are essentially pressing the key between frames.
 
 These may be behaviors that you want. But if not, there is another option.
 
