@@ -502,13 +502,11 @@ function setup() {
   let count = 0;
   for(let x = 0; x < numSquares; x++){
     for(let y = 0; y < numSquares; y++){
-      push();
-      if(count%2 === 0)
-        fill(255, 0, 255)
-      else
-        fill(255, 255, 0)
+      push();        
       translate(x*squareWidth, y*squareHeight);
+      fill(255, 255, 0)
       rect(0,0, squareWidth/2, squareHeight/2);
+      fill(255, 0, 255)
       circle(10, 10, squareWidth/2, squareHeight/2);
       pop();
       count++;
