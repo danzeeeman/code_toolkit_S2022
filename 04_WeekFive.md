@@ -397,6 +397,39 @@ function draw() {
 }
 ```
 
+```
+function draw() {
+  background(220);
+  let some_number = 10;
+  let rect_width = width/some_number;
+  //Declare the var
+  for(let i = 0; 
+  //Compare the var
+      i < some_number; 
+  //Increment the var
+      i+=5){
+    fill(i*rect_width);
+    rect(i*rect_width, 0, rect_width, height);
+  }
+}
+```
+```
+function draw() {
+  background(220);
+  let some_number = 10;
+  let rect_width = width/some_number;
+  //Declare the var
+  for(let i = 10; 
+  //Compare the var
+      i > 0; 
+  //Increment the var
+      i--){
+    fill(i*rect_width);
+    rect(i*rect_width, 0, rect_width, height);
+  }
+}
+```
+
 so this tells the computer that we are going to loop over the variable ```i``` until i is ```greater than``` ```>``` ```some_number``` every time we loop we are going to increment ```i``` by 1. 
 
 ```
@@ -460,6 +493,73 @@ function draw() {
     let r = map(i, 0, num_boxes, -1, 1)*2*PI;
     rotate(r+value);
     rect(x,y,draw_box_width,draw_box_height);
+    // we pop our transform to close out our draw operation
+    pop();
+  }
+}
+```
+
+```
+//global vars
+// the period length for our cycle
+let cycle_period = 500;
+// our counter
+let i = 0;
+// number of frames to loop time
+let num_boxes = 3;
+// box height
+let box_height = 350;
+// box width
+let box_width = 350;
+// alpha value
+let alpha = 0;
+// current animation value in radians 
+let value = 0;
+
+function setup() {
+  //create the canvas the width and height of the window
+  createCanvas(windowWidth, windowHeight);
+  // set the stroke to white
+  stroke(0, 255, 255);
+  // lets uncomment to turn off strokes;
+  // noStroke();
+  rectMode(CENTER);
+}
+
+function draw() {
+  background(255, 255, 255)
+  // we loop from i to the num_boxes
+  for(let i = 0; i < num_boxes; i++){
+  // We use our custom getValue() function 
+  // to calculate a value that drives the animation
+    value = (frameCount%cycle_period)/cycle_period*(2*PI);
+    // we normalize our index between 0..1 by dividing i/num_boxes
+    let c = i/num_boxes;
+    // we create a sin wave using the value and our normalized index
+    let j = sin(value+c);
+    // we scale the wave by 10
+    j *= 5;
+    // we take the abs() value of the wave 0-1
+    alpha = abs(j)
+    // we call setColor passing in our index
+    let red = map(sin(value+c), -1, 1, 150, 255);
+    // our green value
+    let green = 0;
+    // our blue value
+    // let blue = 200+cos(value+c)*50;
+    let blue = map(cos(value+c), -1, 1, 200, 250);
+    fill(red, green, blue, alpha);
+    stroke(0, red, blue, 100+alpha);
+    // we push/pop transform so that the transforms don't add/stack up
+    // more on this later on when we talk about transforms in depth
+    push();
+    // we call draw rect with our index
+    let draw_box_width = box_width*sin(value+c);
+    let draw_box_height = box_height*sin(value+c);
+    translate(width/2, height/2);
+    let r = map(i, 0, num_boxes, -TWO_PI, TWO_PI);
+    rotate(r+value);
+    rect(0,0,draw_box_width,draw_box_height);
     // we pop our transform to close out our draw operation
     pop();
   }
