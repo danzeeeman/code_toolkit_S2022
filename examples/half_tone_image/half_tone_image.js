@@ -18,7 +18,7 @@ function setup() {
 function draw() {
   background(255);
   img.loadPixels();
-  let skip = 5;
+  let skip = 15;
   // Loop through the pixels X and Y
   for (let y = 0; y < img.height; y+=skip) {
     for (let x = 0; x < img.width; x+=skip) {
@@ -35,6 +35,5 @@ function draw() {
       circle(x+skip/2, y+skip/2, skip);
 
     }
-    
   }
 }
