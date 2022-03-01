@@ -63,14 +63,22 @@ Even though this isn't a visual timeline, we can imagine a visual timeline in ou
 This one basic command is enough to implement many different types of timed events, from simple things up to more complicated ones.
 
 For example, think of this pseudocode:
+
   Do something for the first three seconds my sketch is running
+
 We could implement that with:
+
     if millis() < 3000:
+
         # Do something
 Similarly, think about this pseudocode:
+
   Wait three seconds, then do something for two seconds
+
 Which we could implement with this:
+
     if millis() > 3000 and millis() < 5000:
+
         # Do something
 What should Do something be in this case? Well let's say we want to draw a shape and only have it move according to the above timing. We could combine movement and timing like this:
 
