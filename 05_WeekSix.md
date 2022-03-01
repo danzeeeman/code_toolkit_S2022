@@ -532,8 +532,26 @@ function keyPressed(){
 }
 ```
 
-
 ## Pitch Your Mid Term Project
+
+- A Playful Game
+  - A playful game is something fun to play
+- A Nonlinear Narrative
+  - Tell a story in a new manner using Images, Video Clips, Audio, and Text
+  - Make a Choose your Own Adventure  
+- A Data Visualization
+  - Visualize a piece of data relevant to your life
+  - Data Sources
+    - Tweets
+    - NYC Open Data
+- An Interactive Visualization 
+  - Something pretty that you can interact with 
+
+some one button games
+
+[A SERIES OF GUNSHOTS](http://www.pippinbarr.com/games/aseriesofgunshots/)
+[Itch.io](https://itch.io/search?q=one+button+games)
+
 ## Home Work
 * Coding Assignment #5: One Button Game
 * "Data Visualization", from Matthew Fuller's Software Studies: A Lexicon
