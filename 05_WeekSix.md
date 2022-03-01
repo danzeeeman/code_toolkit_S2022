@@ -536,6 +536,7 @@ function keyPressed(){
 
 - A Playful Game
   - A playful game is something fun to play
+  - it can be an implementation of an existing game or something new you create
 - A Nonlinear Narrative
   - Tell a story in a new manner using Images, Video Clips, Audio, and Text
   - Make a Choose your Own Adventure  
@@ -543,11 +544,13 @@ function keyPressed(){
   - Visualize a piece of data relevant to your life
   - Data Sources
     - Tweets
-    - NYC Open Data
-- An Interactive Visualization 
-  - Something pretty that you can interact with 
+    - [NYC Open Data](https://opendata.cityofnewyork.us)
+- An Interactive Visualization
+  - Something pretty that you can interact with via mouse, keyboard, webcam, etc
 
 some one button games
+
+[Pippin Barr](http://www.pippinbarr.com/category/games/)
 
 [A SERIES OF GUNSHOTS](http://www.pippinbarr.com/games/aseriesofgunshots/)
 [Itch.io](https://itch.io/search?q=one+button+games)
