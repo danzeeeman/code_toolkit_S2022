@@ -379,17 +379,20 @@ function setup(){
 
 function draw(){
     background(255)
-    if rectOn:
+    if(rectOn){
         fill(255,155,155)
         rect(200,400,50,50)
+    }
 
-    if ellipseOn:
+    if(ellipseOn){
         fill(155,255,155)
         ellipse(400,400,50,50)
+    }
 
-    if triangleOn:
+    if(triangleOn){
         fill(155,155,255)
         triangle(600,375, 625,425, 575,425)
+    }
 }
 
 function keyPressed(){
