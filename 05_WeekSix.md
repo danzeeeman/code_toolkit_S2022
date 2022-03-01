@@ -179,6 +179,7 @@ function draw(){
         position = position + 1
     }
 }
+```
 Wait a while, then do something for a while, then stop
 In this example we wait two seconds, then start moving the square, move the square for one second, and then stop.
 
