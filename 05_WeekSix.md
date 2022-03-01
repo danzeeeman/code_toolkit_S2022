@@ -491,6 +491,48 @@ function keyPressed():
 Here, I am using a variable dayEveningNight that is holding the values 1, 2, or 3. I am using an if statement in the draw() block that checks what the value of this variable is and draws something accordingly. And then, in the keyPressed() block, I am incrementing that variable based on what the user has pressed. If the variable gets larger than 3, I am reseting back to its initial value of 1.
 You can use these same principles to keep track of many kinds of state within your program. For example, if a user is entering a password, or the levels of a game.
 
+```
+let dayEveningNight = 1
+let startTime = 0;
+let position = 0;
+let direction = 1;
+function setup(){
+    createCanvas(800, 800)
+}
+
+function draw(){
+    if(dayEveningNight ===  1)
+        background(155,155,255)
+    else if(dayEveningNight ===  2)
+        background(25,25,75)
+    else if(dayEveningNight ===  3)
+        background(0)
+  
+  if(millis() - startTime > 1000){
+      position += direction;
+      if(position > width){
+          direction = -1;
+      }
+      if(position < 0){
+          direction = 1;
+      }
+  }
+  rect(position, height/2, 25, 25);
+}
+
+function keyPressed(){
+    if(key ===  'q'){
+        dayEveningNight = dayEveningNight + 1
+        if(dayEveningNight > 3){
+            dayEveningNight = 1
+        }
+    }
+  if(key === 'a'){
+    startTime = millis();
+  }
+}
+```
+
 
 ## Pitch Your Mid Term Project
 ## Home Work
