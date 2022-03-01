@@ -201,7 +201,6 @@ function setup(){
 }
 
 function draw(){
-    global position
     background(255)
 
     ellipse(position,300,100,100)
