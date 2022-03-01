@@ -551,12 +551,11 @@ function keyPressed(){
 some one button games
 
 [Pippin Barr](http://www.pippinbarr.com/category/games/)
-
 [A SERIES OF GUNSHOTS](http://www.pippinbarr.com/games/aseriesofgunshots/)
 [Itch.io](https://itch.io/search?q=one+button+games)
 
 ## Home Work
 * Coding Assignment #5: One Button Game
-* "Data Visualization", from Matthew Fuller's Software Studies: A Lexicon
+* ["Data Visualization", from Matthew Fuller's Software Studies: A Lexicon](https://monoskop.org/images/a/a1/Fuller_Matthew_ed_Software_Studies_A_Lexicon.pdf)
 * Catherine D'Ignazio and Lauren Klein, ["Unicorns, Janitors, Ninjas, Wizards, and Rock
-Stars"](https://monoskop.org/images/a/a1/Fuller_Matthew_ed_Software_Studies_A_Lexicon.pdf)
+Stars"](https://data-feminism.mitpress.mit.edu/pub/2wu7aft8/release/2)
