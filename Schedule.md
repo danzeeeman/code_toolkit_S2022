@@ -97,7 +97,7 @@ Stars"](https://monoskop.org/images/a/a1/Fuller_Matthew_ed_Software_Studies_A_Le
 
 ### Home Work
 
-* Coding Assignment #6: Data Self-Portrait 
+* Coding Assignment #6: Data Self-Portrait
 
 ## Week 8 – Midterm project work and review as needed
 
