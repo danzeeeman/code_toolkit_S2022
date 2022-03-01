@@ -98,8 +98,8 @@ Notice how now, the circle's position is being updated just like before, but onl
 We can get a bit more complicated by introducing variables to use for saving time values. For example:
 
 ```
-circleX = 300
-startTime = 3000
+let circleX = 300
+let startTime = 3000
 function setup(){
     createCanvas(600,600)
     stroke(50,50,150)
@@ -107,7 +107,6 @@ function setup(){
 }
 
 function draw(){
-    global circleX
     background(255)
     ellipse(circleX,300, 50,50)
     if (millis() > startTime && millis() < startTime + 2000){
@@ -125,8 +124,8 @@ This doesn't seem that interesting since I'm setting the variable startTime to a
 Building on this, we can combine it with event handling to let the user trigger the timing:
 
 ```
-circleX = 300
-startTime = 3000
+let circleX = 300
+let startTime = 3000
 function setup(){
     createCanvas(600,600)
     stroke(50,50,150)
@@ -240,7 +239,7 @@ function draw(){
     }
 }
 ```
-State: a new way to use variables
+## State: a new way to use variables
 So far we have been using variables either for numeric things (like shape sizes, positions, or colors) or for Boolean true/false values. All of these things are ways of keeping track of what the program is doing in a given moment.
 
 Today we saw how we could use timing and millis() to affect how the program might change over time.
