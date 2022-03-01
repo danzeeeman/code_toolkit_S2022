@@ -10,7 +10,7 @@ One incredible example of early time-based media is the work of Oskar Fischinger
 
 You might be inclined to think of the history of animation as preceding that of cinema, but in fact there is a historical case to be made for understanding these in the opposite order. Several modern artists and illustrators in the early 20th century were inspired by cinema to create animation, and used the principle of cinema — a continuous strip of film, divided into cells of static imagery that flicker by the viewer's eyes — to create early animation and motion graphics. In fact, many of these innovators actually worked on film strips, drawing and etching into the cells by hand.
 
-Fischinger actually contributed to Disney's Fantasia but quit uncredited because of creative differences. In 2012, the Whitney museum showed an exhibition of his artwork called "Space Light Art". There is great documentation for this show online and I highly recommend taking a look!
+Fischinger actually contributed to Disney's Fantasia but quit uncredited because of creative differences. In 2012, the Whitney museum showed an exhibition of his artwork called ["Space Light Art"](https://whitney.org/exhibitions/oskar-fischinger). There is great documentation for this show online and I highly recommend taking a look!
 
 A numeric timeline with millis()
 In week 4 ("Making Things Move") we saw how you could use variables and some basic arithmetic to make things move "on their own".
