@@ -118,6 +118,7 @@ function draw(){
       circleX = 0
     }
 }
+```
 When would this move the circle?
 This doesn't seem that interesting since I'm setting the variable startTime to a hard-coded value. But because I am using a varibale as a placeholder for that value, that means that the value could change.
 
