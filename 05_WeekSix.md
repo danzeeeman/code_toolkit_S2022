@@ -447,7 +447,7 @@ function draw(){
     }
 }
 
-function keyPressed():
+function keyPressed(){
     if (key ===  'q'){
         rectOn = !rectOn
     }
@@ -458,8 +458,8 @@ function keyPressed():
         
     if (key ===  'o'){
         triangleOn = !triangleOn
-    }
-
+    }  
+}
 ```
 Now, in those if statements, I'm setting each variable to the opposite of whatever it currently is. This creates the toggle effect.
 Lastly, we can keep track state that is more than on / off. Have a look at this code:
