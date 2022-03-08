@@ -431,6 +431,39 @@ We would need an x value for each square. So? Add a new list!
 And go from there: set initial values, use them with the rect() command, and change the values in some way.
 If you wanted each square to have other properties (like size and color), simply add more lists in the same way. Here is an example in which each square has its own x and y position, as well as size and color
 
+```
+let x = []
+let y = []
+function setup(){
+    createCanvas(500, 500)
+    stroke(50, 50, 250)
+    fill(150, 150, 250)
+    rectMode(CENTER)
+
+    for(let i = 0; i < 25; i++){
+      x[i] = random(0, width)
+      y[i] = random(0, height)
+    }
+  
+}
+
+function draw(){
+    background(255)
+
+    for(let i = 0; i < x.length; i++){
+      fill(i/x.length*255)
+      rect(x[i], y[i], 25, 25);
+      
+      let dir_x = (mouseX - x[i])/100
+      let dir_y = (mouseY - y[i])/100
+      
+      x[i] += dir_x + random(-5, 5)
+      y[i] += dir_y + random(-5, 5)
+    }
+}
+```
+
+
 If you wanted them to move in a way that was more sophisticated than just random, what would you do? Well each square would need its own x and y direction. More lists!
 
 Functions: project planning, reusability and modularity
