@@ -598,6 +598,8 @@ function drawCar(x, y){
 Looking at this code, we don't know what each of those functions does, but we can start to get an abstract, high level understanding of what is going on in this sketch.
 Functions can work really well with the topic of state variables from last week. For example, if you were doing the game option for the midterm, you could implement your different levels like this: NOTE: Please pay attention to how I'm using the import command in the main tab to import the function definitions from the other two tabs.
 
+
+
 # First, main tab
 
 ```
@@ -686,6 +688,38 @@ let _map = {"key":"value", "list":[[0,0], [0,0], [0,0], [0,0]]};
 
 # JSON
 JavaScript Object Notation
+
+
+```
+let list_on_lists = [[0,0], [10,10], [50,10], [25,25]];
+
+let _map = {"key":"value", "color":[0, 0, 0], "pos":[0, 0], "size":[10, 10]};
+
+let list_of_map = [{"key":"value", "color":{"r":255, "g":255, "b":0}, "pos":{"x":10, "y":10}, "size":{"width":10, "height":10}}]
+
+function setup() {
+  createCanvas(1400, 1400);
+  // print(_map["key"])
+  // print(_map["color"])
+  // print(_map["pos"])
+  
+  
+  for(let i = 0; i < list_of_map.length; i++){
+    print(list_of_map[i]);
+  }
+}
+
+function draw() {
+  background(220);
+  for(let i = 0; i < list_of_map.length; i++){
+    fill(list_of_map[i].color.r, list_of_map[i].color.g, list_of_map[i].color.b);
+    rect(list_of_map[i].pos.x, 
+         list_of_map[i].pos.y, 
+         list_of_map[i].size.width, 
+         list_of_map[i].size.height)
+  }
+}
+```
 ### Home Work
 * Coding Assignment #6: Data Self-Portrait 
 
