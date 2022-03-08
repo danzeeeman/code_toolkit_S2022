@@ -59,7 +59,7 @@ let c = 200
 let d = 200
 
 function setup(){
-    size(500, 500)
+    createCanvas(500, 500)
     stroke(50, 50, 250)
     fill(150, 150, 250)
     rectMode(CENTER)
@@ -91,7 +91,7 @@ let c = 200
 let d = 200
 
 function setup(){
-    size(500, 500)
+    createCanvas(500, 500)
     stroke(50, 50, 250)
     fill(150, 150, 250)
     rectMode(CENTER)
@@ -125,9 +125,9 @@ New syntax:
 ```x = []``` These square brackets create a new kind of variable, which is a ```list```. It does not have any values yet, but we've just told p5js that this one variable can hold many values. I suggest reading this code like: "Create a variable called x and set it to an empty list".
 Now to actually add values to this new list variable, we use a command called append(). Like this:
 ```
-x.append(5)
-x.append("Hello")
-x.append(True)
+append(x, 5)
+append(x, "Hello")
+append(x, True)
 ```
 As you see, a list can contain any of the other values that we've been working with so far: numbers, text strings, and Boolean values. You can view the contents of a list with ```print()```:
 ```print(x)```
@@ -181,7 +181,7 @@ Let's put this to use in our example, but start by first by going back to the ve
 let y = []
 
 function setup(){
-    size(500, 500)
+    createCanvas(500, 500)
     stroke(50, 50, 250)
     fill(150, 150, 250)
     rectMode(CENTER)
@@ -255,14 +255,14 @@ We can finally put everything together:
 ```
 let y = []
 function setup(){
-    size(500, 500)
+    createCanvas(500, 500)
     stroke(50, 50, 250)
     fill(150, 150, 250)
     rectMode(CENTER)
-    y.append(200)
-    y.append(200)
-    y.append(200)
-    y.append(200)
+    append(y, 200)
+    append(y, 200)
+    append(y, 200)
+    append(y, 200)
 }
 
 function draw(){
@@ -282,14 +282,14 @@ We can also move the code that changes the y values into the same loop:
 ```
 let y = []
 function setup(){
-    size(500, 500)
+    createCanvas(500, 500)
     stroke(50, 50, 250)
     fill(150, 150, 250)
     rectMode(CENTER)
-    y.append(200)
-    y.append(200)
-    y.append(200)
-    y.append(200)
+    append(y, 200)
+    append(y, 200)
+    append(y, 200)
+    append(y, 200)
 }
 
 function draw(){
@@ -313,7 +313,7 @@ function setup(){
     let y = []
     let i = 0
     while(i <= 3){
-        y.append(200)
+        append(y, 200)
         i = i + 1
     }
 }
@@ -344,7 +344,7 @@ function setup(){
  
     let i = 0
     while(i <= 4){
-        y.append(200)
+        append(y, 200)
         i = i + 1
     }
 }
@@ -370,7 +370,7 @@ function setup(){
 
     i = 0
     while(i <= 10){
-        y.append(200)
+        append(y, 200)
         i = i + 1
     }
 }
@@ -427,13 +427,10 @@ To conclude, what should we do if we want these squares to move around in space,
 
 We would need an x value for each square. So? Add a new list!
 
-
 And go from there: set initial values, use them with the rect() command, and change the values in some way.
-If you wanted each square to have other properties (like size and color), simply add more lists in the same way. Here is an example in which each square has its own x and y position, as well as size and color: list_example.pyde
+If you wanted each square to have other properties (like size and color), simply add more lists in the same way. Here is an example in which each square has its own x and y position, as well as size and color
 
 If you wanted them to move in a way that was more sophisticated than just random, what would you do? Well each square would need its own x and y direction. More lists!
-
-Here's a basic version of the game Breakout that puts it all together: breakout.pyde
 
 Functions: project planning, reusability and modularity
 Functions are a way to organize your code.
