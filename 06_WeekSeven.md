@@ -542,6 +542,59 @@ function draw(){
     moveCar()
 }
 ```
+
+
+```
+let x = [100]
+let y = [100]
+let center_rect = [0, 0, 100, 100]
+let dir_x = 0;
+let dir_y = 0;
+let speed = 0.1;
+function setup(){
+    createCanvas(1500, 1500)
+    stroke(50, 50, 250)
+    fill(150, 150, 250)
+    // rectMode(CENTER)
+}
+
+function draw(){
+    background(0)
+    drawLandscape()
+    drawClouds()
+    drawCar(x[0], y[0])
+    moveClouds()
+    moveCar()
+}
+
+function moveClouds(){
+  
+}
+
+function moveCar(){
+  dir_x = mouseX - x[0]
+  x[0] += dir_x * speed
+  y[0] += dir_y * speed
+}
+
+function drawLandscape(){
+  
+}
+
+function drawClouds(){
+  
+}
+
+function drawCar(x, y){
+  push()
+  translate(x, y)
+  rect(0, 0, 500, 200)
+  circle(10, 200, 125)
+  circle(450, 200, 125)
+  push()
+}
+```
+
 Looking at this code, we don't know what each of those functions does, but we can start to get an abstract, high level understanding of what is going on in this sketch.
 Functions can work really well with the topic of state variables from last week. For example, if you were doing the game option for the midterm, you could implement your different levels like this: NOTE: Please pay attention to how I'm using the import command in the main tab to import the function definitions from the other two tabs.
 
