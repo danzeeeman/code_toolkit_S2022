@@ -780,6 +780,7 @@ function draw() {
 ### Home Work
 * Coding Assignment #6: Data Self-Portrait 
 * [How to draw your own selfie — using your personal data](https://ideas.ted.com/how-to-draw-your-own-selfie-using-your-personal-data/)
+* [Nick Felton has produced “Annual Reports” about his activities since 2005](http://feltron.com)
 
 
 
