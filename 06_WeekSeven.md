@@ -160,7 +160,6 @@ y = [] # Make a new empty list
 y[0] = 5 # Try to set a value into the list
 
 # Displays an error in the console saying:
-# IndexError: list assignment index out of range
 
 # But this would work:
 ```
@@ -330,32 +329,36 @@ function draw(){
     }
 }
 ```
+
 Note that since I am creating y inside the setup() block (by saying y = # something) I need to declare it global so that it can be accessed inside the draw() block.
 Now we have a loop that uses repetition to create many things and and one list that holds many values, one for each of those things.
 
 This means that now we could relatively easily modify this so that instead of 4 squares, we had 8, 100, or 1000. Change the 3 to 4 to see how easy it is to add one more:
-
-function setup():
+```
+let y = []
+function setup(){
     createCanvas(500, 500)
     stroke(50, 50, 250)
     fill(150, 150, 250)
     rectMode(CENTER)
-
-    global y
-    y = []
-    i = 0
-    while i <= 4:
+ 
+    let i = 0
+    while(i <= 4){
         y.append(200)
         i = i + 1
+    }
+}
 
-function draw():
+function draw(){
     background(255)
-
-    i = 0
-    while i <= 4:
+    let i = 0
+    while(i <= 4){
         rect(100 + i*100, y[i], 100, 100)
         y[i] = y[i] + random(-5,5)
         i = i + 1
+    }
+}
+```
 Or change it to 10 (for this, I'll make each one less wide):
 ```
 let  y = []
