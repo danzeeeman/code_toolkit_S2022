@@ -295,7 +295,7 @@ function setup(){
 function draw(){
     background(255)
 
-    i = 0
+    let i = 0
     while(i <= 3){
         rect(100 + i*100, y[i], 100, 100)
         y[i] = y[i] + random(-5,5)
