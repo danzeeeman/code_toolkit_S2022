@@ -720,6 +720,65 @@ function draw() {
   }
 }
 ```
+
+```
+let list_on_lists = [[0,0], [10,10], [50,10], [25,25]];
+
+let _map = {"key":"value", "color":[0, 0, 0], "pos":[0, 0], "size":[10, 10]};
+
+let list_of_map = [{"key":"value", "color":{"r":255, "g":255, "b":0}, "pos":{"x":10, "y":10}, "size":{"width":10, "height":10}}]
+
+let cloud_image;
+let assets = {
+  "clouds":{
+    "path":"PATH/TO/CLOUDS",
+    "pos":[{
+      "x":0,
+      "y":0
+    }, {
+      "x":0,
+      "y":0
+    }, {
+      "x":0,
+      "y":0
+    }, {
+      "x":0,
+      "y":0
+    }]
+  }
+}
+
+
+function setup() {
+  createCanvas(1400, 1400);
+  // print(_map["key"])
+  // print(_map["color"])
+  // print(_map["pos"])
+  
+  // cloud_image = loadImage(assets.clouds.path)
+  
+  for(let i = 0; i < assets.clouds.pos.length; i++){
+    print(assets.clouds.pos[i])
+    img(cloud_image, assets.clouds.pos[i].x, assets.clouds.pos[i].y);
+  }
+  
+  for(let i = 0; i < list_of_map.length; i++){
+    print(list_of_map[i]);
+  }
+}
+
+function draw() {
+  background(220);
+  for(let i = 0; i < list_of_map.length; i++){
+    fill(list_of_map[i].color.r, list_of_map[i].color.g, list_of_map[i].color.b);
+    rect(list_of_map[i].pos.x, 
+         list_of_map[i].pos.y, 
+         list_of_map[i].size.width, 
+         list_of_map[i].size.height)
+  }
+}
+```
+
 ### Home Work
 * Coding Assignment #6: Data Self-Portrait 
 
