@@ -688,8 +688,6 @@ let _map = {"key":"value", "list":[[0,0], [0,0], [0,0], [0,0]]};
 
 # JSON
 JavaScript Object Notation
-
-
 ```
 let list_on_lists = [[0,0], [10,10], [50,10], [25,25]];
 
@@ -781,6 +779,7 @@ function draw() {
 
 ### Home Work
 * Coding Assignment #6: Data Self-Portrait 
+* [How to draw your own selfie — using your personal data](https://ideas.ted.com/how-to-draw-your-own-selfie-using-your-personal-data/)
 
 
 
