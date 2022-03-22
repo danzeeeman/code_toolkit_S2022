@@ -7,6 +7,7 @@
 - https://bitcraftlab.github.io/p5.gui/
 - https://github.com/bobcgausa/cook-js
 - https://github.com/visiophone/FXHash_p5
+- https://bmoren.github.io/p5js-cheat-sheet/
 
 ### Home Work
 * Claus Pias, [“The Game Player’s Duty: The User as the Gestalt of the Ports”, from Media Archaeology: Approaches, Applications, Implications, Jussi Parikka and Erkki Huhtamo, eds.](pdfs/huhtamo-parikka-media_arch.pdf)
