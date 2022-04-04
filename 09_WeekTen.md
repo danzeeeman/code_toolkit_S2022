@@ -5,25 +5,56 @@
 * Think about Your Final Projects
 
 
-# Classes
+# MIDTERM PROJECTS
 
+
+# HOME WORK
+
+
+## BREAK
+
+# Classes
 
 A class is declared by using the ```class``` keyword.
 
 ```
-class AnimationImage {
-  constructor(width, height, imgs){
-    this.width = width;
-    this.height = height;
-    this.imgs = imgs;
+class MyCustomCircle {
+  constructor(width){
     
-  }
-  draw(x, y, frame){
-    let index = frame % imgs.length;
-    image(imgs[index], x, y); 
   }
 }
 ```
+
+You can assign variables to the class instance by using the ```this.``` keyword.
+
+```
+class MyCustomCircle {
+  constructor(width){
+    this.width = width;
+  }
+}
+```
+
+we can give it functions that we can call like its own ```draw``` function;
+
+```
+class MyCustomCircle {
+  constructor(width){
+    this.width = width;
+  }
+
+  draw(x, y){
+    push();
+    {
+      translate(x, y);
+      circle(0, 0, width);
+    }
+    pop();
+  }
+}
+```
+
+So let look at a more complex example:
 
 ```
 // Bubble class
@@ -34,7 +65,6 @@ class Bubble {
     this.diameter = diameter;
     this.radius = diameter / 2;
     this.name = name;
-
     this.over = false;
   }
 
@@ -123,6 +153,172 @@ function draw() {
 }
 ```
 
+
+```
+// Daniel Shiffman
+// http://youtube.com/thecodingtrain
+// https://thecodingtrain.com/CodingChallenges/111-animated-sprite.html
+
+// Horse Spritesheet from
+// https://opengameart.org/content/2d-platformer-art-assets-from-horse-of-spring
+
+// Animated Sprite
+// https://youtu.be/3noMeuufLZY
+
+let spritesheet;
+let spritedata;
+
+let animation = [];
+
+let horses = [];
+
+function preload() {
+  spritedata = loadJSON('horse.json');
+  spritesheet = loadImage('horse.png');
+}
+
+function setup() {
+  createCanvas(640, 480);
+  let frames = spritedata.frames;
+  for (let i = 0; i < frames.length; i++) {
+    let pos = frames[i].position;
+    let img = spritesheet.get(pos.x, pos.y, pos.w, pos.h);
+    animation.push(img);
+  }
+
+  for (let i = 0; i < 5; i++) {
+    horses[i] = new Sprite(animation, 0, i * 75, random(0.1, 0.4));
+  }
+}
+
+function draw() {
+  background(0);
+
+  for (let horse of horses) {
+    horse.show();
+    horse.animate();
+  }
+}
+```
+
+Let Look at the class ```Sprite```
+
+```
+// Daniel Shiffman
+// http://youtube.com/thecodingtrain
+// https://thecodingtrain.com/CodingChallenges/111-animated-sprite.html
+
+// Horse Spritesheet from
+// https://opengameart.org/content/2d-platformer-art-assets-from-horse-of-spring
+
+// Animated Sprite
+// https://youtu.be/3noMeuufLZY
+
+class Sprite {
+  constructor(animation, x, y, speed) {
+    this.x = x;
+    this.y = y;
+    this.animation = animation;
+    this.w = this.animation[0].width;
+    this.len = this.animation.length;
+    this.speed = speed;
+    this.index = 0;
+  }
+
+  show() {
+    let index = floor(this.index) % this.len;
+    image(this.animation[index], this.x, this.y);
+  }
+
+  animate() {
+    this.index += this.speed;
+    this.x += this.speed * 15;
+
+    if (this.x > width) {
+      this.x = -this.w;
+    }
+  }
+}
+```
+
+Let's look at the image
+
+![horse.png](examples/Sprites/horse.png)
+
+Let's look at the ```JSON```
+
+## Loading JSON
+
+```
+{
+  "frames": [{
+      "name": "sprite-00",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "w": 192,
+        "h": 144
+      }
+    },
+    {
+      "name": "sprite-01",
+      "position": {
+        "x": 192,
+        "y": 0,
+        "w": 192,
+        "h": 144
+      }
+    },
+    {
+      "name": "sprite-02",
+      "position": {
+        "x": 384,
+        "y": 0,
+        "w": 192,
+        "h": 144
+      }
+    },
+    {
+      "name": "sprite-03",
+      "position": {
+        "x": 0,
+        "y": 144,
+        "w": 192,
+        "h": 144
+      }
+    },
+    {
+      "name": "sprite-04",
+      "position": {
+        "x": 192,
+        "y": 144,
+        "w": 192,
+        "h": 144
+      }
+    },
+    {
+      "name": "sprite-05",
+      "position": {
+        "x": 384,
+        "y": 144,
+        "w": 192,
+        "h": 144
+      }
+    },
+    {
+      "name": "sprite-06",
+      "position": {
+        "x": 0,
+        "y": 288,
+        "w": 192,
+        "h": 144
+      }
+    }
+  ]
+}
+```
+
+# DATA DATA DATA
 
 
 ### Home Work
