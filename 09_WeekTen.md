@@ -422,6 +422,13 @@ Let's look at the ```JSON```
   ]
 }
 ```
+
+
+[https://www.spriters-resource.com](https://www.spriters-resource.com)
+[https://opengameart.org/](https://opengameart.org/)
+
+
+
 # DATA DATA DATA
 
 
