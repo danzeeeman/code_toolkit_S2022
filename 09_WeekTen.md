@@ -152,7 +152,7 @@ So let look at a more complex example:
 
 ## Loading JSON
 
-Loading JSON data is just like loading Images
+Loading JSON data is just like loading Images:
 ```
 function preload() {
   data = loadJSON('assets/bubbles.json');
@@ -351,7 +351,6 @@ Let's look at the image
 
 Let's look at the ```JSON```
 
-## Loading JSON
 
 ```
 {
