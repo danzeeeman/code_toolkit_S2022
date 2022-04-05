@@ -1,11 +1,10 @@
 # Week 10 – Advanced Coding in P5JS
+* Midterm & Homework review
 * An Introduction to Classes
 * Loading JSON
 * Visualizing Data
 * Think about Your Final Projects
-
-
-# MIDTERM PROJECTS
+# MISSED MIDTERM PROJECTS
 
 
 # HOME WORK
@@ -15,7 +14,7 @@
 
 # Classes
 
-A class is declared by using the ```class``` keyword.
+A class is declared by using the ```class``` keyword. Each class has a ```constructor```.  Constructors can take variables such as ```width```
 
 ```
 class MyCustomCircle {
@@ -25,7 +24,7 @@ class MyCustomCircle {
 }
 ```
 
-You can assign variables to the class instance by using the ```this.``` keyword.
+You can assign variables to the class instance by using the ```this.``` keyword.  This means that each instance of the class ```MyCustomCircle``` will store a tiny bit of information and you can access outside of the class.
 
 ```
 class MyCustomCircle {
@@ -35,7 +34,13 @@ class MyCustomCircle {
 }
 ```
 
-we can give it functions that we can call like its own ```draw``` function;
+We use the ```new``` keyword to declare a new instance of our class.  When we call ```new MyCustomCircle(50)``` we are calling the constructor we 
+
+```
+let my_circle = new MyCustomCircle(50);
+```
+
+We can give it functions that we can call like its own ```draw``` function;
 
 ```
 class MyCustomCircle {
@@ -420,5 +425,5 @@ big data is ```messy```
 [turnstiles csv](https://drive.google.com/file/d/1JEJdLVgc6RS59oHmo_Z_Sj6XFORZ-xJj/view?usp=sharing)
 
 ### Home Work
-* Coding Assignment #6: Data Viz Using data from https://opendata.cityofnewyork.us/
+* Coding Assignment #6: Data Viz Using data from the turnstiles data set;
 * Think about your final project!
