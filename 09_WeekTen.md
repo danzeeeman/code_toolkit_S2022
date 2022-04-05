@@ -136,7 +136,7 @@ let my_circles = [];
 function setup(){
   createCanvas(512, 512);
   for(let i = 0; i < 10; i++){
-    my_circles[i] = new MyCustomCircle(random(5, 50), random(0, width), random(0, height));
+    my_circles.push(new MyCustomCircle(random(5, 50), random(0, width), random(0, height)));
   }
 }
 
@@ -304,6 +304,8 @@ function draw() {
   }
 }
 ```
+
+```get()``` Get a region of pixels from an image. If no params are passed, the whole image is returned. If x and y are the only params passed a single pixel is extracted. If all params are passed a rectangle region is extracted and a p5.Image is returned.
 
 Let Look at the class ```Sprite```
 
