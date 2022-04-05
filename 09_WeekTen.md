@@ -321,5 +321,13 @@ Let's look at the ```JSON```
 # DATA DATA DATA
 
 
+Let's look at some data and live code a bit.
+
+```examples/data/population.json```
+
+big data is messy
+
+[turnstiles json](https://drive.google.com/file/d/1jkgEA9z3LP5lBLmQUrfOmZh93OcRJMmi/view?usp=sharing)
+[turnstiles csv](https://drive.google.com/file/d/1JEJdLVgc6RS59oHmo_Z_Sj6XFORZ-xJj/view?usp=sharing)
 ### Home Work
 * Coding Assignment #6: Data Viz Using data from https://opendata.cityofnewyork.us/
