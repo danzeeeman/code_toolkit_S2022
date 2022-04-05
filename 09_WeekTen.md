@@ -54,6 +54,95 @@ class MyCustomCircle {
 }
 ```
 
+How can we use this ```MyCustomCircle```
+
+```
+class MyCustomCircle {
+  constructor(width, x, y){
+    this.width = width;
+    this.x = x;
+    this.y = y;
+  }
+
+  draw(){
+    push();
+    {
+      translate(this.x, this.y);
+      circle(0, 0, width);
+    }
+    pop();
+  }
+}
+
+let my_circles = [];
+
+function setup(){
+  createCanvas(512, 512);
+  for(let i = 0; i < 10; i++){
+    my_circles[i] = new MyCustomCircle(random(5, 50), random(0, width), random(0, height));
+  }
+}
+
+function draw(){
+  for (let i = 0; i < my_circles.length; i++) {
+    my_circles[i].draw()
+  }
+}
+```
+
+
+Lets make our circles move!
+
+```
+class MyCustomCircle {
+  constructor(width, x, y, screen_width, screen_height, dir_x, dir_y){
+    this.width = width;
+    this.x = x;
+    this.y = y;
+    this.screen_width = screen_width;
+    this.screen_height = screen_height;
+    this.dir_x = dir_x;
+    this.dir_y = dir_y;
+  }
+  update(){
+    this.x += this.dir_x;
+    this.y += this.dir_y;
+
+    if(this.x > this.screen_width){
+      this.x = -this.width;
+    }
+    if(this.y > this.screen_height){
+      this.y = -this.width;
+    }
+  }
+
+  draw(){
+    push();
+    {
+      translate(this.x, this.y);
+      circle(0, 0, width);
+    }
+    pop();
+  }
+}
+
+let my_circles = [];
+
+function setup(){
+  createCanvas(512, 512);
+  for(let i = 0; i < 10; i++){
+    my_circles[i] = new MyCustomCircle(random(5, 50), random(0, width), random(0, height));
+  }
+}
+
+function draw(){
+  for (let i = 0; i < my_circles.length; i++) {
+    my_circles[i].update();
+    my_circles[i].draw();
+  }
+}
+```
+
 So let look at a more complex example:
 
 ```
@@ -152,6 +241,7 @@ function draw() {
   text('Click to add bubbles.', 10, height - 10);
 }
 ```
+
 
 
 ```
@@ -317,7 +407,6 @@ Let's look at the ```JSON```
   ]
 }
 ```
-
 # DATA DATA DATA
 
 
@@ -325,9 +414,11 @@ Let's look at some data and live code a bit.
 
 ```examples/data/population.json```
 
-big data is messy
+big data is ```messy```
 
 [turnstiles json](https://drive.google.com/file/d/1jkgEA9z3LP5lBLmQUrfOmZh93OcRJMmi/view?usp=sharing)
 [turnstiles csv](https://drive.google.com/file/d/1JEJdLVgc6RS59oHmo_Z_Sj6XFORZ-xJj/view?usp=sharing)
+
 ### Home Work
 * Coding Assignment #6: Data Viz Using data from https://opendata.cityofnewyork.us/
+* Think about your final project!
