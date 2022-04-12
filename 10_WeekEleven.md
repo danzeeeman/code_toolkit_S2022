@@ -422,7 +422,45 @@ function gotData(data) {
 ```
 
 ## NYT API
+```
+var url =
+  'https://api.nytimes.com/svc/news/v3/content/all/all.json?api-key=SAAznEXg76OxgBJA0SXcbQiz4PrDXNpC';
 
+let title = [""];
+let new_headline = 0;
+let last_clear = 0;
+function setup() {
+  createCanvas(512, 512);
+  setInterval(loadNews, 5000);
+}
+
+function loadNews(){
+  loadJSON(url, gotData);
+}
+
+function gotData(data) {
+  let articles = data;
+  if(articles.results[0].title != title[title.length-1]){
+    title.push(articles.results[0].title);
+    new_headline = millis();
+    print(title);
+  }
+}
+
+function draw(){
+  background(255);
+  for(let i = 0; i < title.length; i++){
+    push();
+    translate(10, i*20);
+    text(title[i], 0, 0);
+    pop();
+  }
+  if(millis() - last_clear >  3600000){
+    last_clear = millis();
+    title = [""];
+  }
+}
+```
 ```
 var url =
   'https://api.nytimes.com/svc/search/v2/articlesearch.json?q=rainbow&api-key=99cfea65a5bb30650b3d31eb1713233e:15:73386102';
