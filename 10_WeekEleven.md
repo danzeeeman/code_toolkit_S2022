@@ -289,6 +289,33 @@ function draw() {
 ## User Input
 
 ```
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>8.6_p5.js_api_query_user_input</title>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/p5@1.4.1/lib/p5.min.js"></script>
+
+    
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/p5@1.4.1/lib/addons/p5.sound.min.js"></script>
+
+    <script type="text/javascript" src="sketch.js"></script>
+
+    <style> body {padding: 0; margin: 0;} canvas {vertical-align: top;} </style>
+  </head>
+  <body>
+
+    <p>
+      City: <input id ="city" value="London" />
+      <br/>
+      <button id="submit">submit</button>
+    </p>
+  </body>
+</html>
+```
+
+
+```
 let weather;
 
 let api = 'https://api.openweathermap.org/data/2.5/weather?q=';
