@@ -244,6 +244,48 @@ function draw() {
 
 ```
 
+```
+let weather;
+let millisecond;
+function setup() {
+  createCanvas(512, 512);
+  // 40.7369919,-73.9921866
+  loadJSON(
+    'https://api.openweathermap.org/data/2.5/weather?lat=-73.9921866&lon=40.7369919&appid=001b0f58045147663b1ea518d34d88b4',
+    gotData
+  );
+  angleMode(DEGREES);
+  rectMode(CENTER);
+  millisecond = millis();
+}
+
+function gotData(data) {
+  weather = data;
+  print(weather)
+}
+
+function draw() {
+  background(0);
+  if (weather) {
+    
+    push();
+    translate(width/2, height/2);
+    rotate(weather.wind.deg)
+    fill(255);
+    rect(0, 0, 5, weather.wind.speed);
+    pop();
+  }
+  
+  if(millis() - millisecond > 10000){
+      loadJSON(
+    'https://api.openweathermap.org/data/2.5/weather?lat=-73.9921866&lon=40.7369919&appid=001b0f58045147663b1ea518d34d88b4',
+    gotData
+  );
+  }
+}
+```
+
+
 ## User Input
 
 ```
