@@ -438,8 +438,9 @@ Let's look at some data and live code a bit.
 
 big data is ```messy```
 
-[turnstiles json](https://drive.google.com/file/d/1jkgEA9z3LP5lBLmQUrfOmZh93OcRJMmi/view?usp=sharing)
-[turnstiles csv](https://drive.google.com/file/d/1JEJdLVgc6RS59oHmo_Z_Sj6XFORZ-xJj/view?usp=sharing)
+- [turnstiles json](https://drive.google.com/file/d/1jkgEA9z3LP5lBLmQUrfOmZh93OcRJMmi/view?usp=sharing)
+- [turnstiles csv](https://drive.google.com/file/d/1JEJdLVgc6RS59oHmo_Z_Sj6XFORZ-xJj/view?usp=sharing)
+- [14th Street](https://drive.google.com/file/d/19_mHKUpCzTQLKdeQgZjQK-GmE8IxdbnW/view?usp=sharing)
 
 ### Home Work
 * Coding Assignment #6: Data Viz Using data from the turnstiles data set;
