@@ -6,6 +6,8 @@
 * Create a branch called ```gh-pages```
 * Download your sketch from the editor
 * Switch the main branch to ```gh-pages```  on ```/settings/branches``` page
+* Upload the contents of the ```sketch.zip``` file to the ```gh-pages``` branch of your repo
+* visit ```https://{your_user_name}.github.io/{your_branch_name}/```
 
 ## IN CLASS ASSIGNMENT 
 
