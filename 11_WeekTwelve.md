@@ -1,5 +1,22 @@
 # Week 12 - Special Topics
 
+
+## JSON
+
+```
+{
+  "name": "sunflower",
+  "r": 255,
+  "g": 200,
+  "b": 0,
+  "rgb":[255, 200, 0],
+  "position":{
+      "x":0,
+      "y":0,
+  },
+  "json":"is a way of store data logically"
+}
+```
 ## REVIEW NYT API
 
 [NYT DEV SITE](https://developer.nytimes.com/apis)
