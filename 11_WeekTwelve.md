@@ -1,4 +1,31 @@
 # Week 12 - Special Topics
+
+## REVIEW NYT API
+
+[NYT DEV SITE](https://developer.nytimes.com/apis)
+
+### BASE URL
+
+```https://api.nytimes.com/```
+
+### API END POINTS
+
+```svc/search/v2/articlesearch.json```
+
+### Query Params 
+
+```?q=rainbow&api-key=your_api_key```
+
+
+### PUT IT ALL TOGETHER 
+
+```https://api.nytimes.com/svc/news/v3/content/all/all.json?api-key=your_api_key```
+```https://api.nytimes.com/svc/news/v3/content/nyt/business.json?api-key=your_api_key```
+```https://api.nytimes.com/svc/news/v3/content/nyt/world.json?api-key=your_api_key```
+```https://api.nytimes.com/svc/news/v3/content/section-list.json?api-key=your_api_key```
+
+
+
 ## GitHub Pages
 ## PUT IT ON THE WEB
 
