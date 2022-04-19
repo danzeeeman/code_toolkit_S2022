@@ -17,7 +17,11 @@
 ```?q=rainbow&api-key=your_api_key```
 
 
-### PUT IT ALL TOGETHER 
+### PUT IT ALL TOGETHER cd
+
+```https://api.nytimes.com/svc/search/v2/articlesearch.json?q=rainbow&api-key=your_api_key```
+
+### MORE EXAMPLES
 
 ```https://api.nytimes.com/svc/news/v3/content/all/all.json?api-key=your_api_key```
 ```https://api.nytimes.com/svc/news/v3/content/nyt/business.json?api-key=your_api_key```
