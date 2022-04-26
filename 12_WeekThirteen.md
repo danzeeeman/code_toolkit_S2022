@@ -24,7 +24,7 @@ The leaderboard API schematic should provide routes to:
 - Remove a player
 - Fetch a list (leaderboard) of top players (ranked by score)
 
-###Step 1: Connecting our Node.js backend to the MongoDB database on mLab
+### Step 1: Connecting our Node.js backend to the MongoDB database on mLab
 Now, we need to connect to the database we created in mLab (in this case sweetgame), and make a collection called players that will contain records of all our players.
 ```Index.js```
 ```
