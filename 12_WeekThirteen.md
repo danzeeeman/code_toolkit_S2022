@@ -3,7 +3,7 @@
 * Special Topics in Coding
 
 Prerequisites
-- Install [Postman](https://www.postman.com) to make the API calls.
+- Install [Postman](https://www.postman.com/downloads/) to make the API calls.
 - [Set up a MongoDB database](https://docs.mlab.com) on [mLab](https://mlab.com).
 
 ### Step 1
