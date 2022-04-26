@@ -4,7 +4,7 @@
 
 Prerequisites
 - Install [Postman](https://www.postman.com) to make the API calls.
-- [Set up a MongoDB database](https://docs.mlab.com) on [mLab](https://mlab.com).
+- [Set up a MongoDB database](cloud.mongodb.com/) on [mongodb](cloud.mongodb.com/).
 
 ### Step 1
 
