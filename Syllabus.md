@@ -1,10 +1,10 @@
-## Code Toolkit: Javascript and P5JS, Spring 2022 – LCOD 2012 – Dan Moore
+## Code Toolkit: Javascript and P5JS, Spring 2022 – LCOD 2010 – Dan Moore
 
 ### Introductory Beep Boops
 
 * Who: Dan Moore, dan@makeitdoathing.com
 
-* What: Code Toolkit: Javascript and P5.JS, Spring 2022 – LCOD 2012
+* What: Code Toolkit: Javascript and P5.JS, Spring 2022 – LCOD 2010
 
 * When: Tuesday, 4:00 – 6:40pm
 
